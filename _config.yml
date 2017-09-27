@@ -1,10 +1,10 @@
 # Site settings
-title: 闫肃的博客
-email: suyan0830@gmail.com
+title: 张庆科的博客
+email: tsingke@hotmail.com
 description: > # this means to ignore newlines until "baseurl:"
   闫肃的博客
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: http://yansu.org # the base hostname & protocol for your site
+#url: http://yansu.org # the base hostname & protocol for your site
 rss_url: /pages/feed.xml
 author: Su Yan
 
@@ -21,17 +21,17 @@ instagram: suyan0830
 linkedin: suyan0830
 
 # avatar and Favicon
-avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
-favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
+#avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
+#favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
 
 # disqus config
 disqus:
   shortname: suyan-zh
 
-# google analytics config
-ga:
-  id: UA-54767140-1
-  url: yansu.org
+## google analytics config
+#ga:
+  #id: UA-54767140-1
+  #url: yansu.org
 
 # Build settings
 permalink: /:year/:month/:day/:title.html
