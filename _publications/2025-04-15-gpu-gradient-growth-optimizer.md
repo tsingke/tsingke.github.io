@@ -12,6 +12,7 @@ screenshot: /images/papers/gpu-gradient-growth-optimizer.jpg
 code: ''
 read: ''
 featured: true
+cites: 0
 tags: ["Q1 Top"]
 keywords: ["GPU/CUDA", "Parallel computing", "Gradient-guided search"]
 abstract: |

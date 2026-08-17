@@ -7,25 +7,46 @@ subtitle: "Recruiting graduate students in Computer Science and Technology and C
 
 {% include base_path %}
 
-<p class="prose" style="max-width: 760px; margin-bottom: var(--s-12);">
-  I recruit <strong>3-4 master's students per year</strong> in <strong>Computer Science and Technology</strong> (academic track) and <strong>Computer Technology</strong> (professional track). Outstanding undergraduates are also welcome to join our research team. If you are interested in intelligent optimization and computational intelligence — with a solid foundation in computer science, artificial intelligence, mathematics, or bioinformatics — feel free to contact me by email.
-</p>
+<div class="recruit-grid-bg" style="padding: var(--s-4) 0 var(--s-8); position:relative;">
 
-<div class="cta-banner" style="padding: var(--s-12) var(--s-8);">
-  <div class="dots"></div>
-  <div class="icon-tile" style="width:72px; height:72px; margin: 0 auto var(--s-6); background: rgba(255,255,255,.18); color:#fff; border-radius: var(--r-xl);">
-    <svg class="icon" style="width:36px; height:36px;"><use href="#i-quote"/></svg>
+  <div class="i18n-en" markdown="1" style="max-width:760px; position:relative;">
+I recruit **3-4 master's students per year** in **Computer Science and Technology** (academic track) and **Computer Technology** (professional track). Outstanding undergraduates are also welcome. If you are interested in intelligent optimization and computational intelligence — with a solid foundation in computer science, artificial intelligence, mathematics, or bioinformatics — feel free to contact me by email.
   </div>
-  <p style="font-size: var(--fs-lg); font-style: italic; max-width: 640px;">
-    海阔凭鱼跃，天高任鸟飞，诚挚欢迎优秀学子加入"山师大智能计算研究课题组"！
-  </p>
-  <p style="color: rgba(255,255,255,.8); font-size: var(--fs-sm); margin-top: var(--s-4);">
-    -- Mentor's Message · 导师寄语
-  </p>
+  <div class="i18n-zh" markdown="1" style="max-width:760px; position:relative;">
+我每年计划招收**3-4 名硕士研究生**，专业涵盖**计算机科学与技术（学术型）**、**计算机技术（专业型）**，同时欢迎优秀本科生加入课题组。如果你对智能优化与智能计算感兴趣，且具备扎实的计算机、人工智能、数学或生物信息学基础，欢迎邮件联系。
+  </div>
+
+  <!-- 招生流程流线 -->
+  <h2 class="pub-section-title" style="margin-top: var(--s-12);">How to Join</h2>
+  <div class="flow-steps">
+    <div class="flow-step">
+      <div class="flow-step__num">1</div>
+      <h4><span class="i18n-en">Explore the Group</span><span class="i18n-zh">了解课题组</span></h4>
+      <p><span class="i18n-en">Browse this site to learn about our research directions and achievements.</span><span class="i18n-zh">浏览本站了解课题组的研究方向与成果。</span></p>
+    </div>
+    <div class="flow-arrow"><svg class="icon"><use href="#i-external"/></svg></div>
+    <div class="flow-step">
+      <div class="flow-step__num">2</div>
+      <h4><span class="i18n-en">Contact by Email</span><span class="i18n-zh">邮件联系</span></h4>
+      <p><span class="i18n-en">Send your CV and research interests to tsingke@sdnu.edu.cn.</span><span class="i18n-zh">将个人简历与研究兴趣发送至 tsingke@sdnu.edu.cn。</span></p>
+    </div>
+    <div class="flow-arrow"><svg class="icon"><use href="#i-external"/></svg></div>
+    <div class="flow-step">
+      <div class="flow-step__num">3</div>
+      <h4><span class="i18n-en">Interview &amp; Admission</span><span class="i18n-zh">复试录取</span></h4>
+      <p><span class="i18n-en">Take part in the entrance interview for graduate admission.</span><span class="i18n-zh">参加硕士研究生入学复试。</span></p>
+    </div>
+    <div class="flow-arrow"><svg class="icon"><use href="#i-external"/></svg></div>
+    <div class="flow-step">
+      <div class="flow-step__num">4</div>
+      <h4><span class="i18n-en">Join the Team</span><span class="i18n-zh">加入团队</span></h4>
+      <p><span class="i18n-en">Begin your research journey in intelligent optimization.</span><span class="i18n-zh">开启智能优化方向的科研之旅。</span></p>
+    </div>
+  </div>
+
 </div>
 
-<div style="height: var(--s-12);"></div>
-
+<!-- 培养理念 -->
 <h2 class="pub-section-title" data-i18n="recruiting.philosophy">Our Philosophy</h2>
 <div class="grid grid--2" style="margin-bottom: var(--s-12);">
   <div class="card">
@@ -40,6 +61,7 @@ subtitle: "Recruiting graduate students in Computer Science and Technology and C
   </div>
 </div>
 
+<!-- 研究方向 -->
 <h2 class="pub-section-title" data-i18n="recruiting.directions">Research Directions</h2>
 <div class="grid grid--3" style="margin-bottom: var(--s-12);">
   {% for d in site.data.lab.directions %}
@@ -47,6 +69,7 @@ subtitle: "Recruiting graduate students in Computer Science and Technology and C
   {% endfor %}
 </div>
 
+<!-- 学生发展 -->
 <h2 class="pub-section-title" data-i18n="recruiting.future">What You Will Gain</h2>
 <div class="grid grid--3" style="margin-bottom: var(--s-12);">
   {% for item in site.data.students.achievements limit:6 %}
@@ -54,6 +77,7 @@ subtitle: "Recruiting graduate students in Computer Science and Technology and C
   {% endfor %}
 </div>
 
+<!-- 软硬件指导 -->
 <h2 class="pub-section-title" data-i18n="recruiting.resources">Resources & Mentoring</h2>
 <div class="grid grid--2" style="margin-bottom: var(--s-12);">
   <div class="card">
@@ -68,7 +92,7 @@ subtitle: "Recruiting graduate students in Computer Science and Technology and C
   </div>
   <div class="card">
     <div class="icon-tile"><svg class="icon"><use href="#i-users"/></svg></div>
-    <h3>Weekly Seminars & Writing</h3>
+    <h3>Weekly Seminars &amp; Writing</h3>
     <p style="margin-top: var(--s-2);">Regular group meetings, literature review, paper-writing and presentation coaching.</p>
   </div>
   <div class="card">
@@ -78,37 +102,47 @@ subtitle: "Recruiting graduate students in Computer Science and Technology and C
   </div>
 </div>
 
+<!-- 导师寄语 -->
+<div class="cta-banner" style="margin-bottom: var(--s-12);">
+  <div class="dots"></div>
+  <div class="icon-tile" style="width:72px; height:72px; margin: 0 auto var(--s-6); background: rgba(255,255,255,.18); color:#fff; border-radius: var(--r-xl);">
+    <svg class="icon" style="width:36px; height:36px;"><use href="#i-quote"/></svg>
+  </div>
+  <p style="font-size: var(--fs-lg); font-style: italic; max-width: 640px;">
+    海阔凭鱼跃，天高任鸟飞，诚挚欢迎优秀学子加入"山师大智能计算研究课题组"！
+  </p>
+  <p style="color: rgba(255,255,255,.8); font-size: var(--fs-sm); margin-top: var(--s-4);">
+    -- Mentor's Message · 导师寄语
+  </p>
+</div>
+
+<!-- 联系方式 -->
 <h2 class="pub-section-title" data-i18n="recruiting.contact">Contact Us</h2>
-<div class="contact-layout">
-  <div class="grid grid--2">
-    <div class="contact-card">
-      <div class="icon-tile" style="width:44px;height:44px;"><svg class="icon"><use href="#i-mail"/></svg></div>
-      <div style="min-width:0;">
-        <div class="contact-card__label">Email</div>
-        <div class="contact-card__value"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></div>
-      </div>
-    </div>
-    <div class="contact-card">
-      <div class="icon-tile" style="width:44px;height:44px;"><svg class="icon"><use href="#i-phone"/></svg></div>
-      <div style="min-width:0;">
-        <div class="contact-card__label">Phone</div>
-        <div class="contact-card__value">+86 139 5312 8163</div>
-      </div>
-    </div>
-    <div class="contact-card" style="grid-column: 1 / -1;">
-      <div class="icon-tile" style="width:44px;height:44px;"><svg class="icon"><use href="#i-wechat"/></svg></div>
-      <div style="min-width:0;">
-        <div class="contact-card__label">WeChat</div>
-        <div class="contact-card__value">13953128163</div>
-      </div>
+<div class="grid grid--3" style="margin-bottom: var(--s-8);">
+  <div class="contact-card">
+    <div class="icon-tile" style="width:44px;height:44px;"><svg class="icon"><use href="#i-mail"/></svg></div>
+    <div style="min-width:0;">
+      <div class="contact-card__label">Email</div>
+      <div class="contact-card__value"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></div>
     </div>
   </div>
-  <div style="display:flex; flex-direction:column; gap: var(--s-4); align-items:center; justify-content:center;">
-    <p style="color: var(--c-text-2); text-align:center; max-width: 320px;">
-      Interested? Send a recruiting inquiry and we will get back to you.
-    </p>
-    <a class="btn btn--lg" href="mailto:{{ site.author.email }}?subject=%5BWebsite%20Recruiting%5D%20Prospective%20Student">
-      <svg class="icon"><use href="#i-mail"/></svg> Send Recruiting Inquiry
-    </a>
+  <div class="contact-card">
+    <div class="icon-tile" style="width:44px;height:44px;"><svg class="icon"><use href="#i-phone"/></svg></div>
+    <div style="min-width:0;">
+      <div class="contact-card__label">Phone</div>
+      <div class="contact-card__value">+86 139 5312 8163</div>
+    </div>
+  </div>
+  <div class="contact-card">
+    <div class="icon-tile" style="width:44px;height:44px;"><svg class="icon"><use href="#i-wechat"/></svg></div>
+    <div style="min-width:0;">
+      <div class="contact-card__label">WeChat</div>
+      <div class="contact-card__value">13953128163</div>
+    </div>
   </div>
 </div>
+<p style="text-align:center; margin-top: var(--s-8);">
+  <a class="btn btn--lg" href="mailto:{{ site.author.email }}?subject=%5BWebsite%20Recruiting%5D%20Prospective%20Student">
+    <svg class="icon"><use href="#i-mail"/></svg> Send Recruiting Inquiry
+  </a>
+</p>

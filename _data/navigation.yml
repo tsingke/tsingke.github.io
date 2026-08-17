@@ -18,10 +18,6 @@ main:
     key: cilab
     url: /lab/
 
-  - title: "Students"
-    key: students
-    url: /students/
-
   - title: "Recruiting"
     key: recruiting
     url: /recruiting/

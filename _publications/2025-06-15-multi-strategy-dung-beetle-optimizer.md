@@ -12,6 +12,7 @@ screenshot: /images/papers/multi-strategy-dung-beetle-optimizer.jpg
 code: ''
 read: ''
 featured: true
+cites: 1
 tags: ["Q1 Top"]
 keywords: ["Dung beetle optimizer", "Photovoltaic models", "Engineering applications"]
 abstract: |

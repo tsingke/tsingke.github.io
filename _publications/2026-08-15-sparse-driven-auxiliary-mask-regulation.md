@@ -12,6 +12,7 @@ screenshot: /images/papers/sparse-driven-auxiliary-mask-regulation.jpg
 code: ''
 read: ''
 featured: true
+cites: 1
 tags: ["Q1 Top"]
 keywords: ["Large-scale optimization", "Multi-objective", "Deep reinforcement learning"]
 abstract: |

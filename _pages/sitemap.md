@@ -12,8 +12,7 @@ sitemap: false
   {% for link in site.data.navigation.main %}
     <li><a href="{{ base_path }}{{ link.url }}">{{ link.title }}</a></li>
   {% endfor %}
-  <li><a href="{{ base_path }}/students/graduate/">Graduate Students</a></li>
-  <li><a href="{{ base_path }}/students/undergraduate/">Undergraduate Students</a></li>
+  <li><a href="{{ base_path }}/lab/#team">Lab · Team Members</a></li>
 </ul>
 
 <h2 class="pub-section-title" style="margin-top: var(--s-12);">Publications</h2>

@@ -1,19 +1,10 @@
 {% include base_path %}
+{% assign sorted = site.publications | sort: "cites" | reverse %}
 {% assign shown = 0 %}
 <div class="grid grid--2">
-  {% for post in site.publications reversed %}
+  {% for post in sorted %}
     {% if shown >= 6 %}{% break %}{% endif %}
-    {% if post.featured %}
-      {% assign shown = shown | plus: 1 %}
-      {% include pub-card.html post=post %}
-    {% endif %}
+    {% assign shown = shown | plus: 1 %}
+    {% include pub-card.html post=post %}
   {% endfor %}
-  {% if shown < 6 %}
-    {% for post in site.publications reversed %}
-      {% if shown >= 6 %}{% break %}{% endif %}
-      {% if post.featured %}{% continue %}{% endif %}
-      {% assign shown = shown | plus: 1 %}
-      {% include pub-card.html post=post %}
-    {% endfor %}
-  {% endif %}
 </div>

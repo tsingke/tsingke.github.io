@@ -11,6 +11,7 @@ date: 2026-03-01
 location: 'Jinan, China'
 semester: "Spring"
 credits: 2
+overview_zh: "博士课程，涵盖经典与现代优化理论与方法，包括凸分析、非线性规划、元启发式算法及学习辅助优化的前沿进展，衔接理论基础与群体智能、演化计算、大规模优化等前沿研究。"
 overview: |
   A doctoral course covering classical and modern optimization theory and methods, including convex analysis, nonlinear programming, metaheuristics, and recent advances in learning-assisted optimization. The course bridges theoretical foundations with frontier research in swarm intelligence, evolutionary computation, and large-scale optimization.
 textbook: "Numerical Optimization (Nocedal & Wright); Convex Optimization (Boyd & Vandenberghe)"

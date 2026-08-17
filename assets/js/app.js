@@ -40,6 +40,35 @@
     try { localStorage.setItem(STORE_KEY, lang); } catch (e) {}
   }
 
+  /* ---------- 主题切换（黑白模式）---------- */
+  function getTheme() {
+    try {
+      var saved = localStorage.getItem('qk-theme');
+      if (saved === 'dark' || saved === 'light') return saved;
+    } catch (e) {}
+    return (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  }
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    var toggles = document.querySelectorAll('[data-theme-toggle]');
+    Array.prototype.forEach.call(toggles, function (b) {
+      var use = b.querySelector('use');
+      if (use) use.setAttribute('href', theme === 'dark' ? '#i-sun' : '#i-moon');
+    });
+    try { localStorage.setItem('qk-theme', theme); } catch (e) {}
+  }
+
+  function bindThemeToggle() {
+    var toggles = document.querySelectorAll('[data-theme-toggle]');
+    Array.prototype.forEach.call(toggles, function (b) {
+      b.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || getTheme();
+        applyTheme(cur === 'dark' ? 'light' : 'dark');
+      });
+    });
+  }
+
   function bindLangToggle() {
     var toggles = document.querySelectorAll('[data-lang-toggle]');
     Array.prototype.forEach.call(toggles, function (b) {
@@ -307,6 +336,8 @@
 
   /* ---------- 初始化 ---------- */
   document.addEventListener('DOMContentLoaded', function () {
+    applyTheme(getTheme());
+    bindThemeToggle();
     applyLang(getLang());
     bindLangToggle();
     bindNavToggle();

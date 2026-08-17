@@ -12,6 +12,7 @@ screenshot: /images/papers/eos-coyote-optimization.jpg
 code: ''
 read: ''
 featured: true
+cites: 25
 tags: ["Q1 Top"]
 keywords: ["Coyote optimization", "Optimization state", "Image segmentation"]
 abstract: |

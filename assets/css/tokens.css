@@ -98,3 +98,47 @@
   --dur-med:  250ms;
   --dur-slow: 600ms;
 }
+
+/* ==========================================================================
+   Dark Theme — 黑暗模式（跟随系统 + 手动切换）
+   html[data-theme="dark"] 覆盖浅色变量
+   ========================================================================== */
+html[data-theme="dark"] {
+  --c-primary:        #60A5FA;
+  --c-primary-400:    #93C5FD;
+  --c-primary-500:    #3B82F6;
+  --c-primary-600:    #2563EB;
+  --c-secondary:      #A78BFA;
+  --c-secondary-400:  #C4B5FD;
+  --c-secondary-500:  #8B5CF6;
+  --c-secondary-600:  #7C3AED;
+  --c-indigo:         #818CF8;
+  --c-gradient:        linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+  --c-gradient-soft:   linear-gradient(135deg, rgba(37,99,235,.16), rgba(124,58,237,.16));
+  --c-gradient-deep:   linear-gradient(135deg, #1E3A8A 0%, #5B21B6 100%);
+
+  --c-bg:        #0B1220;
+  --c-bg-alt:    #0F172A;
+  --c-bg-tint:   #1E293B;
+  --c-text:      #E2E8F0;
+  --c-text-2:    #94A3B8;
+  --c-text-3:    #64748B;
+  --c-border:    #1E293B;
+  --c-border-2:  #334155;
+
+  --shadow-sm:   0 1px 2px rgba(0,0,0,.4);
+  --shadow-md:   0 4px 6px -1px rgba(0,0,0,.45), 0 2px 4px -2px rgba(0,0,0,.3);
+  --shadow-lg:   0 12px 24px -8px rgba(37,99,235,.35);
+  --shadow-glow: 0 0 0 1px rgba(99,102,241,.25), 0 16px 40px -16px rgba(99,102,241,.45);
+}
+
+/* ==========================================================================
+   Bilingual — 正文中英切换
+   默认显示英文（.i18n-en），切中文后显示中文（.i18n-zh）
+   ========================================================================== */
+.i18n-zh { display: none; }
+html[data-lang="zh"] .i18n-en { display: none; }
+html[data-lang="zh"] .i18n-zh { display: block; }
+html[data-lang="zh"] .i18n-zh.i18n-inline { display: inline; }
+html[data-lang="zh"] .i18n-en.i18n-inline { display: none; }
+.i18n-inline { display: inline; }

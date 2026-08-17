@@ -12,6 +12,7 @@ screenshot: /images/papers/multi-strategy-de-adaptive-hash-clustering.jpg
 code: ''
 read: ''
 featured: true
+cites: 13
 tags: ["Q1 Top"]
 keywords: ["Differential evolution", "Adaptive hash clustering", "Wireless sensor networks"]
 abstract: |

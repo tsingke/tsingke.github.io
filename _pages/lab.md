@@ -4,24 +4,94 @@ permalink: /lab/
 title: "CILab — Computational Intelligence Lab"
 subtitle: "Research on intelligent optimization and computational intelligence at Shandong Normal University."
 redirect_from:
+  - /students/
+  - /students/graduate/
+  - /students/undergraduate/
   - /portfolio/
 ---
 
 {% include base_path %}
 
-<p class="prose" style="max-width: 760px; margin-bottom: var(--s-12);">
-  The <strong>{{ site.data.lab.name }}</strong> (山师大智能计算研究课题组) focuses on the frontiers of intelligent optimization and computational intelligence. We adhere to the educational philosophy of <em>{{ site.data.lab.slogan }}</em>, emphasizing the deep integration of theory and practice.
-</p>
+<div class="i18n-en" markdown="1" style="max-width:760px; margin-bottom: var(--s-12);">
+The **{{ site.data.lab.name }}** focuses on the frontiers of intelligent optimization and computational intelligence, including swarm intelligence, evolutionary computation, learning-assisted optimization, and GPU-parallel intelligent computing. We adhere to the philosophy of *{{ site.data.lab.slogan }}*.
+</div>
+<div class="i18n-zh" markdown="1" style="max-width:760px; margin-bottom: var(--s-12);">
+山东师范大学计算机与人工智能学院 **CILab（计算智能实验室）** 聚焦智能优化与智能计算前沿，涵盖群体智能、演化计算、学习型智能优化与 GPU 并行智能计算。实验室坚持 **{{ site.data.lab.slogan }}** 的培养理念，注重理论与实践深度融合。
+</div>
 
-<h2 style="margin-bottom: var(--s-6);">Research Directions</h2>
-<div class="grid grid--3">
-  {% for d in site.data.lab.directions %}
-  {% include card.html icon=d.icon title=d.title text=d.text %}
+<!-- ===== 团队成员 ===== -->
+<h2 class="pub-section-title">Team Members</h2>
+
+<h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-8) 0 var(--s-4);">Current Graduate Students <span class="tag tag--q1">在读</span></h3>
+<div class="grid grid--4">
+  {% assign idx = 0 %}
+  {% for m in site.data.members.graduate_students %}
+    {% if m.status == 'current' %}
+      {% assign idx = idx | plus: 1 %}
+      {% include student-card.html member=m index=idx %}
+    {% endif %}
+  {% endfor %}
+</div>
+{% assign idx = 0 %}
+{% for m in site.data.members.graduate_students %}
+  {% if m.status == 'current' %}
+    {% assign idx = idx | plus: 1 %}
+    {% include student-dialog.html member=m index=idx %}
+  {% endif %}
+{% endfor %}
+
+<h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-12) 0 var(--s-4);">Alumni <span class="tag">已毕业</span></h3>
+<div class="grid grid--4">
+  {% for m in site.data.members.graduate_students %}
+    {% if m.status == 'alumni' %}
+      {% include student-card.html member=m %}
+    {% endif %}
   {% endfor %}
 </div>
 
+<h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-12) 0 var(--s-4);">Undergraduate Students</h3>
+<div class="grid grid--3" style="margin-bottom: var(--s-8);">
+  {% for t in site.data.members.undergraduate.thesis %}
+  <div class="card"><h3>{{ t.name }}</h3><p style="margin-top: var(--s-2);">{{ t.thesis_title }}</p><div class="pub__tags" style="margin-top: var(--s-3);"><span class="tag">{{ t.year }}</span></div></div>
+  {% endfor %}
+</div>
+<div class="grid grid--3" style="margin-bottom: var(--s-8);">
+  {% for c in site.data.members.undergraduate.competition %}
+  <div class="card"><h3>{{ c.name }}</h3><p style="margin-top: var(--s-2);">{{ c.award }}</p><div class="pub__tags" style="margin-top: var(--s-3);"><span class="tag">{{ c.year }}</span></div></div>
+  {% endfor %}
+</div>
+<div class="grid grid--3" style="margin-bottom: var(--s-8);">
+  {% for r in site.data.members.undergraduate.research %}
+  <div class="card"><h3>{{ r.name }}</h3><p style="margin-top: var(--s-2);">{{ r.project }}</p><div class="pub__tags" style="margin-top: var(--s-3);"><span class="tag">{{ r.year }}</span></div></div>
+  {% endfor %}
+</div>
+{% if site.data.members.undergraduate.thesis.size == 0 and site.data.members.undergraduate.competition.size == 0 and site.data.members.undergraduate.research.size == 0 %}
+  <p style="color: var(--c-text-3);">The undergraduate list is being updated. Check back soon.</p>
+{% endif %}
+
+<!-- ===== 研究领域 ===== -->
+<div style="height: var(--s-8);"></div>
+<h2 class="pub-section-title">Research Directions</h2>
+<div class="grid grid--3" style="margin-bottom: var(--s-8);">
+  {% for d in site.data.lab.directions %}
+    {% include card.html icon=d.icon title=d.title text=d.text %}
+  {% endfor %}
+</div>
+
+<div class="card" style="display:flex; gap: var(--s-8); align-items:center; flex-wrap:wrap; background: var(--c-gradient-soft);">
+  <div style="flex:1; min-width: 280px;">
+    <h3>Research Network</h3>
+    <p style="margin-top: var(--s-2);">Our research spans intelligent optimization, evolutionary computation, and parallel intelligent computing, connecting theory with real-world engineering applications such as UAV path planning, bioinformatics, intelligent diagnosis, advanced manufacturing, and energy-system optimization.</p>
+  </div>
+  <div style="flex:1; min-width: 280px;">
+    <svg viewBox="0 0 640 360" style="width:100%; max-width:460px;"><use href="#i-network-lab"/></svg>
+  </div>
+</div>
+
+<!-- ===== PlatECO ===== -->
 {% if site.data.lab.platform %}
-<div style="height: var(--s-12);"></div>
+<div style="height: var(--s-8);"></div>
+<h2 class="pub-section-title">Open-Source Platform</h2>
 <article class="card" style="display:flex; gap: var(--s-6); align-items:center; flex-wrap: wrap;">
   <div class="icon-tile" style="width:72px; height:72px; border-radius: var(--r-xl);">
     <svg class="icon" style="width:36px; height:36px;"><use href="#i-{{ site.data.lab.platform.icon }}"/></svg>
@@ -30,13 +100,15 @@ redirect_from:
     <h3>{{ site.data.lab.platform.name }}</h3>
     <p style="margin-top: var(--s-2);">{{ site.data.lab.platform.desc }}</p>
     {% if site.data.lab.platform.link %}
-    <p style="margin-top: var(--s-3);"><a href="{{ site.data.lab.platform.link }}">{{ site.data.lab.platform.link }} <svg class="icon" style="width:14px; height:14px; display:inline-block; vertical-align: -2px;"><use href="#i-external"/></svg></a></p>
+    <p style="margin-top: var(--s-3);"><a href="{{ site.data.lab.platform.link }}">{{ site.data.lab.platform.link }} <svg class="icon" style="width:14px; height:14px; display:inline-block; vertical-align:-2px;"><use href="#i-external"/></svg></a></p>
     {% endif %}
   </div>
 </article>
 {% endif %}
 
-<h2 style="margin: var(--s-16) 0 var(--s-6);">Research Projects</h2>
+<!-- ===== 项目 ===== -->
+<div style="height: var(--s-8);"></div>
+<h2 class="pub-section-title">Research Projects</h2>
 <div class="grid grid--2">
   {% for p in site.data.lab.projects %}
   <article class="card">
@@ -51,9 +123,31 @@ redirect_from:
   {% endfor %}
 </div>
 
-<h2 style="margin: var(--s-16) 0 var(--s-6);">Granted Patents</h2>
+<!-- ===== 专利 ===== -->
+<div style="height: var(--s-8);"></div>
+<h2 class="pub-section-title">Granted Patents</h2>
 <div class="grid grid--2">
   {% for pat in site.data.lab.patents %}
   {% include card.html icon="database" title=pat.title text=pat.text %}
   {% endfor %}
+</div>
+
+<!-- ===== 地址 ===== -->
+<div style="height: var(--s-8);"></div>
+<h2 class="pub-section-title">Location</h2>
+<div class="grid grid--2">
+  <div class="contact-card">
+    <div class="icon-tile" style="width:44px;height:44px;"><svg class="icon"><use href="#i-map-pin"/></svg></div>
+    <div style="min-width:0;">
+      <div class="contact-card__label">Office</div>
+      <div class="contact-card__value">Room 402/404, Wencong Building, Changqinghu Campus, Shandong Normal University</div>
+    </div>
+  </div>
+  <div class="contact-card">
+    <div class="icon-tile" style="width:44px;height:44px;"><svg class="icon"><use href="#i-map-pin"/></svg></div>
+    <div style="min-width:0;">
+      <div class="contact-card__label">School Address</div>
+      <div class="contact-card__value">School of Computer Science and Artificial Intelligence, Shandong Normal University, No.1 University Road, Changqing District, Jinan, Shandong 250358, China</div>
+    </div>
+  </div>
 </div>

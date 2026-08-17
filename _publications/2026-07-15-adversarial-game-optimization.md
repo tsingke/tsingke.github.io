@@ -12,6 +12,7 @@ screenshot: /images/papers/adversarial-game-optimization.jpg
 code: ''
 read: ''
 featured: true
+cites: 0
 tags: ["Q1 Top"]
 keywords: ["Metaheuristic", "Game theory", "Engineering applications"]
 abstract: |

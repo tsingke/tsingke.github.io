@@ -12,6 +12,7 @@ screenshot: /images/papers/vector-coevolving-particle-swarm-optimization.jpg
 code: ''
 read: ''
 featured: true
+cites: 60
 tags: ["Q1 Top"]
 keywords: ["Particle swarm optimization", "Coevolution", "Numerical optimization"]
 abstract: |

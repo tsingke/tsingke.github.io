@@ -36,7 +36,10 @@ layout: default
           <div class="icon-tile"><svg class="icon"><use href="#i-book-open"/></svg></div>
           <h2 data-i18n="teaching.overview">Overview</h2>
         </div>
-        <div class="cv-block__body"><p style="color: var(--c-text-2);">{{ page.overview }}</p></div>
+        <div class="cv-block__body">
+          <p style="color: var(--c-text-2);" class="i18n-en">{{ page.overview }}</p>
+          {% if page.overview_zh %}<p style="color: var(--c-text-2);" class="i18n-zh">{{ page.overview_zh }}</p>{% endif %}
+        </div>
       </div>
       {% endif %}
 

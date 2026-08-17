@@ -291,7 +291,7 @@ hr { border: 0; border-top: 1px solid var(--c-border); margin: var(--s-12) 0; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: #0B1220; color: #94A3B8; padding: var(--s-16) 0 var(--s-8); margin-top: var(--s-20); }
-.site-footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1.2fr; gap: var(--s-12); }
+.site-footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.3fr; gap: var(--s-10); }
 .site-footer h4 { color: #fff; font-size: var(--fs-sm); margin-bottom: var(--s-4); text-transform: uppercase; letter-spacing: .05em; }
 .site-footer a { color: #94A3B8; }
 .site-footer a:hover { color: #fff; }
@@ -331,6 +331,8 @@ hr { border: 0; border-top: 1px solid var(--c-border); margin: var(--s-12) 0; }
   .hero__inner { grid-template-columns: 1fr; gap: var(--s-10); }
   .hero__art { min-height: 260px; }
   .site-footer__grid { grid-template-columns: 1fr 1fr; }
+  .contact-layout { grid-template-columns: 1fr; gap: var(--s-8); }
+  .pub-detail-grid { grid-template-columns: 1fr !important; }
 }
 
 @media (max-width: 900px) {
@@ -383,6 +385,42 @@ hr { border: 0; border-top: 1px solid var(--c-border); margin: var(--s-12) 0; }
 .course-resource-list .rl-title { display: flex; align-items: center; gap: var(--s-3); color: var(--c-text-2); font-size: var(--fs-sm); }
 .course-resource-list .rl-title .icon { width: 16px; height: 16px; color: var(--c-primary); }
 
+/* ---------- 招生流程流线 ---------- */
+.flow-steps { display: flex; gap: var(--s-4); margin: var(--s-10) 0 var(--s-12); align-items: stretch; }
+.flow-step {
+  flex: 1; text-align: center; padding: var(--s-8) var(--s-4);
+  background: var(--c-bg); border: 1px solid var(--c-border);
+  border-radius: var(--r-lg); position: relative; box-shadow: var(--shadow-sm);
+  transition: all .25s var(--ease-out);
+}
+.flow-step:hover { box-shadow: var(--shadow-glow); transform: translateY(-4px); }
+.flow-step__num {
+  width: 44px; height: 44px; margin: 0 auto var(--s-4); border-radius: 50%;
+  background: var(--c-gradient); color: #fff; font-weight: var(--fw-extra);
+  display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md);
+}
+.flow-step h4 { font-size: var(--fs-base); margin-bottom: var(--s-2); }
+.flow-step p { font-size: var(--fs-sm); color: var(--c-text-2); }
+.flow-step .icon-tile { margin: 0 auto var(--s-3); }
+.flow-arrow { display: flex; align-items: center; color: var(--c-primary-400); font-size: var(--fs-xl); flex-shrink: 0; }
+.flow-arrow .icon { width: 22px; height: 22px; }
+
+/* 曲线分隔装饰 */
+.section-wave { position: relative; }
+.recruit-grid-bg {
+  position: relative;
+  background-image:
+    linear-gradient(rgba(37,99,235,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37,99,235,.04) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+.recruit-grid-bg::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 60%;
+  background: radial-gradient(ellipse at 20% 0%, rgba(96,165,250,.12), transparent 60%),
+              radial-gradient(ellipse at 80% 0%, rgba(124,58,237,.12), transparent 60%);
+  pointer-events: none;
+}
+
 /* ---------- 语言切换按钮 ---------- */
 .lang-toggle {
   display: inline-flex; align-items: center; justify-content: center;
@@ -414,26 +452,29 @@ hr { border: 0; border-top: 1px solid var(--c-border); margin: var(--s-12) 0; }
 /* ---------- Hero 身份卡 ---------- */
 .hero__panel { display: flex; justify-content: center; align-items: center; }
 .id-card {
-  width: min(100%, 360px); border-radius: var(--r-2xl); overflow: hidden;
+  position: relative; width: min(100%, 360px); border-radius: var(--r-2xl); overflow: hidden;
   background: rgba(255,255,255,.12);
   backdrop-filter: blur(18px) saturate(160%);
   -webkit-backdrop-filter: blur(18px) saturate(160%);
   border: 1px solid rgba(255,255,255,.22); box-shadow: var(--shadow-lg);
   animation: fadeUp .55s var(--ease-out) both; animation-delay: .1s;
 }
-.id-card__media img { aspect-ratio: 4/3; object-fit: cover; width: 100%; }
-.id-card__body { padding: var(--s-6); }
+.id-card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, rgba(255,255,255,.55), rgba(255,255,255,.1));
+}
+.id-card__body { padding: var(--s-8) var(--s-6); text-align: center; }
 .id-card__name { font-size: var(--fs-xl); font-weight: var(--fw-extra); color: #fff; margin-bottom: var(--s-2); }
 .id-card__role { font-size: var(--fs-sm); color: rgba(255,255,255,.85); line-height: 1.5; }
 .id-card__loc { display: flex; align-items: center; gap: var(--s-2); font-size: var(--fs-xs); color: rgba(255,255,255,.7); margin-top: var(--s-2); }
 .id-card__loc .icon { width: 14px; height: 14px; }
-.id-card__tags { display: flex; flex-wrap: wrap; gap: var(--s-2); margin-top: var(--s-4); }
+.id-card__tags { display: flex; flex-wrap: wrap; gap: var(--s-2); margin-top: var(--s-4); justify-content: center; }
 .id-card__tags .chip {
   background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.22);
   color: rgba(255,255,255,.92); padding: 4px var(--s-3); border-radius: var(--r-full);
   font-size: var(--fs-xs); font-weight: var(--fw-semi);
 }
-.id-card__actions { display: flex; gap: var(--s-3); margin-top: var(--s-5); }
+.id-card__actions { display: flex; gap: var(--s-3); margin-top: var(--s-5); justify-content: center; }
 .id-card__actions a {
   width: 40px; height: 40px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
@@ -545,6 +586,8 @@ body.modal-open { overflow: hidden; }
 
 /* ---------- 联系表单 ---------- */
 .contact-layout { display: grid; grid-template-columns: 1.1fr .9fr; gap: var(--s-12); align-items: start; }
+.contact-group .contact-card { height: 100%; }
+.contact-form-wrap { position: sticky; top: calc(var(--nav-height) + 24px); }
 .contact-groups { display: flex; flex-direction: column; gap: var(--s-8); }
 .contact-group h3 { font-size: var(--fs-base); display: flex; align-items: center; gap: var(--s-2); margin-bottom: var(--s-4); }
 .contact-group h3 .icon { width: 18px; height: 18px; color: var(--c-primary); }
@@ -600,6 +643,34 @@ body.modal-open { overflow: hidden; }
   .section-head, .card, .pub-card, .teaching-card, .contact-card, .cv-block { opacity: 0; transform: translateY(16px); }
   .revealed { opacity: 1; transform: none; }
 }
+
+/* ---------- 主题切换按钮 ---------- */
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; margin-left: var(--s-2);
+  border: 1px solid var(--c-border); background: var(--c-bg-alt);
+  border-radius: 50%; cursor: pointer; color: var(--c-text-2);
+  transition: all .2s var(--ease-out);
+}
+.theme-toggle:hover { color: var(--c-primary); border-color: var(--c-primary); transform: translateY(-1px); }
+.theme-toggle .icon { width: 18px; height: 18px; }
+
+/* ---------- 黑暗模式适配 ---------- */
+html[data-theme="dark"] .site-nav { background: rgba(11,18,32,.85); }
+html[data-theme="dark"] .site-nav__menu { background: var(--c-bg); }
+html[data-theme="dark"] .site-nav__menu a { color: var(--c-text-2); }
+html[data-theme="dark"] .site-nav__menu a:hover,
+html[data-theme="dark"] .site-nav__menu a.active { color: var(--c-primary); background: var(--c-bg-tint); }
+html[data-theme="dark"] .nav-toggle span { background: var(--c-text); }
+html[data-theme="dark"] .hero .chip { background: rgba(255,255,255,.12); }
+html[data-theme="dark"] .id-card { background: rgba(255,255,255,.1); }
+html[data-theme="dark"] .card, html[data-theme="dark"] .pub, html[data-theme="dark"] .teaching-card,
+html[data-theme="dark"] .contact-card, html[data-theme="dark"] .stat, html[data-theme="dark"] .pub-card,
+html[data-theme="dark"] .student-card { background: var(--c-bg-alt); }
+html[data-theme="dark"] .modal, html[data-theme="dark"] .student-dialog, html[data-theme="dark"] .contact-form-wrap { background: var(--c-bg-alt); }
+html[data-theme="dark"] .prose blockquote { background: var(--c-bg-tint); }
+html[data-theme="dark"] .btn--light { color: var(--c-primary-600); }
+html[data-theme="dark"] .cta-banner .btn--light { color: var(--c-primary); }
 
 /* ---------- 动画降级 ---------- */
 @media (prefers-reduced-motion: reduce) {

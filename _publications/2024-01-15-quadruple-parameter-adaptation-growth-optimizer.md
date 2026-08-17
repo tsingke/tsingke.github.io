@@ -12,6 +12,7 @@ screenshot: /images/papers/quadruple-parameter-adaptation-growth-optimizer.jpg
 code: ''
 read: ''
 featured: true
+cites: 26
 tags: ["Q1 Top"]
 keywords: ["Growth optimizer", "Parameter adaptation", "Image segmentation", "Sensor deployment"]
 abstract: |

@@ -12,6 +12,7 @@ screenshot: /images/papers/alpha-evolution.jpg
 code: ''
 read: ''
 featured: true
+cites: 92
 tags: ["ESI", "Q1 Top"]
 keywords: ["Evolutionary computation", "Evolution path adaptation", "Numerical optimization"]
 abstract: |

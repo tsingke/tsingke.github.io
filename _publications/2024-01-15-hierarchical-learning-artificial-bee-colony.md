@@ -12,6 +12,7 @@ screenshot: /images/papers/hierarchical-learning-artificial-bee-colony.jpg
 code: ''
 read: ''
 featured: true
+cites: 8
 tags: ["Q1 Top"]
 keywords: ["Artificial bee colony", "Hierarchical learning", "Global optimization"]
 abstract: |

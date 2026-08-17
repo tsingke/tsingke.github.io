@@ -11,6 +11,7 @@ date: 2024-09-01
 location: 'Jinan, China'
 semester: "Fall"
 credits: 2
+overview_zh: "硕士课程，讲授算法设计策略——分治、动态规划、贪心、回溯，并严格分析图论、组合与优化等基本问题的复杂度。要求学生能够设计、分析并实现算法。"
 overview: |
   A graduate course on algorithm design strategies — divide and conquer, dynamic programming, greedy methods, and backtracking — together with rigorous complexity analysis of fundamental problems in graph theory, combinatorics, and optimization. Students are expected to design, analyze, and implement algorithms for challenging computational problems.
 textbook: "Introduction to Algorithms, 3rd ed. (Cormen, Leiserson, Rivest, Stein)"

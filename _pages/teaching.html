@@ -7,30 +7,12 @@ subtitle: "Courses across undergraduate, graduate, and doctoral levels, together
 
 {% include base_path %}
 
-<h2 class="pub-section-title" data-i18n="teaching.undergraduate">Undergraduate Courses</h2>
+<h2 class="pub-section-title" data-i18n="teaching.courses">Courses</h2>
 <div class="grid grid--2" style="margin-bottom: var(--s-12);">
   {% for post in site.teaching %}
-    {% if post.level == 'undergraduate' %}
+    {% unless post.type == 'Supervision' %}
       {% include teaching-card.html post=post %}
-    {% endif %}
-  {% endfor %}
-</div>
-
-<h2 class="pub-section-title" data-i18n="teaching.graduate">Graduate Courses</h2>
-<div class="grid grid--2" style="margin-bottom: var(--s-12);">
-  {% for post in site.teaching %}
-    {% if post.level == 'graduate' %}
-      {% include teaching-card.html post=post %}
-    {% endif %}
-  {% endfor %}
-</div>
-
-<h2 class="pub-section-title" data-i18n="teaching.phd">PhD Courses</h2>
-<div class="grid grid--2" style="margin-bottom: var(--s-12);">
-  {% for post in site.teaching %}
-    {% if post.level == 'phd' %}
-      {% include teaching-card.html post=post %}
-    {% endif %}
+    {% endunless %}
   {% endfor %}
 </div>
 

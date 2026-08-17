@@ -12,6 +12,7 @@ screenshot: /images/papers/pulse-strategy-collective-learning-swarm-optimizer.jp
 code: ''
 read: ''
 featured: true
+cites: 0
 tags: ["Q1 Top"]
 keywords: ["Swarm optimizer", "Large-scale global optimization"]
 abstract: |

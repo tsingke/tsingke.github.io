@@ -15,6 +15,9 @@
       {% if include.post.tags contains 'ESI' %}
         <span class="tag tag--esi">ESI Highly Cited</span>
       {% endif %}
+      {% if include.post.cites and include.post.cites > 0 %}
+        <span class="tag">{{ include.post.cites }} citations</span>
+      {% endif %}
     </div>
     <h3 class="pub-card__title"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
     <div class="pub__venue">{{ include.post.venue }}</div>

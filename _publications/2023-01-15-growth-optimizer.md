@@ -12,6 +12,7 @@ screenshot: /images/papers/growth-optimizer.jpg
 code: ''
 read: ''
 featured: true
+cites: 204
 tags: ["ESI", "Q1 Top"]
 keywords: ["Metaheuristic", "Global optimization", "Multiple sequence alignment", "Image segmentation"]
 abstract: |

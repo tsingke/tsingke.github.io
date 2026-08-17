@@ -22,6 +22,9 @@
         {% endif %}
         <a href="{{ domain }}{{ link.url }}"{% if active %} class="active"{% endif %} data-i18n="nav.{{ link.key }}">{{ link.title }}</a>
       {% endfor %}
+      <button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle theme">
+        <svg class="icon"><use href="#i-moon"/></svg>
+      </button>
       <button class="lang-toggle" data-lang-toggle type="button" aria-label="Switch language">中文</button>
     </nav>
   </div>

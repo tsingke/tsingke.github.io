@@ -12,6 +12,7 @@ screenshot: /images/papers/efficient-growth-optimizer-adaptive-parameters.jpg
 code: ''
 read: ''
 featured: false
+cites: 0
 tags: ["Conference"]
 keywords: ["Growth optimizer", "Adaptive parameters", "Global optimization"]
 abstract: |

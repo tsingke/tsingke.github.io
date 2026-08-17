@@ -10,7 +10,7 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 <script>
-  /* FOUC 预防：尽早设置语言 */
+  /* FOUC 预防：尽早设置语言与主题 */
   (function () {
     try {
       var l = localStorage.getItem('qk-lang');
@@ -18,6 +18,11 @@
         l = (navigator.language || '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
       }
       document.documentElement.setAttribute('data-lang', l);
+      var t = localStorage.getItem('qk-theme');
+      if (t !== 'dark' && t !== 'light') {
+        t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
     } catch (e) {}
   })();
 </script>
