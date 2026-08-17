@@ -15,14 +15,13 @@
 
 ## 📸 预览 Preview
 
-**英文简历 English CV** — 完整学术履历（可在 /cv/ 页下载 PDF）
-
-![English CV](images/cv-en-preview.png)
-
 **英文首页 Homepage (English)** — 深蓝紫渐变 Hero · 左矩形照片 + 右个人信息 · 精选论文图文卡
 
 ![Homepage](images/screenshot-home.png)
 
+**英文简历 English CV** — 完整学术履历（可在 /cv/ 页下载 PDF）
+
+![English CV](images/cv-en-preview.png)
 ---
 
 ## ✨ 功能特性 Features
