@@ -1,0 +1,251 @@
+# 界面文案中英文字典（i18n）
+# en / zh 两套扁平键。HTML 元素用 data-i18n="key" 引用，app.js 切换。
+# 注意：文案中不要出现 "</script>"；含 & 的文案必须加引号。
+
+en:
+  nav:
+    home: "Home"
+    publications: "Publications"
+    teaching: "Teaching"
+    cilab: "CILab"
+    students: "Students"
+    recruiting: "Recruiting"
+    cv: "CV"
+    contact: "Contact"
+
+  hero:
+    role: "Associate Professor, School of Computer Science and Artificial Intelligence, Shandong Normal University"
+    tagline: "Research on swarm intelligence, evolutionary computation, and parallel intelligent computing."
+    cv: "Curriculum Vitae"
+    contact: "Contact Me"
+
+  common:
+    view_all: "View all publications"
+    back: "Back"
+    download_pdf: "Download PDF"
+    code: "Source Code"
+    read: "Read Online"
+    cite: "Cite"
+    copy: "Copy"
+    copied: "Copied"
+    detail: "Detail"
+
+  home:
+    news_eyebrow: "Updates"
+    news_title: "News & Updates"
+    pub_eyebrow: "Research"
+    pub_title: "Selected Publications"
+    pub_subtitle: "A selection of representative works from top-tier journals. See all on the Publications page."
+
+  pubs:
+    sort_date: "By Date"
+    sort_type: "By Type"
+    journal: "Journal Articles"
+    conference: "Conference Papers"
+    abstract: "Abstract"
+    keywords: "Keywords"
+    overview: "Research Overview"
+    note: "The list above shows 14 representative publications, selected from more than 40 SCI-indexed journal papers."
+    prev: "Previous"
+    next: "Next"
+
+  teaching:
+    courses: "Courses"
+    supervision: "Graduate Supervision"
+    undergraduate: "Undergraduate Course"
+    graduate: "Graduate Course"
+    phd: "PhD Course"
+    overview: "Overview"
+    textbook: "Textbook"
+    outline: "Course Outline"
+    slides: "Chapter Slides"
+    code: "Course Code"
+    video: "Course Videos"
+    references: "References"
+    semester: "Semester"
+    credits: "Credits"
+    location: "Location"
+    resources: "Course Resources"
+
+  contact:
+    form_title: "Leave a Message"
+    form_subtitle: "Choose a type and your email app will open with the subject pre-filled."
+    type_label: "Message Type"
+    t_feedback: "Feedback"
+    t_collab: "Project Collaboration"
+    t_recruit: "Recruiting Inquiry"
+    t_other: "Other"
+    name: "Name"
+    email: "Your Email"
+    message: "Message"
+    submit: "Send via Email"
+    fallback: "If your email app did not open, please write directly to"
+    direct: "Direct Contact"
+    academic: "Academic Profiles"
+    office: "Office & Media"
+    copy: "Copy"
+    copied: "Copied"
+
+  students:
+    graduate: "Graduate Students"
+    undergraduate: "Undergraduate Students"
+    graduate_desc: "Current master's students and recent graduates of the group."
+    undergraduate_desc: "Undergraduate students supervised for theses, competitions, and research."
+    current: "Current"
+    alumni: "Alumni"
+    enter: "View details"
+    hometown: "Hometown"
+    interests: "Research Interests"
+    papers: "Publications"
+    awards: "Awards"
+    contact: "Contact"
+    updating: "The list is being updated. Check back soon."
+    thesis: "Graduation Theses Supervised"
+    competition: "Competition Coaching"
+    research: "Research Guidance"
+
+  recruiting:
+    title: "Join Our Group"
+    subtitle: "Recruiting graduate students in Computer Science and Technology and Computer Technology, as well as outstanding undergraduates."
+    philosophy: "Our Philosophy"
+    directions: "Research Directions"
+    future: "What You Will Gain"
+    resources: "Resources & Mentoring"
+    mentor: "Message from the Mentor"
+    contact: "Contact Us"
+    cta_title: "Interested in Joining My Group?"
+    cta_sub: "I welcome motivated students in computer science, artificial intelligence, mathematics, and bioinformatics."
+
+  footer:
+    quick_links: "Quick Links"
+    contact: "Contact"
+    rights: "All rights reserved."
+    built: "Built with"
+
+  "404":
+    text: "Sorry, the page you requested could not be found."
+    home: "Back to Home"
+
+zh:
+  nav:
+    home: "首页"
+    publications: "论文"
+    teaching: "教学"
+    cilab: "CILab"
+    students: "学生"
+    recruiting: "招生"
+    cv: "简历"
+    contact: "联系"
+
+  hero:
+    role: "副教授，山东师范大学计算机与人工智能学院"
+    tagline: "研究方向：群体智能、演化计算与并行智能计算。"
+    cv: "个人简历"
+    contact: "联系我"
+
+  common:
+    view_all: "查看全部论文"
+    back: "返回"
+    download_pdf: "下载 PDF"
+    code: "源代码"
+    read: "在线阅读"
+    cite: "引用"
+    copy: "复制"
+    copied: "已复制"
+    detail: "详情"
+
+  home:
+    news_eyebrow: "动态"
+    news_title: "最新动态"
+    pub_eyebrow: "研究"
+    pub_title: "精选论文"
+    pub_subtitle: "精选顶刊代表作，完整列表见论文页面。"
+
+  pubs:
+    sort_date: "按时间"
+    sort_type: "按类型"
+    journal: "期刊论文"
+    conference: "会议论文"
+    abstract: "摘要"
+    keywords: "关键词"
+    overview: "研究内容概览"
+    note: "以上展示 14 篇代表性论文，选自 40 余篇 SCI 期刊论文。"
+    prev: "上一篇"
+    next: "下一篇"
+
+  teaching:
+    courses: "课程"
+    supervision: "研究生指导"
+    undergraduate: "本科课程"
+    graduate: "硕士课程"
+    phd: "博士课程"
+    overview: "课程介绍"
+    textbook: "课程教材"
+    outline: "授课目录"
+    slides: "章节课件"
+    code: "课程代码"
+    video: "课程视频"
+    references: "参考资料"
+    semester: "学期"
+    credits: "学分"
+    location: "地点"
+    resources: "课程资料"
+
+  contact:
+    form_title: "给我留言"
+    form_subtitle: "选择类型后提交，将自动打开您的邮件应用并预填主题。"
+    type_label: "消息类型"
+    t_feedback: "意见反馈"
+    t_collab: "项目合作"
+    t_recruit: "招生咨询"
+    t_other: "其他"
+    name: "姓名"
+    email: "您的邮箱"
+    message: "留言内容"
+    submit: "通过邮件发送"
+    fallback: "如果邮件应用未打开，请直接写信至"
+    direct: "直接联系"
+    academic: "学术主页"
+    office: "办公与媒体"
+    copy: "复制"
+    copied: "已复制"
+
+  students:
+    graduate: "在读研究生"
+    undergraduate: "本科生培养"
+    graduate_desc: "课题组在读硕士研究生与近年毕业研究生。"
+    undergraduate_desc: "指导的毕业设计、竞赛与科研本科生。"
+    current: "在读"
+    alumni: "已毕业"
+    enter: "查看详情"
+    hometown: "籍贯"
+    interests: "研究兴趣"
+    papers: "发表论文"
+    awards: "获得奖励"
+    contact: "联系方式"
+    updating: "名单更新中，敬请期待。"
+    thesis: "指导毕业设计"
+    competition: "竞赛指导"
+    research: "科研指导"
+
+  recruiting:
+    title: "加入课题组"
+    subtitle: "招收计算机科学与技术（学术型）、计算机技术（专业型）硕士研究生，同时欢迎优秀本科生加入。"
+    philosophy: "培养理念"
+    directions: "研究方向"
+    future: "你的收获"
+    resources: "软硬件与指导"
+    mentor: "导师寄语"
+    contact: "联系方式"
+    cta_title: "欢迎加入课题组"
+    cta_sub: "欢迎计算机、人工智能、数学、生物信息学等专业、有科研志向的同学联系。"
+
+  footer:
+    quick_links: "快速链接"
+    contact: "联系方式"
+    rights: "版权所有"
+    built: "由"
+
+  "404":
+    text: "抱歉，您访问的页面不存在。"
+    home: "返回首页"

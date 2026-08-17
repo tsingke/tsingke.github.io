@@ -1,0 +1,138 @@
+# 团队成员数据（Students 子页）
+# graduate_students: 研究生
+#   name 姓名 / name_en 英文名 / cohort 年级 / hometown 籍贯 / contact 联系方式
+#   interests 研究兴趣[数组] / papers 发表论文[数组] / awards 获得奖励[数组]
+#   status: current(在读) 或 alumni(已毕业，可加 alumni_to 去向)
+# undergraduate: 本科生（thesis 毕业设计 / competition 竞赛 / research 科研）
+# 联系方式/籍贯/照片等未提供字段留空，用户后续填写。
+
+graduate_students:
+  - name: "付开通"
+    cohort: "2024级"
+    status: current
+    interests: ["群体智能", "演化算法"]
+    hometown: ""
+    contact: ""
+    papers: []
+    awards: []
+
+  - name: "董星辰"
+    cohort: "2024级"
+    status: current
+    interests: ["大规模全局优化"]
+    hometown: ""
+    contact: ""
+    papers: []
+    awards: []
+
+  - name: "王晓琳"
+    cohort: "2024级"
+    status: current
+    interests: ["生物信息优化"]
+    hometown: ""
+    contact: ""
+    papers: []
+    awards: []
+
+  - name: "周光辉"
+    cohort: "2024级"
+    status: current
+    interests: ["工程应用优化"]
+    hometown: ""
+    contact: ""
+    papers: []
+    awards: []
+
+  - name: "吕凌宇"
+    cohort: "2025级"
+    status: current
+    interests: ["学习型智能优化"]
+    hometown: ""
+    contact: ""
+    papers: []
+    awards: []
+
+  - name: "王娜"
+    cohort: "2025级"
+    status: current
+    interests: ["演化计算", "多目标优化"]
+    hometown: ""
+    contact: ""
+    papers: []
+    awards: []
+
+  - name: "张胜男"
+    cohort: "2025级"
+    status: current
+    interests: ["GPU并行智能计算"]
+    hometown: ""
+    contact: ""
+    papers: []
+    awards: []
+
+  - name: "高昊"
+    cohort: "2021级"
+    status: alumni
+
+  - name: "卜降龙"
+    cohort: "2021级"
+    status: alumni
+
+  - name: "李娜"
+    cohort: "2022级"
+    status: alumni
+
+  - name: "刘晓玉"
+    cohort: "2022级"
+    status: alumni
+
+  - name: "滕家艺"
+    cohort: "2022级"
+    status: alumni
+
+  - name: "郗红彤"
+    cohort: "2022级"
+    status: alumni
+
+  - name: "张慧霞"
+    cohort: "2022级"
+    status: alumni
+
+  - name: "张华伟"
+    cohort: "2023级"
+    status: alumni
+
+  - name: "陈文良"
+    cohort: "2023级"
+    status: alumni
+
+  - name: "李聪琳"
+    cohort: "2023级"
+    status: alumni
+
+  - name: "庞树钊"
+    cohort: "2023级"
+    status: alumni
+
+  - name: "尹鑫"
+    cohort: "2023级"
+    status: alumni
+
+undergraduate:
+  thesis:
+    # - name: "李四"
+    #   contact: ""
+    #   thesis_title: "基于XX的XX算法研究"
+    #   year: "2024"
+
+  competition:
+    # - name: "王五"
+    #   contact: ""
+    #   award: "蓝桥杯省级一等奖"
+    #   year: "2024"
+
+  research:
+    # - name: "赵六"
+    #   contact: ""
+    #   project: "大创国家级项目"
+    #   year: "2024"

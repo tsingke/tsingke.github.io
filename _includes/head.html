@@ -9,6 +9,18 @@
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
+<script>
+  /* FOUC 预防：尽早设置语言 */
+  (function () {
+    try {
+      var l = localStorage.getItem('qk-lang');
+      if (l !== 'en' && l !== 'zh') {
+        l = (navigator.language || '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+      }
+      document.documentElement.setAttribute('data-lang', l);
+    } catch (e) {}
+  })();
+</script>
 
 <!-- 样式：设计变量 + 组件样式（纯 CSS，无编译依赖） -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/tokens.css">

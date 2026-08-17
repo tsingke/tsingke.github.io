@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /lab/
-title: "Intelligent Computing Group"
+title: "CILab — Computational Intelligence Lab"
 subtitle: "Research on intelligent optimization and computational intelligence at Shandong Normal University."
 redirect_from:
   - /portfolio/

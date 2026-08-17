@@ -1,49 +1,73 @@
 # 联系方式（Contact 页）
-# methods: 联系卡片（label=名称；icon=图标名；value=值；link=可选外链）
-# office: 办公地点（label/icon/value）
+# groups: 分组（key 与 methods.group 对应；title 分组名；icon 图标）
+# methods: 联系卡片（label 名称；icon 图标；value 值；link 可选外链；group 所属分组；copy=true 显示复制按钮）
+
+groups:
+  - key: direct
+    title: "Direct Contact"
+    icon: "mail"
+  - key: academic
+    title: "Academic Profiles"
+    icon: "orcid"
+  - key: office
+    title: "Office & Media"
+    icon: "map-pin"
 
 methods:
   - label: "Email"
     icon: "mail"
     value: "tsingke@sdnu.edu.cn"
     link: "mailto:tsingke@sdnu.edu.cn"
+    group: direct
+    copy: true
 
   - label: "Phone"
     icon: "phone"
     value: "+86 139 5312 8163"
+    group: direct
+    copy: true
 
-  - label: "Office"
+  - label: "Office Phone"
     icon: "phone"
     value: "+86 531 8618 1751"
+    group: direct
 
   - label: "WeChat"
     icon: "wechat"
     value: "13953128163"
+    group: direct
+    copy: true
 
   - label: "QQ"
     icon: "qq"
     value: "723911889"
-
-  - label: "WeChat Official Account"
-    icon: "message-square"
-    value: "@IntellExplore 智能计算理论与算法"
+    group: direct
+    copy: true
 
   - label: "ORCID"
     icon: "orcid"
     value: "0000-0003-3960-172X"
     link: "https://orcid.org/0000-0003-3960-172X"
+    group: academic
 
   - label: "GitHub"
     icon: "github"
     value: "github.com/tsingke"
     link: "https://github.com/tsingke"
+    group: academic
 
   - label: "X (Twitter)"
     icon: "x"
     value: "@QK_Zhang"
     link: "https://twitter.com/QK_Zhang"
+    group: academic
 
-office:
-  label: "Office Location"
-  icon: "map-pin"
-  value: "Room 402/404, Wencong Building, Changqinghu Campus, Shandong Normal University, Jinan, Shandong, China"
+  - label: "WeChat Official Account"
+    icon: "message-square"
+    value: "@IntellExplore 智能计算理论与算法"
+    group: office
+
+  - label: "Office Location"
+    icon: "map-pin"
+    value: "Room 402/404, Wencong Building, Changqinghu Campus, Shandong Normal University"
+    group: office

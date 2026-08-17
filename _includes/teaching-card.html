@@ -1,14 +1,15 @@
 {% include base_path %}
 <article class="teaching-card">
   <div class="icon-tile">
-    <svg class="icon"><use href="#i-{{ include.icon | default: 'chalkboard' }}"/></svg>
+    <svg class="icon"><use href="#i-{{ include.post.icon | default: 'chalkboard' }}"/></svg>
   </div>
-  <div>
+  <div style="min-width:0;">
     {% if include.post.type %}<span class="type-badge">{{ include.post.type }}</span>{% endif %}
     <h3><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
-    <p style="margin-top: var(--s-2);">{{ include.post.venue }}</p>
-    {% if include.post.content %}
-      <p style="margin-top: var(--s-2);">{{ include.post.content | strip_html | truncatewords: 40 }}</p>
+    {% if include.post.overview %}
+      <p style="margin-top: var(--s-2);">{{ include.post.overview | truncatewords: 30 }}</p>
+    {% else %}
+      <p style="margin-top: var(--s-2);">{{ include.post.venue }}</p>
     {% endif %}
   </div>
 </article>

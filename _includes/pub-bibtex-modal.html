@@ -1,0 +1,10 @@
+{% if include.post.bibtex %}
+<div class="modal" id="bib-{{ include.post.permalink | slugify }}" role="dialog" aria-modal="true" aria-hidden="true">
+  <button type="button" class="modal-close" aria-label="Close">&times;</button>
+  <h3 style="font-size: var(--fs-base); margin-bottom: var(--s-4);">BibTeX</h3>
+  <pre id="bibtext-{{ include.post.permalink | slugify }}">{{ include.post.bibtex | escape }}</pre>
+  <button type="button" class="btn btn--sm" data-copy-bib="bibtext-{{ include.post.permalink | slugify }}">
+    <svg class="icon"><use href="#i-copy"/></svg> <span data-i18n="common.copy">Copy</span>
+  </button>
+</div>
+{% endif %}

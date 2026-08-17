@@ -1,7 +1,13 @@
 {% if include.eyebrow or include.title or include.subtitle %}
 <div class="section-head{% if include.center %} section-head--center{% endif %}">
-  {% if include.eyebrow %}<span class="eyebrow">{{ include.eyebrow }}</span>{% endif %}
-  {% if include.title %}<h2>{{ include.title }}</h2>{% endif %}
-  {% if include.subtitle %}<p>{{ include.subtitle }}</p>{% endif %}
+  {% if include.eyebrow %}
+    <span class="eyebrow"{% if include.eyebrow_key %} data-i18n="{{ include.eyebrow_key }}"{% endif %}>{{ include.eyebrow }}</span>
+  {% endif %}
+  {% if include.title %}
+    <h2{% if include.title_key %} data-i18n="{{ include.title_key }}"{% endif %}>{{ include.title }}</h2>
+  {% endif %}
+  {% if include.subtitle %}
+    <p{% if include.subtitle_key %} data-i18n="{{ include.subtitle_key }}"{% endif %}>{{ include.subtitle }}</p>
+  {% endif %}
 </div>
 {% endif %}

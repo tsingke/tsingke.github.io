@@ -91,4 +91,10 @@
   --fw-semi:  600;
   --fw-bold:  700;
   --fw-extra: 800;
+
+  /* ---- 动效 ---- */
+  --ease-out: cubic-bezier(.22, .61, .36, 1);
+  --dur-fast: 150ms;
+  --dur-med:  250ms;
+  --dur-slow: 600ms;
 }

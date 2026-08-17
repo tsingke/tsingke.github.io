@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+{% include base_path %}
+{% include hero.html %}
+
+<main class="site-main">
+  <div class="container section">
+    <article>
+      <p class="redirect-note" style="margin-bottom: var(--s-6);">
+        <a href="{{ base_path }}/publications/">&larr; <span data-i18n="common.back">Back to Publications</span></a>
+      </p>
+      <h1 style="font-size: var(--fs-h2); margin-bottom: var(--s-3);">{{ page.title }}</h1>
+      <p style="color: var(--c-text-3); margin-bottom: var(--s-4);">{{ page.venue }}{% if page.date %} &middot; {{ page.date | date: "%Y-%m-%d" }}{% endif %}</p>
+      <div class="pub__tags" style="margin-bottom: var(--s-6);">
+        {% if page.category == 'conferences' %}
+          <span class="tag tag--conf" data-i18n="pubs.conference">Conference Paper</span>
+        {% else %}
+          <span class="tag tag--q1" data-i18n="pubs.journal">Journal Article</span>
+        {% endif %}
+        {% if page.tags contains 'ESI' %}<span class="tag tag--esi">ESI Highly Cited</span>{% endif %}
+      </div>
+
+      {% include pub-actions.html post=page %}
+
+      <div class="pub-detail-grid" style="display:grid; grid-template-columns: 1.15fr .85fr; gap: var(--s-10); margin-top: var(--s-10); align-items:start;">
+        <div style="min-width:0;">
+          {% if page.abstract %}
+            <h2 class="pub-section-title" data-i18n="pubs.abstract">Abstract</h2>
+            <p style="color: var(--c-text-2);">{{ page.abstract }}</p>
+          {% endif %}
+          {% if page.keywords %}
+            <h2 class="pub-section-title" style="margin-top: var(--s-8);" data-i18n="pubs.keywords">Keywords</h2>
+            <div class="pub__tags">{% for kw in page.keywords %}<span class="tag">{{ kw }}</span>{% endfor %}</div>
+          {% endif %}
+        </div>
+        {% if page.screenshot %}
+          <img src="{{ page.screenshot }}" alt="" style="width:100%; border-radius: var(--r-lg); border:1px solid var(--c-border); box-shadow: var(--shadow-md);">
+        {% endif %}
+      </div>
+
+      {% if page.citation %}
+        <h2 class="pub-section-title" style="margin-top: var(--s-12);">Citation</h2>
+        <blockquote>{{ page.citation }}</blockquote>
+      {% endif %}
+
+      {% if page.content and page.content != blank %}
+        <h2 class="pub-section-title" style="margin-top: var(--s-12);" data-i18n="pubs.overview">Research Overview</h2>
+        <div class="prose">{{ content }}</div>
+      {% endif %}
+    </article>
+
+    {% include pub-bibtex-modal.html post=page %}
+  </div>
+</main>

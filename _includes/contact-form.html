@@ -1,0 +1,56 @@
+{% include base_path %}
+<div class="contact-form-wrap">
+  <h2 data-i18n="contact.form_title">Leave a Message</h2>
+  <p data-i18n="contact.form_subtitle">Choose a type and your email app will open with the subject pre-filled.</p>
+
+  <form id="contact-form" data-email="{{ site.author.email }}" novalidate>
+    <div class="form-field">
+      <label data-i18n="contact.type_label">Message Type</label>
+      <div class="type-options">
+        <label class="type-option active">
+          <input type="radio" name="q_type" value="Feedback" checked>
+          <span class="type-label"><svg class="icon"><use href="#i-chat"/></svg> <span data-i18n="contact.t_feedback">Feedback</span></span>
+        </label>
+        <label class="type-option">
+          <input type="radio" name="q_type" value="Collaboration">
+          <span class="type-label"><svg class="icon"><use href="#i-flask"/></svg> <span data-i18n="contact.t_collab">Project Collaboration</span></span>
+        </label>
+        <label class="type-option">
+          <input type="radio" name="q_type" value="Recruiting">
+          <span class="type-label"><svg class="icon"><use href="#i-users"/></svg> <span data-i18n="contact.t_recruit">Recruiting Inquiry</span></span>
+        </label>
+        <label class="type-option">
+          <input type="radio" name="q_type" value="Other">
+          <span class="type-label"><svg class="icon"><use href="#i-star"/></svg> <span data-i18n="contact.t_other">Other</span></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="q_name" data-i18n="contact.name">Name</label>
+      <input type="text" id="q_name" name="q_name" autocomplete="name">
+    </div>
+
+    <div class="form-field">
+      <label for="q_email" data-i18n="contact.email">Your Email</label>
+      <input type="email" id="q_email" name="q_email" autocomplete="email">
+    </div>
+
+    <div class="form-field">
+      <label for="q_msg" data-i18n="contact.message">Message</label>
+      <textarea id="q_msg" name="q_msg" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn--lg" style="width:100%;">
+      <svg class="icon"><use href="#i-mail"/></svg> <span data-i18n="contact.submit">Send via Email</span>
+    </button>
+
+    <div class="form-hint hidden" id="form-hint">
+      <svg class="icon" style="color: var(--c-primary);"><use href="#i-mail"/></svg>
+      <span>
+        <span data-i18n="contact.fallback">If your email app did not open, please write directly to</span>
+        <strong> {{ site.author.email }}</strong>
+      </span>
+    </div>
+  </form>
+</div>

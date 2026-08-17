@@ -19,15 +19,15 @@
         </div>
       </div>
       <div>
-        <h4>Quick Links</h4>
+        <h4 data-i18n="footer.quick_links">Quick Links</h4>
         <ul>
           {% for link in site.data.navigation.main %}
-            <li><a href="{{ base_path }}{{ link.url }}">{{ link.title }}</a></li>
+            <li><a href="{{ base_path }}{{ link.url }}" data-i18n="nav.{{ link.key }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contact">Contact</h4>
         <ul>
           <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
           <li>{{ site.author.employer }}</li>
@@ -36,8 +36,8 @@
       </div>
     </div>
     <div class="site-footer__bottom">
-      <span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</span>
-      <span>Built with <a href="https://jekyllrb.com">Jekyll</a> on GitHub Pages</span>
+      <span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <span><span data-i18n="footer.built">Built with</span> <a href="https://jekyllrb.com">Jekyll</a> on GitHub Pages</span>
     </div>
   </div>
 </footer>

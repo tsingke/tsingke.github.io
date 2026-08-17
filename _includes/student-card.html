@@ -1,0 +1,16 @@
+<div class="student-card"{% if include.index %} data-student="{{ include.index }}" role="button" tabindex="0" aria-label="View details of {{ include.member.name }}"{% endif %}>
+  {% if include.member.status == 'current' %}
+    <span class="badge-current" data-i18n="students.current">Current</span>
+  {% endif %}
+  <div class="student-card__avatar">{{ include.member.name | slice: 0, 1 }}</div>
+  <h3>{{ include.member.name }}</h3>
+  <div class="student-card__meta">
+    {{ include.member.cohort }}
+    {% if include.member.status == 'alumni' %} &middot; <span data-i18n="students.alumni">Alumni</span>{% endif %}
+  </div>
+  {% if include.member.interests %}
+    <div class="pub__tags" style="justify-content:center; margin-top: var(--s-3);">
+      {% for i in include.member.interests limit:2 %}<span class="tag">{{ i }}</span>{% endfor %}
+    </div>
+  {% endif %}
+</div>

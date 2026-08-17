@@ -1,16 +1,5 @@
 {% include analytics.html %}
 
-<script>
-  // 移动端汉堡菜单
-  document.addEventListener('DOMContentLoaded', function () {
-    var toggle = document.getElementById('nav-toggle');
-    var menu = document.getElementById('site-nav-menu');
-    if (toggle && menu) {
-      toggle.addEventListener('click', function () {
-        var open = menu.classList.toggle('open');
-        toggle.classList.toggle('open', open);
-        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-    }
-  });
-</script>
+<!-- i18n 文案字典（Liquid 注入） -->
+<script>window.I18N = {{ site.data.i18n | jsonify }};</script>
+<script src="{{ base_path }}/assets/js/app.js"></script>

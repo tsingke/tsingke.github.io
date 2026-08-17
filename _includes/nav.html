@@ -20,8 +20,9 @@
         {% elsif link.url != '/' and page.url contains link.url %}
           {% assign active = true %}
         {% endif %}
-        <a href="{{ domain }}{{ link.url }}"{% if active %} class="active"{% endif %}>{{ link.title }}</a>
+        <a href="{{ domain }}{{ link.url }}"{% if active %} class="active"{% endif %} data-i18n="nav.{{ link.key }}">{{ link.title }}</a>
       {% endfor %}
+      <button class="lang-toggle" data-lang-toggle type="button" aria-label="Switch language">中文</button>
     </nav>
   </div>
 </header>

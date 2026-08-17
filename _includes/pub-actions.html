@@ -1,0 +1,23 @@
+{% include base_path %}
+<div class="pub-actions">
+  {% if include.post.pdf %}
+    <a class="btn btn--sm btn--outline" href="{{ include.post.pdf }}" download>
+      <svg class="icon"><use href="#i-download"/></svg> <span data-i18n="common.download_pdf">Download PDF</span>
+    </a>
+  {% endif %}
+  {% if include.post.code %}
+    <a class="btn btn--sm btn--outline" href="{{ include.post.code }}" target="_blank" rel="noopener">
+      <svg class="icon"><use href="#i-code"/></svg> <span data-i18n="common.code">Source Code</span>
+    </a>
+  {% endif %}
+  {% if include.post.read %}
+    <a class="btn btn--sm btn--outline" href="{{ include.post.read }}" target="_blank" rel="noopener">
+      <svg class="icon"><use href="#i-external"/></svg> <span data-i18n="common.read">Read Online</span>
+    </a>
+  {% endif %}
+  {% if include.post.bibtex %}
+    <button type="button" class="btn btn--sm btn--outline" data-bib="{{ include.post.permalink | slugify }}">
+      <svg class="icon"><use href="#i-quote"/></svg> <span data-i18n="common.cite">Cite</span>
+    </button>
+  {% endif %}
+</div>

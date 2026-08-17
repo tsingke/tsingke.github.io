@@ -1,0 +1,35 @@
+<div class="student-dialog" id="stu-{{ include.index }}" role="dialog" aria-modal="true" aria-hidden="true">
+  <button type="button" class="modal-close" aria-label="Close">&times;</button>
+  <h3>{{ include.member.name }}</h3>
+  <div class="sd-meta">{{ include.member.cohort }}{% if include.member.name_en %} &middot; {{ include.member.name_en }}{% endif %}</div>
+
+  {% if include.member.hometown %}
+    <h4 data-i18n="students.hometown">Hometown</h4>
+    <p>{{ include.member.hometown }}</p>
+  {% endif %}
+
+  {% if include.member.contact %}
+    <h4 data-i18n="students.contact">Contact</h4>
+    <p>{{ include.member.contact }}</p>
+  {% endif %}
+
+  {% if include.member.interests %}
+    <h4 data-i18n="students.interests">Research Interests</h4>
+    <div class="pub__tags">{% for i in include.member.interests %}<span class="tag">{{ i }}</span>{% endfor %}</div>
+  {% endif %}
+
+  {% if include.member.papers %}
+    <h4 data-i18n="students.papers">Publications</h4>
+    <ul>{% for p in include.member.papers %}<li>{{ p }}</li>{% endfor %}</ul>
+  {% endif %}
+
+  {% if include.member.awards %}
+    <h4 data-i18n="students.awards">Awards</h4>
+    <ul>{% for a in include.member.awards %}<li>{{ a }}</li>{% endfor %}</ul>
+  {% endif %}
+
+  {% if include.member.alumni_to %}
+    <h4>Where They Went</h4>
+    <p>{{ include.member.alumni_to }}</p>
+  {% endif %}
+</div>

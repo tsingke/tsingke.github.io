@@ -1,0 +1,36 @@
+---
+layout: archive
+permalink: /students/graduate/
+title: "Graduate Students"
+subtitle: "Current master's students and recent graduates of the group. Click a card for details."
+---
+
+{% include base_path %}
+
+<h2 class="pub-section-title" data-i18n="students.current">Current Students</h2>
+<div class="grid grid--4" style="margin-bottom: var(--s-12);">
+  {% assign idx = 0 %}
+  {% for m in site.data.members.graduate_students %}
+    {% if m.status == 'current' %}
+      {% assign idx = idx | plus: 1 %}
+      {% include student-card.html member=m index=idx %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% assign idx = 0 %}
+{% for m in site.data.members.graduate_students %}
+  {% if m.status == 'current' %}
+    {% assign idx = idx | plus: 1 %}
+    {% include student-dialog.html member=m index=idx %}
+  {% endif %}
+{% endfor %}
+
+<h2 class="pub-section-title" data-i18n="students.alumni">Alumni</h2>
+<div class="grid grid--4">
+  {% for m in site.data.members.graduate_students %}
+    {% if m.status == 'alumni' %}
+      {% include student-card.html member=m %}
+    {% endif %}
+  {% endfor %}
+</div>

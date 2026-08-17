@@ -1,0 +1,139 @@
+---
+layout: default
+---
+
+{% include base_path %}
+{% include hero.html %}
+
+<main class="site-main">
+  <div class="container section">
+    <article>
+      <p class="redirect-note" style="margin-bottom: var(--s-6);">
+        <a href="{{ base_path }}/teaching/">&larr; <span data-i18n="common.back">Back to Teaching</span></a>
+      </p>
+      <h1 style="font-size: var(--fs-h2); margin-bottom: var(--s-3);">{{ page.title }}</h1>
+      <div class="pub__tags" style="margin-bottom: var(--s-6);">
+        {% if page.type contains 'Undergraduate' %}
+          <span class="tag tag--q1" data-i18n="teaching.undergraduate">Undergraduate Course</span>
+        {% elsif page.type contains 'Graduate' %}
+          <span class="tag tag--q2" data-i18n="teaching.graduate">Graduate Course</span>
+        {% elsif page.type contains 'PhD' %}
+          <span class="tag tag--conf" data-i18n="teaching.phd">PhD Course</span>
+        {% endif %}
+      </div>
+
+      {% if page.semester or page.credits or page.location %}
+      <div class="course-meta">
+        {% if page.semester %}<span class="cm-item"><svg class="icon"><use href="#i-calendar"/></svg> <span data-i18n="teaching.semester">Semester</span>: {{ page.semester }}</span>{% endif %}
+        {% if page.credits %}<span class="cm-item"><svg class="icon"><use href="#i-book-open"/></svg> <span data-i18n="teaching.credits">Credits</span>: {{ page.credits }}</span>{% endif %}
+        {% if page.location %}<span class="cm-item"><svg class="icon"><use href="#i-map-pin"/></svg> <span data-i18n="teaching.location">Location</span>: {{ page.location }}</span>{% endif %}
+      </div>
+      {% endif %}
+
+      {% if page.overview %}
+      <div class="cv-block">
+        <div class="cv-block__head">
+          <div class="icon-tile"><svg class="icon"><use href="#i-book-open"/></svg></div>
+          <h2 data-i18n="teaching.overview">Overview</h2>
+        </div>
+        <div class="cv-block__body"><p style="color: var(--c-text-2);">{{ page.overview }}</p></div>
+      </div>
+      {% endif %}
+
+      {% if page.textbook %}
+      <div class="cv-block">
+        <div class="cv-block__head">
+          <div class="icon-tile"><svg class="icon"><use href="#i-book"/></svg></div>
+          <h2 data-i18n="teaching.textbook">Textbook</h2>
+        </div>
+        <div class="cv-block__body"><p style="color: var(--c-text-2);">{{ page.textbook }}</p></div>
+      </div>
+      {% endif %}
+
+      {% if page.outline %}
+      <div class="cv-block">
+        <div class="cv-block__head">
+          <div class="icon-tile"><svg class="icon"><use href="#i-list"/></svg></div>
+          <h2 data-i18n="teaching.outline">Course Outline</h2>
+        </div>
+        <div class="cv-block__body">
+          <ol style="color: var(--c-text-2); padding-left: 1.1rem;">
+            {% for line in page.outline %}<li style="margin-bottom: var(--s-2);">{{ line }}</li>{% endfor %}
+          </ol>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if page.slides %}
+      <div class="cv-block">
+        <div class="cv-block__head">
+          <div class="icon-tile"><svg class="icon"><use href="#i-presentation"/></svg></div>
+          <h2 data-i18n="teaching.slides">Chapter Slides</h2>
+        </div>
+        <div class="cv-block__body">
+          <ul class="course-resource-list">
+            {% for s in page.slides %}
+            <li>
+              <span class="rl-title"><svg class="icon"><use href="#i-file-text"/></svg> {{ s.title }}</span>
+              {% if s.file %}<a class="btn btn--sm btn--outline" href="{{ s.file }}" download><svg class="icon"><use href="#i-download"/></svg> PDF</a>{% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if page.code %}
+      <div class="cv-block">
+        <div class="cv-block__head">
+          <div class="icon-tile"><svg class="icon"><use href="#i-code"/></svg></div>
+          <h2 data-i18n="teaching.code">Course Code</h2>
+        </div>
+        <div class="cv-block__body">
+          <ul class="course-resource-list">
+            {% for c in page.code %}
+            <li>
+              <span class="rl-title"><svg class="icon"><use href="#i-code"/></svg> {{ c.title }}</span>
+              {% if c.url %}<a class="btn btn--sm btn--outline" href="{{ c.url }}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-external"/></svg> Open</a>{% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if page.video %}
+      <div class="cv-block">
+        <div class="cv-block__head">
+          <div class="icon-tile"><svg class="icon"><use href="#i-activity"/></svg></div>
+          <h2 data-i18n="teaching.video">Course Videos</h2>
+        </div>
+        <div class="cv-block__body">
+          <ul class="course-resource-list">
+            {% for v in page.video %}
+            <li>
+              <span class="rl-title"><svg class="icon"><use href="#i-activity"/></svg> {{ v.title }}</span>
+              {% if v.url %}<a class="btn btn--sm btn--outline" href="{{ v.url }}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-external"/></svg> Watch</a>{% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if page.references %}
+      <div class="cv-block">
+        <div class="cv-block__head">
+          <div class="icon-tile"><svg class="icon"><use href="#i-bookmark"/></svg></div>
+          <h2 data-i18n="teaching.references">References</h2>
+        </div>
+        <div class="cv-block__body">
+          <ul style="color: var(--c-text-2); padding-left: 1.1rem;">
+            {% for r in page.references %}<li style="margin-bottom: var(--s-2);">{{ r }}</li>{% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+    </article>
+  </div>
+</main>

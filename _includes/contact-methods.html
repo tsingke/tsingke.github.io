@@ -1,11 +1,34 @@
-{% if site.data.contact.methods %}
-<div class="grid grid--3">
-  {% for item in site.data.contact.methods %}
-  <div class="contact-card">
-    <div class="icon-tile"><svg class="icon"><use href="#i-{{ item.icon }}"/></svg></div>
-    <div style="min-width:0;">
-      <div class="contact-card__label">{{ item.label }}</div>
-      <div class="contact-card__value">{{ item.value }}</div>
+{% include base_path %}
+{% if site.data.contact.groups %}
+<div class="contact-groups">
+  {% for g in site.data.contact.groups %}
+  <div class="contact-group">
+    <h3><svg class="icon"><use href="#i-{{ g.icon }}"/></svg> {{ g.title }}</h3>
+    <div class="grid grid--2">
+      {% for m in site.data.contact.methods %}
+        {% if m.group == g.key %}
+        <div class="contact-card">
+          <div class="icon-tile" style="width:44px; height:44px;">
+            <svg class="icon"><use href="#i-{{ m.icon }}"/></svg>
+          </div>
+          <div style="min-width:0; flex:1;">
+            <div class="contact-card__label">{{ m.label }}</div>
+            <div class="contact-card__value">
+              {% if m.link %}
+                <a href="{{ m.link }}"{% if m.link contains 'http' %} target="_blank" rel="noopener"{% endif %}>{{ m.value }}</a>
+              {% else %}
+                {{ m.value }}
+              {% endif %}
+            </div>
+          </div>
+          {% if m.copy %}
+            <button type="button" class="copy-btn" data-copy-value="{{ m.value }}" aria-label="Copy {{ m.label }}">
+              <svg class="icon" style="width:12px; height:12px;"><use href="#i-copy"/></svg>
+            </button>
+          {% endif %}
+        </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
   {% endfor %}

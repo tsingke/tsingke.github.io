@@ -1,13 +1,33 @@
 {% include base_path %}
-<article class="card">
-  <div class="pub__tags" style="margin-bottom: var(--s-3);">
-    {% if include.post.category == 'conferences' %}
-      <span class="tag tag--conf">Conference</span>
-    {% else %}
-      <span class="tag tag--q1">Journal</span>
-    {% endif %}
-    {% if include.post.excerpt contains 'ESI' %}<span class="tag tag--esi">ESI Highly Cited</span>{% endif %}
+<article class="pub-card">
+  {% if include.post.screenshot %}
+  <a class="pub-card__media" href="{{ include.post.url }}">
+    <img src="{{ include.post.screenshot }}" alt="" loading="lazy">
+  </a>
+  {% endif %}
+  <div class="pub-card__body">
+    <div class="pub__tags">
+      {% if include.post.category == 'conferences' %}
+        <span class="tag tag--conf" data-i18n="pubs.conference">Conference</span>
+      {% else %}
+        <span class="tag tag--q1" data-i18n="pubs.journal">Journal</span>
+      {% endif %}
+      {% if include.post.tags contains 'ESI' %}
+        <span class="tag tag--esi">ESI Highly Cited</span>
+      {% endif %}
+    </div>
+    <h3 class="pub-card__title"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
+    <div class="pub__venue">{{ include.post.venue }}</div>
+    {% if include.post.excerpt %}<p class="pub-card__excerpt">{{ include.post.excerpt }}</p>{% endif %}
+    <div class="pub-card__actions">
+      {% if include.post.pdf %}
+        <a class="btn btn--sm btn--outline" href="{{ include.post.pdf }}" download>
+          <svg class="icon"><use href="#i-download"/></svg> <span data-i18n="common.download_pdf">PDF</span>
+        </a>
+      {% endif %}
+      <a class="btn btn--sm btn--outline" href="{{ include.post.url }}">
+        <svg class="icon"><use href="#i-external"/></svg> <span data-i18n="common.detail">Detail</span>
+      </a>
+    </div>
   </div>
-  <h3><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
-  <p style="margin-top: var(--s-3);">{{ include.post.venue }}</p>
 </article>

@@ -7,25 +7,34 @@ subtitle: "Courses across undergraduate, graduate, and doctoral levels, together
 
 {% include base_path %}
 
-<h2 style="margin-bottom: var(--s-6);">Courses</h2>
-<div class="grid grid--2">
+<h2 class="pub-section-title" data-i18n="teaching.undergraduate">Undergraduate Courses</h2>
+<div class="grid grid--2" style="margin-bottom: var(--s-12);">
   {% for post in site.teaching %}
-    {% unless post.type == 'Supervision' %}
-      {% if post.type contains 'Undergraduate' %}
-        {% assign icon = 'chalkboard' %}
-      {% elsif post.type contains 'Graduate' %}
-        {% assign icon = 'book-open' %}
-      {% else %}
-        {% assign icon = 'graduation-cap' %}
-      {% endif %}
-      {% include teaching-card.html post=post icon=icon %}
-    {% endunless %}
+    {% if post.level == 'undergraduate' %}
+      {% include teaching-card.html post=post %}
+    {% endif %}
   {% endfor %}
 </div>
 
-<div style="height: var(--s-12);"></div>
+<h2 class="pub-section-title" data-i18n="teaching.graduate">Graduate Courses</h2>
+<div class="grid grid--2" style="margin-bottom: var(--s-12);">
+  {% for post in site.teaching %}
+    {% if post.level == 'graduate' %}
+      {% include teaching-card.html post=post %}
+    {% endif %}
+  {% endfor %}
+</div>
 
-<h2 style="margin-bottom: var(--s-6);">Graduate Supervision</h2>
+<h2 class="pub-section-title" data-i18n="teaching.phd">PhD Courses</h2>
+<div class="grid grid--2" style="margin-bottom: var(--s-12);">
+  {% for post in site.teaching %}
+    {% if post.level == 'phd' %}
+      {% include teaching-card.html post=post %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h2 class="pub-section-title" data-i18n="teaching.supervision">Graduate Supervision</h2>
 <div class="grid grid--2">
   {% for post in site.teaching %}
     {% if post.type == 'Supervision' %}

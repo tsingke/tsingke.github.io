@@ -7,33 +7,34 @@ subtitle: "A selection of representative publications from more than 40 SCI-inde
 
 {% include base_path %}
 
-{% for category in site.publication_category %}
-  {% if category[0] == 'books' %}{% continue %}{% endif %}
-
-  <h2 style="margin: var(--s-12) 0 var(--s-4);">{{ category[1].title }}</h2>
-  <div style="display:flex; flex-direction:column; gap: var(--s-4);">
-    {% assign idx = 0 %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}{% continue %}{% endif %}
-      {% assign idx = idx | plus: 1 %}
-      <article class="pub">
-        <div class="pub__num">{{ idx }}</div>
-        <div class="pub__body">
-          <div class="pub__title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-          <div class="pub__venue">{{ post.venue }}</div>
-          <div class="pub__tags">
-            {% if post.excerpt contains 'ESI' %}<span class="tag tag--esi">ESI Highly Cited</span>{% endif %}
-            {% if post.excerpt contains 'CCF' %}<span class="tag tag--q3">CCF B</span>{% endif %}
-            {% if post.excerpt != '' and post.excerpt contains 'ESI' == false and post.excerpt contains 'CCF' == false %}
-              <span class="tag">{{ post.excerpt }}</span>
-            {% endif %}
-          </div>
-        </div>
-      </article>
-    {% endfor %}
+<div class="pub-toolbar">
+  <p style="color: var(--c-text-3); font-size: var(--fs-sm); margin: 0;">{{ site.publications | size }} papers</p>
+  <div class="seg" id="pub-sort" role="group" aria-label="Sort publications">
+    <button type="button" data-sort="date" class="active"><span data-i18n="pubs.sort_date">By Date</span></button>
+    <button type="button" data-sort="type"><span data-i18n="pubs.sort_type">By Type</span></button>
   </div>
-{% endfor %}
+</div>
 
-<p style="margin-top: var(--s-12); color: var(--c-text-3); font-size: var(--fs-sm);">
-  The list above shows 14 representative publications, selected from a total of more than 40 SCI-indexed journal papers and CCF-recommended conference papers.
-</p>
+<div id="pub-list">
+  {% for post in site.publications reversed %}
+  <article class="pub" data-date="{{ post.date | date: '%Y' }}" data-type="{% if post.category == 'manuscripts' %}journal{% else %}conf{% endif %}" style="margin-bottom: var(--s-4);">
+    <div class="pub__num">{{ forloop.index }}</div>
+    <div class="pub__body">
+      <div class="pub__title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+      <div class="pub__venue">{{ post.venue }}</div>
+      <div class="pub__tags" style="margin-bottom: var(--s-4);">
+        {% if post.category == 'conferences' %}
+          <span class="tag tag--conf" data-i18n="pubs.conference">Conference</span>
+        {% else %}
+          <span class="tag tag--q1" data-i18n="pubs.journal">Journal</span>
+        {% endif %}
+        {% if post.tags contains 'ESI' %}<span class="tag tag--esi">ESI Highly Cited</span>{% endif %}
+      </div>
+      {% include pub-actions.html post=post %}
+    </div>
+  </article>
+  {% include pub-bibtex-modal.html post=post %}
+  {% endfor %}
+</div>
+
+<p style="margin-top: var(--s-10); color: var(--c-text-3); font-size: var(--fs-sm);" data-i18n="pubs.note">The list above shows 14 representative publications, selected from more than 40 SCI-indexed journal papers.</p>

@@ -1,0 +1,56 @@
+---
+layout: archive
+permalink: /students/undergraduate/
+title: "Undergraduate Students"
+subtitle: "Undergraduate students supervised for graduation theses, competitions, and research projects."
+---
+
+{% include base_path %}
+
+<h2 class="pub-section-title" data-i18n="students.thesis">Graduation Theses Supervised</h2>
+{% assign thesis = site.data.members.undergraduate.thesis %}
+{% if thesis and thesis.size > 0 %}
+<div class="grid grid--3" style="margin-bottom: var(--s-12);">
+  {% for t in thesis %}
+  <div class="card">
+    <h3>{{ t.name }}</h3>
+    <p style="margin-top: var(--s-2);">{{ t.thesis_title }}</p>
+    <div class="pub__tags" style="margin-top: var(--s-3);"><span class="tag">{{ t.year }}</span></div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p style="color: var(--c-text-3); margin-bottom: var(--s-12);" data-i18n="students.updating">The list is being updated. Check back soon.</p>
+{% endif %}
+
+<h2 class="pub-section-title" data-i18n="students.competition">Competition Coaching</h2>
+{% assign comp = site.data.members.undergraduate.competition %}
+{% if comp and comp.size > 0 %}
+<div class="grid grid--3" style="margin-bottom: var(--s-12);">
+  {% for c in comp %}
+  <div class="card">
+    <h3>{{ c.name }}</h3>
+    <p style="margin-top: var(--s-2);">{{ c.award }}</p>
+    <div class="pub__tags" style="margin-top: var(--s-3);"><span class="tag">{{ c.year }}</span></div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p style="color: var(--c-text-3); margin-bottom: var(--s-12);" data-i18n="students.updating">The list is being updated. Check back soon.</p>
+{% endif %}
+
+<h2 class="pub-section-title" data-i18n="students.research">Research Guidance</h2>
+{% assign res = site.data.members.undergraduate.research %}
+{% if res and res.size > 0 %}
+<div class="grid grid--3">
+  {% for r in res %}
+  <div class="card">
+    <h3>{{ r.name }}</h3>
+    <p style="margin-top: var(--s-2);">{{ r.project }}</p>
+    <div class="pub__tags" style="margin-top: var(--s-3);"><span class="tag">{{ r.year }}</span></div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p style="color: var(--c-text-3);" data-i18n="students.updating">The list is being updated. Check back soon.</p>
+{% endif %}

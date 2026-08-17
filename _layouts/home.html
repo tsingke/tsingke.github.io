@@ -13,21 +13,19 @@ layout: default
     </div>
   </section>
 
-  {% include stats-band.html %}
-
   <section class="section section--alt" id="news">
     <div class="container">
-      {% include section-heading.html eyebrow="Updates" title="News &amp; Updates" %}
+      {% include section-heading.html eyebrow="Updates" eyebrow_key="home.news_eyebrow" title="News & Updates" title_key="home.news_title" %}
       {% include news-list.html %}
     </div>
   </section>
 
   <section class="section" id="publications">
     <div class="container">
-      {% include section-heading.html eyebrow="Research" title="Selected Publications" subtitle="A selection of representative works. See all on the Publications page." %}
+      {% include section-heading.html eyebrow="Research" eyebrow_key="home.pub_eyebrow" title="Selected Publications" title_key="home.pub_title" subtitle="A selection of representative works from top-tier journals. See all on the Publications page." subtitle_key="home.pub_subtitle" %}
       {% include selected-pubs.html %}
       <p style="text-align:center; margin-top: var(--s-10);">
-        <a class="btn btn--lg" href="{{ base_path }}/publications/">View all publications</a>
+        <a class="btn btn--lg" href="{{ base_path }}/publications/"><span data-i18n="common.view_all">View all publications</span></a>
       </p>
     </div>
   </section>

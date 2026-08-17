@@ -7,46 +7,33 @@ subtitle: "Research training and achievement highlights for undergraduate and gr
 
 {% include base_path %}
 
-{% if site.data.students.stats %}
-<div class="stats" style="margin-bottom: var(--s-16);">
-  {% for stat in site.data.students.stats %}
-  <div class="stat">
-    <div class="stat__num">{{ stat.num }}</div>
-    <div class="stat__label">{{ stat.label }}</div>
-  </div>
-  {% endfor %}
+<div class="grid grid--2" style="margin-bottom: var(--s-16);">
+  <a class="card" href="{{ base_path }}/students/graduate/" style="text-decoration:none; display:block;">
+    <div class="icon-tile"><svg class="icon"><use href="#i-graduation-cap"/></svg></div>
+    <h3 data-i18n="students.graduate">Graduate Students</h3>
+    <p style="margin-top: var(--s-2);" data-i18n="students.graduate_desc">Current master's students and recent graduates of the group.</p>
+    <p style="margin-top: var(--s-4); color: var(--c-primary); font-weight: var(--fw-semi);">View &rarr;</p>
+  </a>
+  <a class="card" href="{{ base_path }}/students/undergraduate/" style="text-decoration:none; display:block;">
+    <div class="icon-tile"><svg class="icon"><use href="#i-users"/></svg></div>
+    <h3 data-i18n="students.undergraduate">Undergraduate Students</h3>
+    <p style="margin-top: var(--s-2);" data-i18n="students.undergraduate_desc">Undergraduate students supervised for theses, competitions, and research.</p>
+    <p style="margin-top: var(--s-4); color: var(--c-primary); font-weight: var(--fw-semi);">View &rarr;</p>
+  </a>
 </div>
-{% endif %}
 
-<h2 style="margin-bottom: var(--s-6);">Graduate Students</h2>
-<p style="color: var(--c-text-2); max-width: 720px; margin-bottom: var(--s-8);">
-  I have supervised more than 20 master's students. My students have won national scholarships and thesis awards, published dozens of papers in top-tier CAS JCR Q1/Q2 journals, and many have continued to doctoral programs at 985/211 universities.
-</p>
-
-<div class="grid grid--2">
+<h2 class="pub-section-title">Student Achievements</h2>
+<div class="grid grid--3" style="margin-bottom: var(--s-16);">
   {% for item in site.data.students.achievements limit:6 %}
-  {% include card.html icon=item.icon title=item.title text=item.text %}
+    {% include card.html icon=item.icon title=item.title text=item.text %}
   {% endfor %}
 </div>
 
-<h2 style="margin: var(--s-16) 0 var(--s-6);">Undergraduate Students</h2>
-<p style="color: var(--c-text-2); max-width: 720px; margin-bottom: var(--s-8);">
-  I have guided undergraduate students to national innovation projects, excellence theses, and numerous competition awards.
-</p>
-
-<div class="grid grid--3">
-  {% for item in site.data.students.achievements offset:6 %}
-  {% include card.html icon=item.icon title=item.title text=item.text %}
-  {% endfor %}
-</div>
-
-<div class="cta-banner" style="margin-top: var(--s-16);">
+<div class="cta-banner">
   <div class="dots"></div>
-  <h2>Recruiting Graduate Students</h2>
-  <p>
-    I recruit {{ site.data.students.recruitment.annual }} master's students per year in Computer Science and Technology (academic track) and Computer Technology (professional track). Students with a solid foundation in computer science, artificial intelligence, mathematics, or bioinformatics are warmly welcome.
-  </p>
-  <a class="btn btn--light btn--lg" href="mailto:{{ site.data.students.recruitment.email }}">
-    <svg class="icon"><use href="#i-mail"/></svg> Contact Me
+  <h2 data-i18n="recruiting.cta_title">Interested in Joining My Group?</h2>
+  <p data-i18n="recruiting.cta_sub">I welcome motivated students in computer science, artificial intelligence, mathematics, and bioinformatics.</p>
+  <a class="btn btn--light btn--lg" href="{{ base_path }}/recruiting/">
+    <svg class="icon"><use href="#i-users"/></svg> <span data-i18n="nav.recruiting">Recruiting</span>
   </a>
 </div>

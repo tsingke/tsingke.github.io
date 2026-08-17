@@ -1,24 +1,35 @@
 # 顶部导航（顺序即显示顺序）
-# title = 菜单文字；url = 页面路径
+# title = 默认(英文)显示名；key = i18n 键（nav.<key>）；url = 页面路径
 
 main:
   - title: "Home"
+    key: home
     url: /
 
   - title: "Publications"
+    key: publications
     url: /publications/
 
   - title: "Teaching"
+    key: teaching
     url: /teaching/
 
-  - title: "Students"
-    url: /students/
-
-  - title: "Lab"
+  - title: "CILab"
+    key: cilab
     url: /lab/
 
+  - title: "Students"
+    key: students
+    url: /students/
+
+  - title: "Recruiting"
+    key: recruiting
+    url: /recruiting/
+
   - title: "CV"
+    key: cv
     url: /cv/
 
   - title: "Contact"
+    key: contact
     url: /contact/
