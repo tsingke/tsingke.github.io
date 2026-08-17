@@ -106,13 +106,45 @@ hr { border: 0; border-top: 1px solid var(--c-border); margin: var(--s-12) 0; }
 .hero__tags { display: flex; flex-wrap: wrap; gap: var(--s-2); margin-bottom: var(--s-8); }
 .hero__tags .chip {
   background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22);
-  color: rgba(255,255,255,.9); padding: 5px var(--s-4); border-radius: var(--r-full);
+  color: rgba(255,255,255,.92); padding: 5px var(--s-4); border-radius: var(--r-full);
   font-size: var(--fs-xs); font-weight: var(--fw-semi);
 }
+.chip--blue { background: rgba(37,99,235,.28); border-color: rgba(96,165,250,.45); }
+.chip--orange { background: rgba(249,115,22,.26); border-color: rgba(251,146,60,.45); }
+.chip--purple { background: rgba(124,58,237,.28); border-color: rgba(167,139,250,.45); }
+
+/* ---------- Hero 右侧头像与徽章 ---------- */
+.hero__media { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--s-8); }
+.hero__portrait {
+  width: 232px; height: 232px; border-radius: 50%;
+  padding: 6px; background: linear-gradient(135deg, #2563EB, #7C3AED 55%, #F59E0B);
+  box-shadow: var(--shadow-glow); animation: float 6s ease-in-out infinite alternate;
+}
+.hero__portrait img {
+  width: 100%; height: 100%; object-fit: cover;
+  border-radius: 50%; border: 4px solid rgba(255,255,255,.92);
+}
+.hero__socials { display: flex; gap: var(--s-3); margin-top: var(--s-6); }
+.hero__socials a {
+  width: 42px; height: 42px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,.12); color: rgba(255,255,255,.9);
+  border: 1px solid rgba(255,255,255,.22); transition: all .2s var(--ease-out);
+}
+.hero__socials a:hover { background: var(--c-gradient); color: #fff; transform: translateY(-2px); }
+.hero__socials .icon { width: 18px; height: 18px; }
+.hero__badges { display: flex; flex-wrap: wrap; gap: var(--s-3); justify-content: center; }
+.hbadge {
+  font-size: var(--fs-xs); font-weight: var(--fw-semi);
+  padding: 5px var(--s-4); border-radius: var(--r-full); color: #fff; box-shadow: var(--shadow-md);
+}
+.hbadge--orange { background: linear-gradient(135deg, #F59E0B, #F97316); }
+.hbadge--blue { background: linear-gradient(135deg, #2563EB, #3B82F6); }
+.hbadge--purple { background: linear-gradient(135deg, #7C3AED, #8B5CF6); }
 .hero__bg { position: absolute; inset: 0; pointer-events: none; }
 .hero__bg .glow { position: absolute; border-radius: 50%; filter: blur(50px); }
 .hero__bg .glow--1 { width: 420px; height: 420px; top: -140px; left: -80px; background: rgba(96,165,250,.45); }
-.hero__bg .glow--2 { width: 360px; height: 360px; bottom: -120px; right: -60px; background: rgba(167,139,250,.4); }
+.hero__bg .glow--2 { width: 360px; height: 360px; bottom: -120px; right: -60px; background: rgba(249,115,22,.42); }
 .hero__bg .dots {
   position: absolute; inset: 0; opacity: .5;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26'%3E%3Ccircle cx='2' cy='2' r='1.6' fill='%23ffffff' fill-opacity='.16'/%3E%3C/svg%3E");
@@ -370,6 +402,8 @@ hr { border: 0; border-top: 1px solid var(--c-border); margin: var(--s-12) 0; }
   .grid--2, .grid--3 { grid-template-columns: 1fr; }
   .hero { padding-top: var(--s-16); }
   .hero__avatar { width: 116px; height: 116px; }
+  .hero__portrait { width: 168px; height: 168px; }
+  .hero__media { gap: var(--s-6); }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .site-footer__grid { grid-template-columns: 1fr; gap: var(--s-8); }
   .pub { flex-direction: column; }

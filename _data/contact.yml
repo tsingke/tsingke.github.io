@@ -38,12 +38,6 @@ methods:
     group: direct
     copy: true
 
-  - label: "QQ"
-    icon: "qq"
-    value: "723911889"
-    group: direct
-    copy: true
-
   - label: "ORCID"
     icon: "orcid"
     value: "0000-0003-3960-172X"
