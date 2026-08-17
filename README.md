@@ -9,7 +9,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 > A professional, bilingual academic homepage — **data-driven** so content updates never require touching layout or styles.
-> 专业的双语学术主页——**数据驱动**，更新内容无需改动布局与样式。
 
 ---
 
