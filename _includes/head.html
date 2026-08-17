@@ -27,8 +27,8 @@
   })();
 </script>
 
-<!-- 样式：设计变量 + 组件样式（纯 CSS，无编译依赖） -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/tokens.css">
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+<!-- 样式：设计变量 + 组件样式（纯 CSS，无编译依赖；带构建时间戳避免缓存） -->
+<link rel="stylesheet" href="{{ base_path }}/assets/css/tokens.css?v={{ site.time | date: '%s' }}">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css?v={{ site.time | date: '%s' }}">
 
 {% include head/custom.html %}
