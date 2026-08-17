@@ -32,6 +32,7 @@ The **{{ site.data.lab.name }}** focuses on the frontiers of intelligent optimiz
     {% endif %}
   {% endfor %}
 </div>
+<div markdown="0">
 {% assign idx = 0 %}
 {% for m in site.data.members.graduate_students %}
   {% if m.status == 'current' %}
@@ -39,6 +40,7 @@ The **{{ site.data.lab.name }}** focuses on the frontiers of intelligent optimiz
     {% include student-dialog.html member=m index=idx %}
   {% endif %}
 {% endfor %}
+</div>
 
 <h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-12) 0 var(--s-4);">Alumni <span class="tag">已毕业</span></h3>
 <div class="grid grid--4">

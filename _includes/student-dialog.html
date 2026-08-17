@@ -3,12 +3,12 @@
   <h3>{{ include.member.name }}</h3>
   <div class="sd-meta">{{ include.member.cohort }}{% if include.member.name_en %} &middot; {{ include.member.name_en }}{% endif %}</div>
 
-  {% if include.member.hometown %}
+  {% if include.member.hometown != "" and include.member.hometown %}
     <h4 data-i18n="students.hometown">Hometown</h4>
     <p>{{ include.member.hometown }}</p>
   {% endif %}
 
-  {% if include.member.contact %}
+  {% if include.member.contact != "" and include.member.contact %}
     <h4 data-i18n="students.contact">Contact</h4>
     <p>{{ include.member.contact }}</p>
   {% endif %}
