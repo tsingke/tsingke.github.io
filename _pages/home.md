@@ -2,6 +2,8 @@
 layout: home
 permalink: /
 title: "Qingke Zhang — Academic Homepage"
+header:
+  image: profile.jpg
 redirect_from:
   - /about/
   - /about.html
