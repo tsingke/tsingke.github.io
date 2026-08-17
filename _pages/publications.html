@@ -1,38 +1,39 @@
 ---
 layout: archive
-title: "Publications"
 permalink: /publications/
-author_profile: true
+title: "Publications"
+subtitle: "A selection of representative publications from more than 40 SCI-indexed journal papers."
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-*The following is a selection of representative publications, drawn from more than 40 SCI-indexed journal papers.*
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
+{% for category in site.publication_category %}
+  {% if category[0] == 'books' %}{% continue %}{% endif %}
+
+  <h2 style="margin: var(--s-12) 0 var(--s-4);">{{ category[1].title }}</h2>
+  <div style="display:flex; flex-direction:column; gap: var(--s-4);">
+    {% assign idx = 0 %}
     {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+      {% if post.category != category[0] %}{% continue %}{% endif %}
+      {% assign idx = idx | plus: 1 %}
+      <article class="pub">
+        <div class="pub__num">{{ idx }}</div>
+        <div class="pub__body">
+          <div class="pub__title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+          <div class="pub__venue">{{ post.venue }}</div>
+          <div class="pub__tags">
+            {% if post.excerpt contains 'ESI' %}<span class="tag tag--esi">ESI Highly Cited</span>{% endif %}
+            {% if post.excerpt contains 'CCF' %}<span class="tag tag--q3">CCF B</span>{% endif %}
+            {% if post.excerpt != '' and post.excerpt contains 'ESI' == false and post.excerpt contains 'CCF' == false %}
+              <span class="tag">{{ post.excerpt }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </article>
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+  </div>
+{% endfor %}
 
-
-
+<p style="margin-top: var(--s-12); color: var(--c-text-3); font-size: var(--fs-sm);">
+  The list above shows 14 representative publications, selected from a total of more than 40 SCI-indexed journal papers and CCF-recommended conference papers.
+</p>

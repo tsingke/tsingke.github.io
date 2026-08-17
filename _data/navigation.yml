@@ -1,18 +1,24 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
+# 顶部导航（顺序即显示顺序）
+# title = 菜单文字；url = 页面路径
 
 main:
+  - title: "Home"
+    url: /
+
   - title: "Publications"
     url: /publications/
 
   - title: "Teaching"
     url: /teaching/
 
-  - title: "Portfolio"
-    url: /portfolio/
+  - title: "Students"
+    url: /students/
+
+  - title: "Lab"
+    url: /lab/
 
   - title: "CV"
     url: /cv/
+
+  - title: "Contact"
+    url: /contact/

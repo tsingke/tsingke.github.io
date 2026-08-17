@@ -1,0 +1,13 @@
+{% if site.data.contact.methods %}
+<div class="grid grid--3">
+  {% for item in site.data.contact.methods %}
+  <div class="contact-card">
+    <div class="icon-tile"><svg class="icon"><use href="#i-{{ item.icon }}"/></svg></div>
+    <div style="min-width:0;">
+      <div class="contact-card__label">{{ item.label }}</div>
+      <div class="contact-card__value">{{ item.value }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

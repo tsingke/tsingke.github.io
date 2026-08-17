@@ -1,0 +1,7 @@
+{% if include.eyebrow or include.title or include.subtitle %}
+<div class="section-head{% if include.center %} section-head--center{% endif %}">
+  {% if include.eyebrow %}<span class="eyebrow">{{ include.eyebrow }}</span>{% endif %}
+  {% if include.title %}<h2>{{ include.title }}</h2>{% endif %}
+  {% if include.subtitle %}<p>{{ include.subtitle }}</p>{% endif %}
+</div>
+{% endif %}

@@ -1,0 +1,9 @@
+{% include base_path %}
+<div class="grid grid--2">
+  {% assign count = 0 %}
+  {% for post in site.publications reversed %}
+    {% if count >= 6 %}{% break %}{% endif %}
+    {% assign count = count | plus: 1 %}
+    {% include pub-card.html post=post %}
+  {% endfor %}
+</div>

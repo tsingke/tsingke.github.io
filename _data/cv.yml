@@ -1,0 +1,14 @@
+# CV 页配置
+# pdfs: 简历下载按钮（label=按钮文字；file=文件路径，文件放 files/ 目录）
+# note: 可选底部说明文字
+
+pdfs:
+  - label: "Download English CV"
+    icon: "download"
+    file: "/files/main-en.pdf"
+
+  - label: "下载中文简历"
+    icon: "download"
+    file: "/files/main-zh.pdf"
+
+note: "Curriculum Vitae (PDF) · 简历（PDF）"

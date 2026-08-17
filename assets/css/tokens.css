@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Design Tokens — 设计变量
+   全站配色 / 阴影 / 圆角 / 间距 / 排版 的唯一来源
+   ========================================================================== */
+
+:root {
+  /* ---- 品牌主色：蓝 → 紫渐变 ---- */
+  --c-primary:        #2563EB;   /* 主蓝 */
+  --c-primary-400:    #60A5FA;
+  --c-primary-500:    #3B82F6;
+  --c-primary-600:    #1D4ED8;
+  --c-secondary:      #7C3AED;   /* 主紫 */
+  --c-secondary-400:  #A78BFA;
+  --c-secondary-500:  #8B5CF6;
+  --c-secondary-600:  #6D28D9;
+  --c-indigo:         #6366F1;   /* 靛蓝 */
+  --c-gradient:        linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+  --c-gradient-soft:   linear-gradient(135deg, rgba(37,99,235,.08), rgba(124,58,237,.08));
+  --c-gradient-deep:   linear-gradient(135deg, #1D4ED8 0%, #6D28D9 100%);
+
+  /* ---- 背景 / 文字 ---- */
+  --c-bg:        #FFFFFF;
+  --c-bg-alt:    #F8FAFC;   /* 交替区块背景 */
+  --c-bg-tint:   #EEF2FF;   /* 浅靛蓝卡片底 */
+  --c-text:      #0F172A;   /* 主文字 */
+  --c-text-2:    #475569;   /* 次级文字 */
+  --c-text-3:    #94A3B8;   /* 弱化文字 */
+  --c-border:    #E2E8F0;
+  --c-border-2:  #CBD5E1;
+
+  /* ---- 语义色（标签 / 徽章）---- */
+  --c-success:  #10B981;
+  --c-warning:  #F59E0B;
+  --c-danger:   #F43F5E;
+  --c-info:     #0EA5E9;
+  --c-amber:    #F59E0B;    /* ESI 高亮 */
+  --c-white:    #FFFFFF;
+
+  /* ---- 阴影 ---- */
+  --shadow-sm:   0 1px 2px rgba(15,23,42,.06);
+  --shadow-md:   0 4px 6px -1px rgba(15,23,42,.08), 0 2px 4px -2px rgba(15,23,42,.05);
+  --shadow-lg:   0 12px 24px -8px rgba(37,99,235,.18);
+  --shadow-glow: 0 0 0 1px rgba(99,102,241,.12), 0 16px 40px -16px rgba(99,102,241,.35);
+
+  /* ---- 圆角 ---- */
+  --r-sm:   8px;
+  --r-md:   12px;
+  --r-lg:   16px;
+  --r-xl:   20px;
+  --r-2xl:  28px;
+  --r-full: 9999px;
+
+  /* ---- 间距 ---- */
+  --s-1:  .25rem;
+  --s-2:  .5rem;
+  --s-3:  .75rem;
+  --s-4:  1rem;
+  --s-5:  1.25rem;
+  --s-6:  1.5rem;
+  --s-8:  2rem;
+  --s-10: 2.5rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+  --s-20: 5rem;
+  --s-24: 6rem;
+
+  /* ---- 布局 ---- */
+  --container:     1200px;
+  --container-pad: clamp(1.25rem, 4vw, 2.5rem);
+  --nav-height:    64px;
+
+  /* ---- 排版 ---- */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB",
+               "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  --fs-xs:   .75rem;
+  --fs-sm:   .875rem;
+  --fs-base: 1rem;
+  --fs-lg:   1.125rem;
+  --fs-xl:   1.25rem;
+  --fs-h1:   clamp(2.25rem, 5vw, 3.5rem);
+  --fs-h2:   clamp(1.5rem, 3vw, 2.25rem);
+  --fs-h3:   clamp(1.25rem, 2vw, 1.5rem);
+
+  --lh-tight:  1.2;
+  --lh-normal: 1.6;
+
+  --fw-med:   500;
+  --fw-semi:  600;
+  --fw-bold:  700;
+  --fw-extra: 800;
+}

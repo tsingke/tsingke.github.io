@@ -1,0 +1,49 @@
+# 联系方式（Contact 页）
+# methods: 联系卡片（label=名称；icon=图标名；value=值；link=可选外链）
+# office: 办公地点（label/icon/value）
+
+methods:
+  - label: "Email"
+    icon: "mail"
+    value: "tsingke@sdnu.edu.cn"
+    link: "mailto:tsingke@sdnu.edu.cn"
+
+  - label: "Phone"
+    icon: "phone"
+    value: "+86 139 5312 8163"
+
+  - label: "Office"
+    icon: "phone"
+    value: "+86 531 8618 1751"
+
+  - label: "WeChat"
+    icon: "wechat"
+    value: "13953128163"
+
+  - label: "QQ"
+    icon: "qq"
+    value: "723911889"
+
+  - label: "WeChat Official Account"
+    icon: "message-square"
+    value: "@IntellExplore 智能计算理论与算法"
+
+  - label: "ORCID"
+    icon: "orcid"
+    value: "0000-0003-3960-172X"
+    link: "https://orcid.org/0000-0003-3960-172X"
+
+  - label: "GitHub"
+    icon: "github"
+    value: "github.com/tsingke"
+    link: "https://github.com/tsingke"
+
+  - label: "X (Twitter)"
+    icon: "x"
+    value: "@QK_Zhang"
+    link: "https://twitter.com/QK_Zhang"
+
+office:
+  label: "Office Location"
+  icon: "map-pin"
+  value: "Room 402/404, Wencong Building, Changqinghu Campus, Shandong Normal University, Jinan, Shandong, China"

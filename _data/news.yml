@@ -1,0 +1,17 @@
+# 首页「News & Updates」时间轴
+# 每条：year = 年份（文本），text = 动态内容。新条目加到顶部（从新到旧排列）。
+
+- year: "2025"
+  text: "Awarded the CSC Visiting Scholar Fellowship by the China Scholarship Council (12 months, expected to start in 2027)."
+
+- year: "2024"
+  text: "Promoted to Associate Professor at Shandong Normal University; two papers (Growth Optimizer, Alpha Evolution) selected as ESI Highly Cited Papers."
+
+- year: "2024"
+  text: "Alpha Evolution published in Engineering Applications of Artificial Intelligence and later recognized as an ESI Highly Cited Paper."
+
+- year: "2023"
+  text: "Growth Optimizer published in Knowledge-Based Systems and recognized as an ESI Highly Cited Paper."
+
+- year: "2017"
+  text: "Received the Ph.D. in Computer Science and Technology from Shandong University; honored as Outstanding Graduate of Shandong University and Shandong Province."

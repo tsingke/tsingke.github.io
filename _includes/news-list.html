@@ -1,0 +1,10 @@
+{% if site.data.news %}
+<div class="timeline">
+  {% for item in site.data.news %}
+  <div class="timeline__item">
+    <div class="timeline__year">{{ item.year }}</div>
+    <p>{{ item.text }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

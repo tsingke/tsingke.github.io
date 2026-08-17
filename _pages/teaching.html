@@ -1,12 +1,42 @@
 ---
 layout: archive
-title: "Teaching"
 permalink: /teaching/
-author_profile: true
+title: "Teaching"
+subtitle: "Courses across undergraduate, graduate, and doctoral levels, together with graduate supervision."
 ---
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<h2 style="margin-bottom: var(--s-6);">Courses</h2>
+<div class="grid grid--2">
+  {% for post in site.teaching %}
+    {% unless post.type == 'Supervision' %}
+      {% if post.type contains 'Undergraduate' %}
+        {% assign icon = 'chalkboard' %}
+      {% elsif post.type contains 'Graduate' %}
+        {% assign icon = 'book-open' %}
+      {% else %}
+        {% assign icon = 'graduation-cap' %}
+      {% endif %}
+      {% include teaching-card.html post=post icon=icon %}
+    {% endunless %}
+  {% endfor %}
+</div>
+
+<div style="height: var(--s-12);"></div>
+
+<h2 style="margin-bottom: var(--s-6);">Graduate Supervision</h2>
+<div class="grid grid--2">
+  {% for post in site.teaching %}
+    {% if post.type == 'Supervision' %}
+      <article class="card" style="grid-column: 1 / -1; background: var(--c-bg-tint);">
+        <div class="icon-tile"><svg class="icon"><use href="#i-users"/></svg></div>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p style="margin-top: var(--s-3);">{{ post.content | strip_html | truncatewords: 80 }}</p>
+        <p style="margin-top: var(--s-4);">
+          <a class="btn btn--sm" href="mailto:{{ site.author.email }}">Contact Me</a>
+        </p>
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>

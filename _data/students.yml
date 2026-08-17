@@ -1,0 +1,64 @@
+# 学生培养数据（Students 页）
+# stats: 培养成果统计（num=数字，label=说明）
+# achievements: 成就卡组（icon=图标名，见 _includes/icons.html；title=标题；text=说明）
+
+stats:
+  - num: "20+"
+    label: "Master Students Supervised"
+
+  - num: "6"
+    label: "National Innovation Projects"
+
+  - num: "24"
+    label: "Blue Bridge Awards"
+
+  - num: "15+"
+    label: "Math Modeling Awards"
+
+  - num: "50+"
+    label: "Competition Awards Total"
+
+achievements:
+  - icon: "award"
+    title: "National Graduate Scholarship"
+    text: "Multiple supervised master's students have been honored with the National Graduate Scholarship."
+
+  - icon: "medal"
+    title: "Excellent Master's Thesis"
+    text: "Students have received Excellent Master's Thesis and Outstanding Graduate awards at Shandong Normal University."
+
+  - icon: "file-text"
+    title: "High-Impact Publications"
+    text: "Graduate students have published dozens of papers in CAS JCR Q1/Q2 journals under supervision."
+
+  - icon: "graduation-cap"
+    title: "Doctoral Pathways"
+    text: "Many graduates have continued to pursue Ph.D. degrees at 985/211 universities or joined research institutes and enterprises."
+
+  - icon: "users"
+    title: "Undergraduate Innovation Programs"
+    text: "Supervised 3 national-level and 3 provincial-level College Students Innovation and Entrepreneurship projects."
+
+  - icon: "trophy"
+    title: "Challenger Cup Gold Award"
+    text: "Gold award (university level) in the 13th Challenger Cup College Students Entrepreneurship Competition."
+
+  - icon: "star"
+    title: "Internet+ Silver Award"
+    text: "Silver award (university level) in the 8th China International Internet+ Innovation and Entrepreneurship Competition."
+
+  - icon: "medal"
+    title: "Blue Bridge Cup"
+    text: "24 provincial first/second/third prizes in the National Blue Bridge Cup Software Competition."
+
+  - icon: "award"
+    title: "Mathematical Modeling"
+    text: "4 first prizes and 9 second/third prizes in national math modeling (province level), plus 1 national second prize in Huashu Cup and 2 international second prizes in MCM/ICM."
+
+  - icon: "users"
+    title: "Thesis Excellence"
+    text: "4 university-level Excellent Bachelor's Theses and 4 SDNU Undergraduate Research Fund projects supervised."
+
+recruitment:
+  annual: "3-4"
+  email: "tsingke@sdnu.edu.cn"

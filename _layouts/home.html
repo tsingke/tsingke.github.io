@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% include hero.html %}
+
+<main class="site-main">
+  <section class="section" id="about">
+    <div class="container">
+      <div class="prose" style="max-width: 820px;">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+
+  {% include stats-band.html %}
+
+  <section class="section section--alt" id="news">
+    <div class="container">
+      {% include section-heading.html eyebrow="Updates" title="News &amp; Updates" %}
+      {% include news-list.html %}
+    </div>
+  </section>
+
+  <section class="section" id="publications">
+    <div class="container">
+      {% include section-heading.html eyebrow="Research" title="Selected Publications" subtitle="A selection of representative works. See all on the Publications page." %}
+      {% include selected-pubs.html %}
+      <p style="text-align:center; margin-top: var(--s-10);">
+        <a class="btn btn--lg" href="{{ base_path }}/publications/">View all publications</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container">
+      {% include cta.html %}
+    </div>
+  </section>
+</main>

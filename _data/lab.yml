@@ -1,0 +1,75 @@
+# 实验室数据（Lab 页）
+# name/slogan: 组名与组训
+# directions: 研究方向（icon=图标名；title=方向；text=说明）
+# projects: 主持项目（title=项目名；id=编号；period=时间；text=说明；highlight=true 置顶高亮）
+# patents: 专利（title=专利方向；text=说明）
+# platform: 开源平台（name/desc/icon/link）
+
+name: "Intelligent Computing Group"
+slogan: "Tailoring teaching to each student · Unifying knowledge with practice"
+
+directions:
+  - icon: "atom"
+    title: "Swarm Intelligence"
+    text: "Metaheuristic algorithms inspired by collective behavior in nature."
+
+  - icon: "sparkles"
+    title: "Evolutionary Computation"
+    text: "Evolution-based global optimization paradigms and new evolutionary frameworks."
+
+  - icon: "lightbulb"
+    title: "Learning-assisted Optimization"
+    text: "Deep and reinforcement learning embedded into metaheuristic search."
+
+  - icon: "network"
+    title: "Large-scale Optimization"
+    text: "Algorithms for high-dimensional, large-scale global optimization problems."
+
+  - icon: "cpu"
+    title: "GPU/CUDA Parallel Computing"
+    text: "GPU-accelerated intelligent computing for efficient complex optimization."
+
+  - icon: "activity"
+    title: "Bioinformatics Optimization"
+    text: "Biological sequence analysis and bioinformatics-driven optimization."
+
+projects:
+  - title: "National Natural Science Foundation of China (NSFC) Young Scientists Fund"
+    id: "62006144"
+    period: "2021-2024"
+    text: "Large-scale global optimization for biological multiple sequence alignment. PI. Completed."
+    highlight: true
+
+  - title: "Postdoctoral Research Project, Shandong Normal University"
+    period: "2018-2021"
+    text: "Optimization theory and methods for high-dimensional complex problems. PI. Completed."
+
+  - title: "MOE Industry-University Cooperation and Collaborative Education Project"
+    period: "2018-2020"
+    text: "Construction and reform of the Mobile Computing course. PI. Completed."
+
+  - title: "University-level Young Faculty Research Project, Shandong Normal University"
+    period: "2018-2019"
+    text: "Convergence-divergence cooperative particle swarm optimization. PI. Completed."
+
+patents:
+  - title: "Parameter-Adaptive Growth Optimizer"
+    text: "Core patent covering an adaptive global-optimization method."
+
+  - title: "Biological Multiple Sequence Alignment"
+    text: "Patent on large-scale global optimization for sequence alignment."
+
+  - title: "Multi-level Threshold Image Segmentation"
+    text: "Patent on image segmentation via intelligent optimization."
+
+  - title: "Gene Sequence Alignment"
+    text: "Patent on gene sequence analysis and alignment."
+
+  - title: "Related Intelligent Optimization Methods"
+    text: "Additional granted patents on intelligent optimization and applications."
+
+platform:
+  name: "PlatECO"
+  desc: "An open-source platform for intelligent-optimization visualization and analysis — algorithm implementations, batch benchmarking, statistical comparison, and visualization."
+  icon: "platform"
+  link: "https://github.com/tsingke"

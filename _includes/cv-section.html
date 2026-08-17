@@ -1,0 +1,9 @@
+<div class="cv-block">
+  <div class="cv-block__head">
+    <div class="icon-tile"><svg class="icon"><use href="#i-{{ include.icon | default: 'user' }}"/></svg></div>
+    <h2>{{ include.title }}</h2>
+  </div>
+  <div class="cv-block__body">
+    {{ include.body }}
+  </div>
+</div>

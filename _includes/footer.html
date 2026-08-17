@@ -1,25 +1,43 @@
 {% include base_path %}
-
-{% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    {% if site.atom_feed.hide != true %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endif %}
-  </ul>
-</div>
-{% endif %}
-
-<div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated {{ "now" | date: '%Y-%m-%d' }}, <a href="/sitemap/" style="text-transform: uppercase;">{{ site.data.ui-text[site.locale].site_map | default: "Sitemap" }}</a>
-</div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <div class="footer-brand"><span class="brand-dot"></span>{{ site.title }}</div>
+        <p style="font-size: var(--fs-sm); margin-bottom: var(--s-6);">{{ site.author.bio }}</p>
+        <div class="socials">
+          {% if site.author.github %}
+            <a href="https://github.com/{{ site.author.github }}" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
+          {% endif %}
+          {% if site.author.orcid %}
+            <a href="{{ site.author.orcid }}" aria-label="ORCID"><svg class="icon"><use href="#i-orcid"/></svg></a>
+          {% endif %}
+          {% if site.author.twitter %}
+            <a href="https://twitter.com/{{ site.author.twitter }}" aria-label="X"><svg class="icon"><use href="#i-x"/></svg></a>
+          {% endif %}
+          <a href="{{ base_path }}/feed.xml" aria-label="RSS"><svg class="icon"><use href="#i-rss"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          {% for link in site.data.navigation.main %}
+            <li><a href="{{ base_path }}{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          <li>{{ site.author.employer }}</li>
+          <li>{{ site.author.location }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</span>
+      <span>Built with <a href="https://jekyllrb.com">Jekyll</a> on GitHub Pages</span>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,14 @@
+{% if site.data.stats %}
+<section class="section section--alt" id="stats">
+  <div class="container">
+    <div class="stats">
+      {% for stat in site.data.stats %}
+      <div class="stat">
+        <div class="stat__num">{{ stat.num }}</div>
+        <div class="stat__label">{{ stat.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

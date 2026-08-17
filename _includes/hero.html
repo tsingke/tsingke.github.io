@@ -1,0 +1,64 @@
+{% include base_path %}
+
+{% if page.layout == 'home' %}
+<section class="hero">
+  <div class="hero__bg">
+    <div class="glow glow--1"></div>
+    <div class="glow glow--2"></div>
+    <div class="dots"></div>
+  </div>
+  <div class="container">
+    <div class="hero__inner">
+      <div>
+        <div class="hero__avatar">
+          <img src="{{ base_path }}/images/{{ site.author.avatar }}" alt="{{ site.author.name }}">
+        </div>
+        <h1>{{ site.author.name }}</h1>
+        <div class="hero__role">{{ site.author.employer }}</div>
+        <p class="hero__tagline">{{ site.author.bio }}</p>
+        <div class="hero__ctas">
+          <a class="btn btn--light btn--lg" href="{{ base_path }}/cv/">
+            <svg class="icon"><use href="#i-id-card"/></svg> Curriculum Vitae
+          </a>
+          <a class="btn btn--ghost btn--lg" href="{{ base_path }}/contact/">
+            <svg class="icon"><use href="#i-mail"/></svg> Contact Me
+          </a>
+        </div>
+      </div>
+      <div class="hero__art">
+        <svg viewBox="0 0 440 340" style="width:100%; max-width:460px;" role="img" aria-hidden="true">
+          <use href="#i-network-hero"/>
+        </svg>
+        <div class="floating-chips" style="top: 8%; left: 0;">
+          <span class="chip"><svg class="icon"><use href="#i-file-text"/></svg> 40+ SCI Papers</span>
+        </div>
+        <div class="floating-chips" style="top: 34%; right: 0;">
+          <span class="chip"><svg class="icon"><use href="#i-award"/></svg> 2 ESI Highly Cited</span>
+        </div>
+        <div class="floating-chips" style="top: 62%; left: 4%;">
+          <span class="chip"><svg class="icon"><use href="#i-users"/></svg> 20+ Master Students</span>
+        </div>
+        <div class="floating-chips" style="top: 88%; right: 6%;">
+          <span class="chip"><svg class="icon"><use href="#i-database"/></svg> 5 Patents</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% else %}
+<section class="hero hero--compact">
+  <div class="hero__bg">
+    <div class="glow glow--1"></div>
+    <div class="glow glow--2"></div>
+    <div class="dots"></div>
+  </div>
+  <div class="container">
+    <div class="hero__inner">
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <p class="hero__sub">{{ page.subtitle }}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}

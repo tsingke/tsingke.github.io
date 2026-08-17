@@ -1,0 +1,27 @@
+{% include base_path %}
+<header class="site-nav">
+  <div class="container site-nav__inner">
+    <a class="site-nav__brand" href="{{ base_path }}/">
+      <span class="brand-dot"></span>{{ site.title }}
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav__menu" id="site-nav-menu" aria-label="Main navigation">
+      {% for link in site.data.navigation.main %}
+        {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+        {% else %}
+          {% assign domain = base_path %}
+        {% endif %}
+        {% assign active = false %}
+        {% if page.url == link.url %}
+          {% assign active = true %}
+        {% elsif link.url != '/' and page.url contains link.url %}
+          {% assign active = true %}
+        {% endif %}
+        <a href="{{ domain }}{{ link.url }}"{% if active %} class="active"{% endif %}>{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

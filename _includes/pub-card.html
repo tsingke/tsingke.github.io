@@ -1,0 +1,13 @@
+{% include base_path %}
+<article class="card">
+  <div class="pub__tags" style="margin-bottom: var(--s-3);">
+    {% if include.post.category == 'conferences' %}
+      <span class="tag tag--conf">Conference</span>
+    {% else %}
+      <span class="tag tag--q1">Journal</span>
+    {% endif %}
+    {% if include.post.excerpt contains 'ESI' %}<span class="tag tag--esi">ESI Highly Cited</span>{% endif %}
+  </div>
+  <h3><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
+  <p style="margin-top: var(--s-3);">{{ include.post.venue }}</p>
+</article>
