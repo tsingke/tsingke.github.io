@@ -255,7 +255,7 @@
   }
 
   function bindCopyButtons() {
-    var buttons = document.querySelectorAll('[data-copy]');
+    var buttons = document.querySelectorAll('[data-copy], [data-copy-value]');
     Array.prototype.forEach.call(buttons, function (btn) {
       btn.addEventListener('click', function () {
         var target = document.querySelector(btn.getAttribute('data-copy-target')) ||
