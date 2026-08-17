@@ -15,13 +15,13 @@
 
 ## 📸 预览 Preview
 
-**桌面版 Desktop** — 深蓝紫渐变 Hero · 左矩形照片 + 右个人信息 · 精选论文图文卡
+**英文简历 English CV** — 完整学术履历（可在 /cv/ 页下载 PDF）
 
-![Desktop preview](images/screenshot-home.png)
+![English CV](images/cv-en-preview.png)
 
-**移动版 Mobile** — 完全响应式 · 汉堡导航 · 内容自适应
+**英文首页 Homepage (English)** — 深蓝紫渐变 Hero · 左矩形照片 + 右个人信息 · 精选论文图文卡
 
-![Mobile preview](images/screenshot-mobile.png)
+![Homepage](images/screenshot-home.png)
 
 ---
 
