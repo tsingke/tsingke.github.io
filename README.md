@@ -21,7 +21,7 @@
 
 **英文首页 Homepage (English)** — 深蓝紫渐变 Hero · 左矩形照片 + 右个人信息 · 精选论文图文卡
 
-![Homepage](images/screenshot-homes.png)
+![Homepage](images/screenshot-home.png)
 
 ---
 
