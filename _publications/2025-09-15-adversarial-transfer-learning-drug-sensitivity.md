@@ -15,6 +15,8 @@ featured: false
 cites: 0
 tags: ["Conference"]
 keywords: ["Transfer learning", "Drug sensitivity", "Single-cell data"]
+abstract_zh: |
+  药物耐药性及由此导致的治疗无效占癌症相关死亡的 90%。本文提出基于对抗领域自适应的迁移学习方法，用于预测单细胞数据的药物敏感性，为个性化治疗提供支持。
 abstract: |
   Drug resistance remains a primary cause of cancer treatment failure, while single-cell-level heterogeneity within the tumor microen- vironment poses signiﬁcant challenges for predicting drug sensitivity. This study proposes a framework for single-cell drug sensitivity pre- diction based on adversarial transfer learning.
 bibtex: |

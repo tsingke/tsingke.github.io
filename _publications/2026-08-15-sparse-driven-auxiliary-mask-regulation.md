@@ -15,6 +15,8 @@ featured: true
 cites: 1
 tags: ["Q1 Top"]
 keywords: ["Large-scale optimization", "Multi-objective", "Deep reinforcement learning"]
+abstract_zh: |
+  本文面向大规模稀疏多目标优化问题（特征为高维决策变量、异质变量等），提出基于稀疏驱动辅助掩码调控与分层动作选择的深度强化学习优化方法，并结合演化计算框架。
 abstract: |
   This paper addresses the optimization challenges of large-scale sparse multi-objective problems, which are char- acterized by high-dimensional decision variables, heterogeneous variable bounds, and complex structural de- pendencies. To tackle these issues, we propose an improved algorithm based on an automated guiding vector selection-based evolutionary algorithm (AGSEA), termed SMAF, which integrates structure-aware sampling and dynamic guidance.
 bibtex: |

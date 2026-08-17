@@ -15,7 +15,15 @@ overview_zh: "博士课程，涵盖经典与现代优化理论与方法，包括
 overview: |
   A doctoral course covering classical and modern optimization theory and methods, including convex analysis, nonlinear programming, metaheuristics, and recent advances in learning-assisted optimization. The course bridges theoretical foundations with frontier research in swarm intelligence, evolutionary computation, and large-scale optimization.
 textbook: "Numerical Optimization (Nocedal & Wright); Convex Optimization (Boyd & Vandenberghe)"
+textbook_zh: "《数值优化》（Nocedal & Wright）；《凸优化》（Boyd & Vandenberghe）"
 outline:
+outline_zh:
+  - "第1章 优化基础"
+  - "第2章 凸分析"
+  - "第3章 非线性规划"
+  - "第4章 元启发式与全局优化"
+  - "第5章 大规模优化"
+  - "第6章 学习型智能优化"
   - "Ch1: Foundations of Optimization"
   - "Ch2: Convex Analysis"
   - "Ch3: Nonlinear Programming"

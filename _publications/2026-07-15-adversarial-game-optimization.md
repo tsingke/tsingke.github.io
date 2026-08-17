@@ -15,6 +15,8 @@ featured: true
 cites: 0
 tags: ["Q1 Top"]
 keywords: ["Metaheuristic", "Game theory", "Engineering applications"]
+abstract_zh: |
+  元启发式优化算法在求解复杂非线性优化任务时表现出强大性能，但在高维环境下性能往往下降。本文提出对抗博弈优化算法（AGOA），借鉴博弈论思想构建高效元启发式框架，并应用于多阈值图像分割、约束工程设计以及无人机三维路径规划等实际问题。
 abstract: |
   Metaheuristic optimization algorithms have demonstrated strong performance when applied to complex nonlinear optimization tasks. However, their performance often degrades in high- dimensional and multimodal settings due to premature convergence and insufficient global search. To address these limitations, an Adversarial Game Optimization Algorithm (AGOA) is proposed, which constructs a metaheuristic optimization framework based on adversarial game mechanisms.
 bibtex: |

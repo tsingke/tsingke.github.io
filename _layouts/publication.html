@@ -28,7 +28,8 @@ layout: default
         <div style="min-width:0;">
           {% if page.abstract %}
             <h2 class="pub-section-title" data-i18n="pubs.abstract">Abstract</h2>
-            <p style="color: var(--c-text-2);">{{ page.abstract }}</p>
+            <p style="color: var(--c-text-2);" class="i18n-en">{{ page.abstract }}</p>
+            {% if page.abstract_zh %}<p style="color: var(--c-text-2);" class="i18n-zh">{{ page.abstract_zh }}</p>{% endif %}
           {% endif %}
           {% if page.keywords %}
             <h2 class="pub-section-title" style="margin-top: var(--s-8);" data-i18n="pubs.keywords">Keywords</h2>

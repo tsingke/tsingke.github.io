@@ -17,7 +17,7 @@ I recruit **3-4 master's students per year** in **Computer Science and Technolog
   </div>
 
   <!-- 招生流程流线 -->
-  <h2 class="pub-section-title" style="margin-top: var(--s-12);">How to Join</h2>
+  <h2 class="pub-section-title" style="margin-top: var(--s-12);"><span class="i18n-en">How to Join</span><span class="i18n-zh">如何加入</span></h2>
   <div class="flow-steps">
     <div class="flow-step">
       <div class="flow-step__num">1</div>
@@ -51,13 +51,13 @@ I recruit **3-4 master's students per year** in **Computer Science and Technolog
 <div class="grid grid--2" style="margin-bottom: var(--s-12);">
   <div class="card">
     <div class="icon-tile"><svg class="icon"><use href="#i-sparkles"/></svg></div>
-    <h3>因材施教 · 知行合一</h3>
-    <p style="margin-top: var(--s-2);">Tailoring teaching to each student and unifying knowledge with practice — deep integration of theory and application.</p>
+    <h3><span class="i18n-en">Tailor &amp; Practice</span><span class="i18n-zh">因材施教 · 知行合一</span></h3>
+    <p style="margin-top: var(--s-2);"><span class="i18n-en">Tailoring teaching to each student and unifying knowledge with practice — deep integration of theory and application.</span><span class="i18n-zh">根据学生特点因材施教，注重知行合一——理论与实践深度融合。</span></p>
   </div>
   <div class="card">
     <div class="icon-tile"><svg class="icon"><use href="#i-lightbulb"/></svg></div>
-    <h3>格物致知 · 守正创新</h3>
-    <p style="margin-top: var(--s-2);">Self-cultivation through inquiry and innovation — solid fundamentals with the courage to explore the frontier.</p>
+    <h3><span class="i18n-en">Inquiry &amp; Innovation</span><span class="i18n-zh">格物致知 · 守正创新</span></h3>
+    <p style="margin-top: var(--s-2);"><span class="i18n-en">Self-cultivation through inquiry and innovation — solid fundamentals with the courage to explore the frontier.</span><span class="i18n-zh">通过探究与创新自我修炼——夯实基础，勇于探索前沿。</span></p>
   </div>
 </div>
 
@@ -65,7 +65,7 @@ I recruit **3-4 master's students per year** in **Computer Science and Technolog
 <h2 class="pub-section-title" data-i18n="recruiting.directions">Research Directions</h2>
 <div class="grid grid--3" style="margin-bottom: var(--s-12);">
   {% for d in site.data.lab.directions %}
-    {% include card.html icon=d.icon title=d.title text=d.text %}
+    {% include card.html icon=d.icon title=d.title title_zh=d.title_zh text=d.text text_zh=d.text_zh %}
   {% endfor %}
 </div>
 
@@ -73,7 +73,7 @@ I recruit **3-4 master's students per year** in **Computer Science and Technolog
 <h2 class="pub-section-title" data-i18n="recruiting.future">What You Will Gain</h2>
 <div class="grid grid--3" style="margin-bottom: var(--s-12);">
   {% for item in site.data.students.achievements limit:6 %}
-    {% include card.html icon=item.icon title=item.title text=item.text %}
+    {% include card.html icon=item.icon title=item.title title_zh=item.title_zh text=item.text text_zh=item.text_zh %}
   {% endfor %}
 </div>
 
@@ -82,23 +82,23 @@ I recruit **3-4 master's students per year** in **Computer Science and Technolog
 <div class="grid grid--2" style="margin-bottom: var(--s-12);">
   <div class="card">
     <div class="icon-tile"><svg class="icon"><use href="#i-platform"/></svg></div>
-    <h3>PlatECO Platform</h3>
-    <p style="margin-top: var(--s-2);">Open-source intelligent-optimization platform for algorithm development, benchmarking, and visualization.</p>
+    <h3><span class="i18n-en">PlatECO Platform</span><span class="i18n-zh">PlatECO 平台</span></h3>
+    <p style="margin-top: var(--s-2);"><span class="i18n-en">Open-source intelligent-optimization platform for algorithm development, benchmarking, and visualization.</span><span class="i18n-zh">智能优化开源平台，支持算法开发、批量评测与可视化。</span></p>
   </div>
   <div class="card">
     <div class="icon-tile"><svg class="icon"><use href="#i-cpu"/></svg></div>
-    <h3>GPU / CUDA Computing</h3>
-    <p style="margin-top: var(--s-2);">GPU-accelerated parallel computing resources for large-scale and high-dimensional optimization.</p>
+    <h3><span class="i18n-en">GPU / CUDA Computing</span><span class="i18n-zh">GPU/CUDA 计算</span></h3>
+    <p style="margin-top: var(--s-2);"><span class="i18n-en">GPU-accelerated parallel computing resources for large-scale and high-dimensional optimization.</span><span class="i18n-zh">面向大规模、高维优化的 GPU 加速并行计算资源。</span></p>
   </div>
   <div class="card">
     <div class="icon-tile"><svg class="icon"><use href="#i-users"/></svg></div>
-    <h3>Weekly Seminars &amp; Writing</h3>
-    <p style="margin-top: var(--s-2);">Regular group meetings, literature review, paper-writing and presentation coaching.</p>
+    <h3><span class="i18n-en">Weekly Seminars &amp; Writing</span><span class="i18n-zh">组会与论文写作</span></h3>
+    <p style="margin-top: var(--s-2);"><span class="i18n-en">Regular group meetings, literature review, paper-writing and presentation coaching.</span><span class="i18n-zh">定期组会、文献阅读、论文写作与汇报指导。</span></p>
   </div>
   <div class="card">
     <div class="icon-tile"><svg class="icon"><use href="#i-network"/></svg></div>
-    <h3>Interdisciplinary Applications</h3>
-    <p style="margin-top: var(--s-2);">UAV path planning, gene sequence analysis, intelligent diagnosis, advanced manufacturing, and energy-system optimization.</p>
+    <h3><span class="i18n-en">Interdisciplinary Applications</span><span class="i18n-zh">跨学科应用</span></h3>
+    <p style="margin-top: var(--s-2);"><span class="i18n-en">UAV path planning, gene sequence analysis, intelligent diagnosis, advanced manufacturing, and energy-system optimization.</span><span class="i18n-zh">无人机路径规划、基因序列分析、智能诊断、先进制造与能源系统优化。</span></p>
   </div>
 </div>
 
@@ -122,27 +122,27 @@ I recruit **3-4 master's students per year** in **Computer Science and Technolog
   <div class="contact-card">
     <div class="icon-tile" style="width:44px;height:44px;"><svg class="icon"><use href="#i-mail"/></svg></div>
     <div style="min-width:0;">
-      <div class="contact-card__label">Email</div>
+      <div class="contact-card__label"><span class="i18n-en">Email</span><span class="i18n-zh">邮箱</span></div>
       <div class="contact-card__value"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></div>
     </div>
   </div>
   <div class="contact-card">
     <div class="icon-tile" style="width:44px;height:44px;"><svg class="icon"><use href="#i-phone"/></svg></div>
     <div style="min-width:0;">
-      <div class="contact-card__label">Phone</div>
+      <div class="contact-card__label"><span class="i18n-en">Phone</span><span class="i18n-zh">电话</span></div>
       <div class="contact-card__value">+86 139 5312 8163</div>
     </div>
   </div>
   <div class="contact-card">
     <div class="icon-tile" style="width:44px;height:44px;"><svg class="icon"><use href="#i-wechat"/></svg></div>
     <div style="min-width:0;">
-      <div class="contact-card__label">WeChat</div>
+      <div class="contact-card__label"><span class="i18n-en">WeChat</span><span class="i18n-zh">微信</span></div>
       <div class="contact-card__value">13953128163</div>
     </div>
   </div>
 </div>
 <p style="text-align:center; margin-top: var(--s-8);">
   <a class="btn btn--lg" href="mailto:{{ site.author.email }}?subject=%5BWebsite%20Recruiting%5D%20Prospective%20Student">
-    <svg class="icon"><use href="#i-mail"/></svg> Send Recruiting Inquiry
+    <svg class="icon"><use href="#i-mail"/></svg> <span class="i18n-en">Send Recruiting Inquiry</span><span class="i18n-zh">发送招生咨询</span>
   </a>
 </p>

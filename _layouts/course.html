@@ -49,7 +49,10 @@ layout: default
           <div class="icon-tile"><svg class="icon"><use href="#i-book"/></svg></div>
           <h2 data-i18n="teaching.textbook">Textbook</h2>
         </div>
-        <div class="cv-block__body"><p style="color: var(--c-text-2);">{{ page.textbook }}</p></div>
+        <div class="cv-block__body">
+          <p style="color: var(--c-text-2);" class="i18n-en">{{ page.textbook }}</p>
+          {% if page.textbook_zh %}<p style="color: var(--c-text-2);" class="i18n-zh">{{ page.textbook_zh }}</p>{% endif %}
+        </div>
       </div>
       {% endif %}
 
@@ -61,7 +64,10 @@ layout: default
         </div>
         <div class="cv-block__body">
           <ol style="color: var(--c-text-2); padding-left: 1.1rem;">
-            {% for line in page.outline %}<li style="margin-bottom: var(--s-2);">{{ line }}</li>{% endfor %}
+            {% for line in page.outline %}
+              <li class="i18n-en" style="margin-bottom: var(--s-2);">{{ line }}</li>
+              {% if page.outline_zh %}<li class="i18n-zh" style="margin-bottom: var(--s-2);">{{ page.outline_zh[forloop.index0] }}</li>{% endif %}
+            {% endfor %}
           </ol>
         </div>
       </div>

@@ -1,7 +1,7 @@
 <div class="cv-block">
   <div class="cv-block__head">
     <div class="icon-tile"><svg class="icon"><use href="#i-{{ include.icon | default: 'user' }}"/></svg></div>
-    <h2>{{ include.title }}</h2>
+    <h2><span class="i18n-en">{{ include.title }}</span>{% if include.title_zh %}<span class="i18n-zh">{{ include.title_zh }}</span>{% endif %}</h2>
   </div>
   <div class="cv-block__body">
     {{ include.body }}

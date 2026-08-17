@@ -20,9 +20,9 @@ redirect_from:
 </div>
 
 <!-- ===== 团队成员 ===== -->
-<h2 class="pub-section-title">Team Members</h2>
+<h2 class="pub-section-title"><span class="i18n-en">Team Members</span><span class="i18n-zh">团队成员</span></h2>
 
-<h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-8) 0 var(--s-4);">Current Graduate Students <span class="tag tag--q1">在读</span></h3>
+<h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-8) 0 var(--s-4);"><span class="i18n-en">Current Graduate Students</span><span class="i18n-zh">在读研究生</span> <span class="tag tag--q1">在读</span></h3>
 <div class="grid grid--4">
   {% assign idx = 0 %}
   {% for m in site.data.members.graduate_students %}
@@ -41,7 +41,7 @@ redirect_from:
   {% endif %}
 {% endfor %}
 
-<h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-12) 0 var(--s-4);">Alumni <span class="tag">已毕业</span></h3>
+<h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-12) 0 var(--s-4);"><span class="i18n-en">Alumni</span><span class="i18n-zh">已毕业研究生</span> <span class="tag">已毕业</span></h3>
 <div class="grid grid--4">
   {% for m in site.data.members.graduate_students %}
     {% if m.status == 'alumni' %}
@@ -50,7 +50,7 @@ redirect_from:
   {% endfor %}
 </div>
 
-<h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-12) 0 var(--s-4);">Undergraduate Students</h3>
+<h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-12) 0 var(--s-4);"><span class="i18n-en">Undergraduate Students</span><span class="i18n-zh">本科生培养</span></h3>
 <div class="grid grid--3" style="margin-bottom: var(--s-8);">
   {% for t in site.data.members.undergraduate.thesis %}
   <div class="card"><h3>{{ t.name }}</h3><p style="margin-top: var(--s-2);">{{ t.thesis_title }}</p><div class="pub__tags" style="margin-top: var(--s-3);"><span class="tag">{{ t.year }}</span></div></div>
@@ -72,17 +72,17 @@ redirect_from:
 
 <!-- ===== 研究领域 ===== -->
 <div style="height: var(--s-8);"></div>
-<h2 class="pub-section-title">Research Directions</h2>
+<h2 class="pub-section-title"><span class="i18n-en">Research Directions</span><span class="i18n-zh">研究方向</span></h2>
 <div class="grid grid--3" style="margin-bottom: var(--s-8);">
   {% for d in site.data.lab.directions %}
-    {% include card.html icon=d.icon title=d.title text=d.text %}
+    {% include card.html icon=d.icon title=d.title title_zh=d.title_zh text=d.text text_zh=d.text_zh %}
   {% endfor %}
 </div>
 
 <div class="card" style="display:flex; gap: var(--s-8); align-items:center; flex-wrap:wrap; background: var(--c-gradient-soft);">
   <div style="flex:1; min-width: 280px;">
-    <h3>Research Network</h3>
-    <p style="margin-top: var(--s-2);">Our research spans intelligent optimization, evolutionary computation, and parallel intelligent computing, connecting theory with real-world engineering applications such as UAV path planning, bioinformatics, intelligent diagnosis, advanced manufacturing, and energy-system optimization.</p>
+    <h3><span class="i18n-en">Research Network</span><span class="i18n-zh">研究网络</span></h3>
+    <p style="margin-top: var(--s-2);"><span class="i18n-en">Our research spans intelligent optimization, evolutionary computation, and parallel intelligent computing, connecting theory with real-world engineering applications such as UAV path planning, bioinformatics, intelligent diagnosis, advanced manufacturing, and energy-system optimization.</span><span class="i18n-zh">我们的研究覆盖智能优化、演化计算与并行智能计算，连接理论与实际工程应用——如无人机路径规划、生物信息、智能诊断、先进制造与能源系统优化。</span></p>
   </div>
   <div style="flex:1; min-width: 280px;">
     <svg viewBox="0 0 640 360" style="width:100%; max-width:460px;"><use href="#i-network-lab"/></svg>
@@ -92,14 +92,14 @@ redirect_from:
 <!-- ===== PlatECO ===== -->
 {% if site.data.lab.platform %}
 <div style="height: var(--s-8);"></div>
-<h2 class="pub-section-title">Open-Source Platform</h2>
+<h2 class="pub-section-title"><span class="i18n-en">Open-Source Platform</span><span class="i18n-zh">开源平台</span></h2>
 <article class="card" style="display:flex; gap: var(--s-6); align-items:center; flex-wrap: wrap;">
   <div class="icon-tile" style="width:72px; height:72px; border-radius: var(--r-xl);">
     <svg class="icon" style="width:36px; height:36px;"><use href="#i-{{ site.data.lab.platform.icon }}"/></svg>
   </div>
   <div style="flex:1; min-width: 260px;">
     <h3>{{ site.data.lab.platform.name }}</h3>
-    <p style="margin-top: var(--s-2);">{{ site.data.lab.platform.desc }}</p>
+    <p style="margin-top: var(--s-2);"><span class="i18n-en">{{ site.data.lab.platform.desc }}</span><span class="i18n-zh">{{ site.data.lab.platform.desc_zh }}</span></p>
     {% if site.data.lab.platform.link %}
     <p style="margin-top: var(--s-4);">
       <a class="btn btn--sm btn--outline" href="{{ site.data.lab.platform.link }}" target="_blank" rel="noopener">
@@ -113,7 +113,7 @@ redirect_from:
 
 <!-- ===== 项目 ===== -->
 <div style="height: var(--s-8);"></div>
-<h2 class="pub-section-title">Research Projects</h2>
+<h2 class="pub-section-title"><span class="i18n-en">Research Projects</span><span class="i18n-zh">科研项目</span></h2>
 <div class="grid grid--2">
   {% for p in site.data.lab.projects %}
   <article class="card">
@@ -122,24 +122,24 @@ redirect_from:
       {% if p.id %}<span class="tag tag--q2">{{ p.id }}</span>{% endif %}
       {% if p.highlight %}<span class="tag tag--esi">PI</span>{% endif %}
     </div>
-    <h3>{{ p.title }}</h3>
-    <p style="margin-top: var(--s-3);">{{ p.text }}</p>
+    <h3><span class="i18n-en">{{ p.title }}</span>{% if p.title_zh %}<span class="i18n-zh">{{ p.title_zh }}</span>{% endif %}</h3>
+    <p style="margin-top: var(--s-3);"><span class="i18n-en">{{ p.text }}</span>{% if p.text_zh %}<span class="i18n-zh">{{ p.text_zh }}</span>{% endif %}</p>
   </article>
   {% endfor %}
 </div>
 
 <!-- ===== 专利 ===== -->
 <div style="height: var(--s-8);"></div>
-<h2 class="pub-section-title">Granted Patents</h2>
+<h2 class="pub-section-title"><span class="i18n-en">Granted Patents</span><span class="i18n-zh">授权专利</span></h2>
 <div class="grid grid--2">
   {% for pat in site.data.lab.patents %}
-  {% include card.html icon="database" title=pat.title text=pat.text %}
+  {% include card.html icon="database" title=pat.title title_zh=pat.title_zh text=pat.text text_zh=pat.text_zh %}
   {% endfor %}
 </div>
 
 <!-- ===== 地址 ===== -->
 <div style="height: var(--s-8);"></div>
-<h2 class="pub-section-title">Location</h2>
+<h2 class="pub-section-title"><span class="i18n-en">Location</span><span class="i18n-zh">实验室地址</span></h2>
 <div class="grid grid--2">
   <div class="contact-card">
     <div class="icon-tile" style="width:44px;height:44px;"><svg class="icon"><use href="#i-map-pin"/></svg></div>

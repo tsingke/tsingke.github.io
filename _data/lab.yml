@@ -1,9 +1,10 @@
 # 实验室数据（Lab 页）
+# 双语：title/text 英文，title_zh/text_zh 中文（页面切中文时显示）
 # name/slogan: 组名与组训
-# directions: 研究方向（icon=图标名；title=方向；text=说明）
-# projects: 主持项目（title=项目名；id=编号；period=时间；text=说明；highlight=true 置顶高亮）
-# patents: 专利（title=专利方向；text=说明）
-# platform: 开源平台（name/desc/icon/link）
+# directions: 研究方向（icon=图标名；title/title_zh；text/text_zh）
+# projects: 主持项目（title/title_zh；text/text_zh；id 编号；period 时间；highlight 置顶高亮）
+# patents: 专利（title/title_zh；text/text_zh）
+# platform: 开源平台（name/desc/desc_zh/icon/link）
 
 name: "CILab — Computational Intelligence Lab"
 slogan: "Tailoring teaching to each student · Unifying knowledge with practice"
@@ -11,65 +12,96 @@ slogan: "Tailoring teaching to each student · Unifying knowledge with practice"
 directions:
   - icon: "atom"
     title: "Swarm Intelligence"
+    title_zh: "群体智能"
     text: "Metaheuristic algorithms inspired by collective behavior in nature."
+    text_zh: "受自然界集体行为启发的元启发式算法。"
 
   - icon: "sparkles"
     title: "Evolutionary Computation"
+    title_zh: "演化计算"
     text: "Evolution-based global optimization paradigms and new evolutionary frameworks."
+    text_zh: "基于演化的全局优化范式与新演化框架。"
 
   - icon: "lightbulb"
     title: "Learning-assisted Optimization"
+    title_zh: "学习型智能优化"
     text: "Deep and reinforcement learning embedded into metaheuristic search."
+    text_zh: "将深度与强化学习嵌入元启发式搜索。"
 
   - icon: "network"
     title: "Large-scale Optimization"
+    title_zh: "大规模优化"
     text: "Algorithms for high-dimensional, large-scale global optimization problems."
+    text_zh: "面向高维、大规模全局优化问题的算法。"
 
   - icon: "cpu"
     title: "GPU/CUDA Parallel Computing"
+    title_zh: "GPU 并行计算"
     text: "GPU-accelerated intelligent computing for efficient complex optimization."
+    text_zh: "面向高效复杂优化的 GPU 加速智能计算。"
 
   - icon: "activity"
     title: "Bioinformatics Optimization"
+    title_zh: "生物信息优化"
     text: "Biological sequence analysis and bioinformatics-driven optimization."
+    text_zh: "生物序列分析与生物信息驱动的优化。"
 
 projects:
   - title: "National Natural Science Foundation of China (NSFC) Young Scientists Fund"
+    title_zh: "国家自然科学基金青年基金项目"
     id: "62006144"
     period: "2021-2024"
     text: "Large-scale global optimization for biological multiple sequence alignment. PI. Completed."
+    text_zh: "面向生物多序列比对的大规模全局优化。主持，已结题。"
     highlight: true
 
   - title: "Postdoctoral Research Project, Shandong Normal University"
+    title_zh: "博士后科研项目（山东师范大学）"
     period: "2018-2021"
     text: "Optimization theory and methods for high-dimensional complex problems. PI. Completed."
+    text_zh: "高维复杂问题优化理论与方法。主持，已结题。"
 
   - title: "MOE Industry-University Cooperation and Collaborative Education Project"
+    title_zh: "教育部产学合作协同育人项目"
     period: "2018-2020"
     text: "Construction and reform of the Mobile Computing course. PI. Completed."
+    text_zh: "新工科背景下《移动计算》课程建设与改革。主持，已结题。"
 
   - title: "University-level Young Faculty Research Project, Shandong Normal University"
+    title_zh: "校级青年教师科研项目（山东师范大学）"
     period: "2018-2019"
     text: "Convergence-divergence cooperative particle swarm optimization. PI. Completed."
+    text_zh: "聚散协同粒子群优化。主持，已结题。"
 
 patents:
   - title: "Parameter-Adaptive Growth Optimizer"
+    title_zh: "参数自适应生长优化器"
     text: "Core patent covering an adaptive global-optimization method."
+    text_zh: "覆盖自适应全局优化方法的核心专利。"
 
   - title: "Biological Multiple Sequence Alignment"
+    title_zh: "生物多序列比对"
     text: "Patent on large-scale global optimization for sequence alignment."
+    text_zh: "面向序列比对的大规模全局优化专利。"
 
   - title: "Multi-level Threshold Image Segmentation"
+    title_zh: "多级阈值图像分割"
     text: "Patent on image segmentation via intelligent optimization."
+    text_zh: "基于智能优化的图像分割专利。"
 
   - title: "Gene Sequence Alignment"
+    title_zh: "基因序列比对"
     text: "Patent on gene sequence analysis and alignment."
+    text_zh: "基因序列分析与比对专利。"
 
   - title: "Related Intelligent Optimization Methods"
+    title_zh: "相关智能优化方法"
     text: "Additional granted patents on intelligent optimization and applications."
+    text_zh: "智能优化与应用相关授权专利。"
 
 platform:
   name: "PlatECO"
   desc: "An open-source platform for intelligent-optimization visualization and analysis — algorithm implementations, batch benchmarking, statistical comparison, and visualization."
+  desc_zh: "智能优化可视化与分析的开源平台——算法实现、批量评测、统计比较与可视化。"
   icon: "platform"
   link: "https://github.com/tsingke"

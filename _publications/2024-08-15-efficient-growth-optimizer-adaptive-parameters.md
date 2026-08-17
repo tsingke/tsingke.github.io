@@ -15,6 +15,8 @@ featured: false
 cites: 0
 tags: ["Conference"]
 keywords: ["Growth optimizer", "Adaptive parameters", "Global optimization"]
+abstract_zh: |
+  优化问题广泛应用于工程、经济与管理等领域，但传统算法在面临大规模解空间或复杂目标函数等挑战时往往难以求得全局最优。本文提出具有自适应参数与定向随机变异策略的高效生长优化器，用于全局优化问题的求解。
 abstract: |
   Growth optimizer (GO) is a metaheuristic algorithm that simulates the learning and internal self-reﬂection mechanisms during human growth. The algorithm exhibits stable and efﬁcient convergence capabilities on mathematical bench-mark functions of various types and complexities. However, it still suf- fers from trapping into local optimal solution. Thus, in this paper, we propose an improved growth optimizer algorithm named ASGO.
 bibtex: |

@@ -15,6 +15,8 @@ featured: true
 cites: 60
 tags: ["Q1 Top"]
 keywords: ["Particle swarm optimization", "Coevolution", "Numerical optimization"]
+abstract_zh: |
+  本文提出一种新颖的向量协同进化粒子群优化算法（VCPSO）。每个粒子的全维度首先被随机划分为若干子空间，通过集中式学习与分散式学习的协同进化机制提升优化性能。
 abstract: |
   In this paper, we propose a novel vector coevolving particle swarm optimization algorithm (VCPSO). In VCPSO, the full dimension of each particle is ﬁrst randomly partitioned into several sub-dimensions. Then, we randomly assign either one of our newly designed scalar operators or learning operators to update the values in each sub-dimension. The scalar op- erators are designed to enhance the population diversity and avoid premature convergence.
 bibtex: |

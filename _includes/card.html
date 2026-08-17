@@ -3,8 +3,12 @@
   {% if include.icon %}
     <div class="icon-tile"><svg class="icon"><use href="#i-{{ include.icon }}"/></svg></div>
   {% endif %}
-  {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
-  {% if include.text %}<p>{{ include.text }}</p>{% endif %}
+  {% if include.title %}
+    <h3><span class="i18n-en">{{ include.title }}</span>{% if include.title_zh %}<span class="i18n-zh">{{ include.title_zh }}</span>{% endif %}</h3>
+  {% endif %}
+  {% if include.text %}
+    <p><span class="i18n-en">{{ include.text }}</span>{% if include.text_zh %}<span class="i18n-zh">{{ include.text_zh }}</span>{% endif %}</p>
+  {% endif %}
   {% if include.link %}
     <p style="margin-top: var(--s-4);"><a href="{{ include.link.url }}">{{ include.link.label }} &rarr;</a></p>
   {% endif %}

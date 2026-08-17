@@ -15,6 +15,8 @@ featured: true
 cites: 26
 tags: ["Q1 Top"]
 keywords: ["Growth optimizer", "Parameter adaptation", "Image segmentation", "Sensor deployment"]
+abstract_zh: |
+  生长优化器是一种具有强大数值优化能力的新型元启发式算法，但其参数与搜索算子成为影响性能的关键因素。本文提出四参数自适应生长优化器，集成分布、对抗与平衡特性，利用 Jensen-Shannon 散度进行算子改进，并应用于图像分割与传感器部署问题。
 abstract: |
   Growth optimizer is a novel metaheuristic algorithm that has powerful numerical optimization capabilities. However, its parameters and search operators become crucial factors that significantly impact its optimization capability for engineering problems and benchmarks. Therefore, this paper proposes a quadruple parameter adaptation growth optimizer (QAGO) integrated with distribution, confrontation, and balance features.
 bibtex: |

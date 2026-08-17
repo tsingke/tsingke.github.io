@@ -15,6 +15,8 @@ featured: true
 cites: 0
 tags: ["Q1 Top"]
 keywords: ["GPU/CUDA", "Parallel computing", "Gradient-guided search"]
+abstract_zh: |
+  高效求解高维复杂数值优化问题仍是高性能计算领域的关键挑战。本文提出 GPU/CUDA 加速梯度生长优化器，利用 GPU 并行架构与梯度引导搜索机制，实现高效高维复杂全局优化，显著提升求解效率。
 abstract: |
   Efficiently solving high-dimensional and complex numerical optimization problems remains a critical challenge in high-performance computing. This paper presents the GPU/CUDA-Accelerated Gradient Growth Optimizer (GGO)—a novel parallel metaheuristic algorithm that combines gradient-guided local search with GPU- enabled large-scale parallelism.
 bibtex: |

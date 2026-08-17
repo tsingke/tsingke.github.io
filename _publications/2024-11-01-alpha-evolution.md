@@ -15,6 +15,8 @@ featured: true
 cites: 92
 tags: ["ESI", "Q1 Top"]
 keywords: ["Evolutionary computation", "Evolution path adaptation", "Numerical optimization"]
+abstract_zh: |
+  元启发式算法通过信息提取与利用来生成更优质的解决方案，然而过度隐喻化导致概念模糊。本文提出 Alpha 演化算法——一种高效的、无隐喻的演化算法，其核心是进化路径自适应与矩阵生成机制，在数值优化与工程应用中展现出优越性能。
 abstract: |
   Metaheuristics involve information extraction and utilization processes to generate more promising solutions. However, the background of excessive metaphor has led to ambiguity in the computational process. To solve this problem, this paper proposes a novel evolutionary algorithm called alpha evolution (AE). It updates the solution using the alpha operator with the adaptive base vector and the random and adaptive step sizes. First, sample candidate solutions to construct the evolution matrix.
 bibtex: |
