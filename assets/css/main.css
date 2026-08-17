@@ -91,7 +91,23 @@ hr { border: 0; border-top: 1px solid var(--c-border); margin: var(--s-12) 0; }
   position: relative; overflow: hidden;
   background: var(--c-gradient-deep);
   color: #fff;
-  padding: var(--s-24) 0 var(--s-16);
+  padding: clamp(4rem, 9vw, 7rem) 0 clamp(3rem, 6vw, 5rem);
+}
+.hero__main { min-width: 0; }
+.hero__eyebrow {
+  display: inline-flex; align-items: center; gap: var(--s-2);
+  font-size: var(--fs-xs); font-weight: var(--fw-semi);
+  letter-spacing: .08em; text-transform: uppercase;
+  color: rgba(255,255,255,.85); background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.22); padding: var(--s-2) var(--s-4);
+  border-radius: var(--r-full); margin-bottom: var(--s-5);
+}
+.hero__eyebrow .icon { width: 14px; height: 14px; }
+.hero__tags { display: flex; flex-wrap: wrap; gap: var(--s-2); margin-bottom: var(--s-8); }
+.hero__tags .chip {
+  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22);
+  color: rgba(255,255,255,.9); padding: 5px var(--s-4); border-radius: var(--r-full);
+  font-size: var(--fs-xs); font-weight: var(--fw-semi);
 }
 .hero__bg { position: absolute; inset: 0; pointer-events: none; }
 .hero__bg .glow { position: absolute; border-radius: 50%; filter: blur(50px); }
@@ -103,7 +119,7 @@ hr { border: 0; border-top: 1px solid var(--c-border); margin: var(--s-12) 0; }
 }
 .hero__inner { position: relative; display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,.9fr); gap: var(--s-16); align-items: center; }
 .hero__avatar {
-  width: 148px; height: 148px; border-radius: 50%;
+  width: 164px; height: 164px; border-radius: 50%;
   padding: 4px; background: var(--c-gradient);
   box-shadow: var(--shadow-glow); margin-bottom: var(--s-6);
 }

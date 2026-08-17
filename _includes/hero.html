@@ -9,13 +9,21 @@
   </div>
   <div class="container">
     <div class="hero__inner">
-      <div>
+      <div class="hero__main">
         <div class="hero__avatar">
           <img src="{{ base_path }}/images/{{ site.author.avatar }}" alt="{{ site.author.name }}">
+        </div>
+        <div class="hero__eyebrow">
+          <svg class="icon"><use href="#i-graduation-cap"/></svg> Ph.D. &middot; Associate Professor &middot; Master's Supervisor
         </div>
         <h1>{{ site.author.name }}</h1>
         <div class="hero__role"><span data-i18n="hero.role">{{ site.author.employer }}</span></div>
         <p class="hero__tagline"><span data-i18n="hero.tagline">{{ site.author.bio }}</span></p>
+        <div class="hero__tags">
+          <span class="chip">Swarm Intelligence</span>
+          <span class="chip">Evolutionary Computation</span>
+          <span class="chip">GPU/CUDA Computing</span>
+        </div>
         <div class="hero__ctas">
           <a class="btn btn--light btn--lg" href="{{ base_path }}/cv/">
             <svg class="icon"><use href="#i-id-card"/></svg> <span data-i18n="hero.cv">Curriculum Vitae</span>
@@ -32,11 +40,6 @@
             <div class="id-card__role"><span data-i18n="hero.role">{{ site.author.employer }}</span></div>
             <div class="id-card__loc">
               <svg class="icon"><use href="#i-map-pin"/></svg> {{ site.author.location }}
-            </div>
-            <div class="id-card__tags">
-              <span class="chip">Swarm Intelligence</span>
-              <span class="chip">Evolutionary Computation</span>
-              <span class="chip">GPU/CUDA Computing</span>
             </div>
             <div class="id-card__actions">
               {% if site.author.email %}<a href="mailto:{{ site.author.email }}" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a>{% endif %}

@@ -17,14 +17,22 @@
     return nav.indexOf('zh') === 0 ? 'zh' : 'en';
   }
 
+  /* 按点分路径访问嵌套字典：dict["nav.home"] → dict.nav.home */
+  function getByPath(obj, path) {
+    return path.split('.').reduce(function (acc, k) {
+      return acc && acc[k] !== undefined ? acc[k] : undefined;
+    }, obj);
+  }
+
   function applyLang(lang) {
     if (window.I18N && window.I18N[lang]) {
       var dict = window.I18N[lang];
       var nodes = document.querySelectorAll('[data-i18n]');
       Array.prototype.forEach.call(nodes, function (node) {
         var key = node.getAttribute('data-i18n');
-        if (dict[key] !== undefined) {
-          node.textContent = dict[key];
+        var val = getByPath(dict, key);
+        if (val !== undefined) {
+          node.textContent = val;
         } else if (window.console && window.console.warn) {
           window.console.warn('[i18n] missing key: ' + lang + '.' + key);
         }
@@ -154,7 +162,8 @@
       el.setAttribute('data-i18n', i18nKey);
       if (window.I18N) {
         var lang = document.documentElement.getAttribute('data-lang') || getLang();
-        el.textContent = (window.I18N[lang] && window.I18N[lang][i18nKey]) || '';
+        var val = getByPath(window.I18N[lang], i18nKey);
+        el.textContent = val || '';
       }
       return el;
     }

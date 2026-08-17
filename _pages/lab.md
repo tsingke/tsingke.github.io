@@ -100,7 +100,11 @@ The **{{ site.data.lab.name }}** focuses on the frontiers of intelligent optimiz
     <h3>{{ site.data.lab.platform.name }}</h3>
     <p style="margin-top: var(--s-2);">{{ site.data.lab.platform.desc }}</p>
     {% if site.data.lab.platform.link %}
-    <p style="margin-top: var(--s-3);"><a href="{{ site.data.lab.platform.link }}">{{ site.data.lab.platform.link }} <svg class="icon" style="width:14px; height:14px; display:inline-block; vertical-align:-2px;"><use href="#i-external"/></svg></a></p>
+    <p style="margin-top: var(--s-4);">
+      <a class="btn btn--sm btn--outline" href="{{ site.data.lab.platform.link }}" target="_blank" rel="noopener">
+        <svg class="icon"><use href="#i-github"/></svg> GitHub Repository
+      </a>
+    </p>
     {% endif %}
   </div>
 </article>

@@ -31,6 +31,8 @@ en:
     detail: "Detail"
 
   home:
+    about_eyebrow: "About"
+    profile_title: "Profile"
     news_eyebrow: "Updates"
     news_title: "News & Updates"
     pub_eyebrow: "Research"
@@ -155,6 +157,8 @@ zh:
     detail: "详情"
 
   home:
+    about_eyebrow: "关于"
+    profile_title: "个人简介"
     news_eyebrow: "动态"
     news_title: "最新动态"
     pub_eyebrow: "研究"
