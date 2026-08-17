@@ -123,6 +123,7 @@ hr { border: 0; border-top: 1px solid var(--c-border); margin: var(--s-12) 0; }
 }
 .hero__photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
 .hero__info { flex: 1; min-width: 0; }
+.hero__info h1 { margin-bottom: var(--s-2); }
 .hero__contact {
   display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--s-3) var(--s-8); margin: var(--s-6) 0;

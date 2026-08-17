@@ -13,17 +13,9 @@
         <img src="{{ base_path }}/images/photo-portrait.jpg" alt="{{ site.author.name }}">
       </div>
       <div class="hero__info">
-        <div class="hero__eyebrow">
-          <svg class="icon"><use href="#i-graduation-cap"/></svg> Ph.D. &middot; Associate Professor &middot; Master's Supervisor
-        </div>
         <h1>{{ site.author.name }}</h1>
         <div class="hero__role"><span data-i18n="hero.role">{{ site.author.employer }}</span></div>
         <p class="hero__tagline"><span data-i18n="hero.tagline">{{ site.author.bio }}</span></p>
-        <div class="hero__tags">
-          <span class="chip chip--blue">Swarm Intelligence</span>
-          <span class="chip chip--orange">Evolutionary Computation</span>
-          <span class="chip chip--purple">GPU/CUDA Computing</span>
-        </div>
         <div class="hero__contact">
           {% if site.author.email %}<a href="mailto:{{ site.author.email }}"><svg class="icon"><use href="#i-mail"/></svg> {{ site.author.email }}</a>{% endif %}
           {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-github"/></svg> github.com/{{ site.author.github }}</a>{% endif %}
