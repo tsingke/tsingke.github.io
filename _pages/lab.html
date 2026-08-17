@@ -23,7 +23,7 @@ redirect_from:
 <h2 class="pub-section-title"><span class="i18n-en">Team Members</span><span class="i18n-zh">团队成员</span></h2>
 
 <h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-8) 0 var(--s-4);"><span class="i18n-en">Current Graduate Students</span><span class="i18n-zh">在读研究生</span> <span class="tag tag--q1">在读</span></h3>
-<div class="grid grid--4" style="gap: var(--s-3);">
+<div class="grid grid--5" style="gap: var(--s-2);">
   {% assign idx = 0 %}
   {% for m in site.data.members.graduate_students %}
     {% if m.status == 'current' %}
@@ -42,7 +42,7 @@ redirect_from:
 {% endfor %}
 
 <h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-12) 0 var(--s-4);"><span class="i18n-en">Alumni</span><span class="i18n-zh">已毕业研究生</span> <span class="tag">已毕业</span></h3>
-<div class="grid grid--4" style="gap: var(--s-3);">
+<div class="grid grid--5" style="gap: var(--s-2);">
   {% for m in site.data.members.graduate_students %}
     {% if m.status == 'alumni' %}
       {% include student-card.html member=m %}
