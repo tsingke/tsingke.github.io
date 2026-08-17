@@ -2,4 +2,4 @@
 
 <!-- i18n 文案字典（Liquid 注入） -->
 <script>window.I18N = {{ site.data.i18n | jsonify }};</script>
-<script src="{{ base_path }}/assets/js/app.js"></script>
+<script src="{{ base_path }}/assets/js/app.js?v={{ site.time | date: '%s' }}"></script>
