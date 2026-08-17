@@ -561,25 +561,24 @@ body.modal-open { overflow: hidden; }
 /* ---------- 学生卡 / 详情 ---------- */
 .student-card {
   text-align: center; padding: var(--s-4) var(--s-3);
-  background: var(--c-bg); border: 1px solid var(--c-border);
+  background: linear-gradient(160deg, rgba(37,99,235,.07), rgba(124,58,237,.07));
+  border: 1px solid var(--c-border);
   border-radius: var(--r-md); box-shadow: var(--shadow-sm); cursor: pointer;
   transition: all .25s var(--ease-out);
 }
-.student-card:nth-child(3n+1) { background: linear-gradient(160deg, #EFF6FF, var(--c-bg) 70%); }
-.student-card:nth-child(3n+2) { background: linear-gradient(160deg, #FAF5FF, var(--c-bg) 70%); }
-.student-card:nth-child(3n) { background: linear-gradient(160deg, #FFF7ED, var(--c-bg) 70%); }
-.student-card:hover { box-shadow: var(--shadow-glow); transform: translateY(-3px); }
-.student-card:nth-child(3n+1):hover { background: linear-gradient(160deg, #DBEAFE, var(--c-bg) 80%); }
-.student-card:nth-child(3n+2):hover { background: linear-gradient(160deg, #EDE9FE, var(--c-bg) 80%); }
-.student-card:nth-child(3n):hover { background: linear-gradient(160deg, #FED7AA, var(--c-bg) 80%); }
+.student-card:hover {
+  background: linear-gradient(160deg, rgba(37,99,235,.16), rgba(124,58,237,.16));
+  box-shadow: var(--shadow-glow); transform: translateY(-3px);
+}
 .student-card__avatar {
-  width: 66px; height: 66px; border-radius: 50%; margin: 0 auto var(--s-3);
+  width: 64px; height: 64px; border-radius: 50%; margin: 0 auto var(--s-2);
   background: var(--c-gradient-soft); display: flex; align-items: center; justify-content: center;
   color: var(--c-primary); font-size: var(--fs-lg); font-weight: var(--fw-extra);
   overflow: hidden;
 }
 .student-card__avatar img { width: 100%; height: 100%; object-fit: cover; }
 .student-card h3 { font-size: var(--fs-sm); }
+.student-card__meta { font-size: var(--fs-xs); color: var(--c-text-3); margin-top: 2px; }
 .student-card .student-card__meta { font-size: var(--fs-sm); color: var(--c-text-3); margin-top: var(--s-1); }
 .student-card .badge-current {
   display: inline-block; font-size: var(--fs-xs); font-weight: var(--fw-semi);
@@ -675,10 +674,8 @@ html[data-theme="dark"] .site-nav__menu a.active { color: var(--c-primary); back
 html[data-theme="dark"] .nav-toggle span { background: var(--c-text); }
 html[data-theme="dark"] .card, html[data-theme="dark"] .pub, html[data-theme="dark"] .teaching-card,
 html[data-theme="dark"] .contact-card, html[data-theme="dark"] .stat, html[data-theme="dark"] .pub-card,
-html[data-theme="dark"] .student-card { background: var(--c-bg-alt); }
-html[data-theme="dark"] .student-card:nth-child(3n+1) { background: linear-gradient(160deg, rgba(37,99,235,.2), var(--c-bg-alt) 70%); }
-html[data-theme="dark"] .student-card:nth-child(3n+2) { background: linear-gradient(160deg, rgba(124,58,237,.2), var(--c-bg-alt) 70%); }
-html[data-theme="dark"] .student-card:nth-child(3n) { background: linear-gradient(160deg, rgba(249,115,22,.18), var(--c-bg-alt) 70%); }
+html[data-theme="dark"] .student-card { background: linear-gradient(160deg, rgba(37,99,235,.16), rgba(124,58,237,.16)); }
+html[data-theme="dark"] .student-card:hover { background: linear-gradient(160deg, rgba(37,99,235,.3), rgba(124,58,237,.3)); }
 html[data-theme="dark"] .modal, html[data-theme="dark"] .student-dialog, html[data-theme="dark"] .contact-form-wrap { background: var(--c-bg-alt); }
 html[data-theme="dark"] .prose blockquote { background: var(--c-bg-tint); }
 html[data-theme="dark"] .btn--light { color: var(--c-primary-600); }

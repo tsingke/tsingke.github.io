@@ -21,11 +21,9 @@
               {% endif %}
             </div>
           </div>
-          {% if m.copy %}
-            <button type="button" class="copy-btn" data-copy-value="{{ m.value }}" aria-label="Copy {{ m.label }}">
-              <svg class="icon" style="width:12px; height:12px;"><use href="#i-copy"/></svg>
-            </button>
-          {% endif %}
+          <button type="button" class="copy-btn" data-copy-value="{{ m.value }}" aria-label="Copy {{ m.label }}" title="Copy">
+            <svg class="icon" style="width:12px; height:12px;"><use href="#i-copy"/></svg>
+          </button>
         </div>
         {% endif %}
       {% endfor %}

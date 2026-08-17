@@ -64,4 +64,5 @@ methods:
   - label: "Office Location"
     icon: "map-pin"
     value: "Room 402/404, Wencong Building, Changqinghu Campus, Shandong Normal University"
+    link: "https://uri.amap.com/search?keyword=%E5%B1%B1%E4%B8%9C%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%EF%BC%88%E9%95%BF%E6%B8%85%E6%B9%96%E6%A0%A1%E5%8C%BA%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8E%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AD%A6%E9%99%A2"
     group: office

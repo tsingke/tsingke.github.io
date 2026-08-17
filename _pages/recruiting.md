@@ -108,11 +108,12 @@ I recruit **3-4 master's students per year** in **Computer Science and Technolog
   <div class="icon-tile" style="width:72px; height:72px; margin: 0 auto var(--s-6); background: rgba(255,255,255,.18); color:#fff; border-radius: var(--r-xl);">
     <svg class="icon" style="width:36px; height:36px;"><use href="#i-quote"/></svg>
   </div>
-  <p style="font-size: var(--fs-lg); font-style: italic; max-width: 640px;">
-    海阔凭鱼跃，天高任鸟飞，诚挚欢迎优秀学子加入"山师大智能计算研究课题组"！
+  <p style="font-size: var(--fs-lg); font-style: italic; max-width: 680px;">
+    <span class="i18n-en">The ocean is vast, and the sky is boundless — fish leap and birds soar. We sincerely welcome outstanding young minds to join the Intelligent Computing Group and write your own story at the frontier of intelligence.</span>
+    <span class="i18n-zh">海阔凭鱼跃，天高任鸟飞，诚挚欢迎优秀学子加入"山师大智能计算研究课题组"！</span>
   </p>
   <p style="color: rgba(255,255,255,.8); font-size: var(--fs-sm); margin-top: var(--s-4);">
-    -- Mentor's Message · 导师寄语
+    <span class="i18n-en">-- Mentor's Message</span><span class="i18n-zh">-- 导师寄语</span>
   </p>
 </div>
 
