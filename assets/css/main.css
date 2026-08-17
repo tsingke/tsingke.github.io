@@ -93,7 +93,6 @@ hr { border: 0; border-top: 1px solid var(--c-border); margin: var(--s-12) 0; }
   color: #fff;
   padding: clamp(4rem, 9vw, 7rem) 0 clamp(3rem, 6vw, 5rem);
 }
-.hero__main { min-width: 0; }
 
 /* ---------- Hero：左矩形照片 + 右信息 ---------- */
 .hero__profile { display: flex; gap: var(--s-12); align-items: center; }
