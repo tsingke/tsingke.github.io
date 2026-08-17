@@ -12,11 +12,11 @@ redirect_from:
 
 {% include base_path %}
 
-<div class="i18n-en" markdown="1" style="max-width:760px; margin-bottom: var(--s-12);">
-The **{{ site.data.lab.name }}** focuses on the frontiers of intelligent optimization and computational intelligence, including swarm intelligence, evolutionary computation, learning-assisted optimization, and GPU-parallel intelligent computing. We adhere to the philosophy of *{{ site.data.lab.slogan }}*.
+<div class="i18n-en" style="max-width:760px; margin-bottom: var(--s-12);">
+<p>The <strong>{{ site.data.lab.name }}</strong> focuses on the frontiers of intelligent optimization and computational intelligence, including swarm intelligence, evolutionary computation, learning-assisted optimization, and GPU-parallel intelligent computing. We adhere to the philosophy of <em>{{ site.data.lab.slogan }}</em>.</p>
 </div>
-<div class="i18n-zh" markdown="1" style="max-width:760px; margin-bottom: var(--s-12);">
-山东师范大学计算机与人工智能学院 **CILab（计算智能实验室）** 聚焦智能优化与智能计算前沿，涵盖群体智能、演化计算、学习型智能优化与 GPU 并行智能计算。实验室坚持 **{{ site.data.lab.slogan }}** 的培养理念，注重理论与实践深度融合。
+<div class="i18n-zh" style="max-width:760px; margin-bottom: var(--s-12);">
+<p>山东师范大学计算机与人工智能学院 <strong>CILab（计算智能实验室）</strong> 聚焦智能优化与智能计算前沿，涵盖群体智能、演化计算、学习型智能优化与 GPU 并行智能计算。实验室坚持 <strong>{{ site.data.lab.slogan }}</strong> 的培养理念，注重理论与实践深度融合。</p>
 </div>
 
 <!-- ===== 团队成员 ===== -->
@@ -32,7 +32,7 @@ The **{{ site.data.lab.name }}** focuses on the frontiers of intelligent optimiz
     {% endif %}
   {% endfor %}
 </div>
-<div markdown="0">
+
 {% assign idx = 0 %}
 {% for m in site.data.members.graduate_students %}
   {% if m.status == 'current' %}
@@ -40,7 +40,6 @@ The **{{ site.data.lab.name }}** focuses on the frontiers of intelligent optimiz
     {% include student-dialog.html member=m index=idx %}
   {% endif %}
 {% endfor %}
-</div>
 
 <h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-12) 0 var(--s-4);">Alumni <span class="tag">已毕业</span></h3>
 <div class="grid grid--4">
