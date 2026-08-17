@@ -9,7 +9,7 @@ venue: 'Information Sciences, vol. 394-395, pp. 273-298'
 citation: 'Q. Zhang*, W. Liu, X. Meng, B. Yang, and A. V. Vasilakos (2017). &quot;Vector Coevolving Particle Swarm Optimization Algorithm.&quot; <i>Information Sciences</i>, 394-395, pp. 273-298.'
 pdf: /files/papers/vector-coevolving-particle-swarm-optimization.pdf
 screenshot: /images/papers/vector-coevolving-particle-swarm-optimization.jpg
-code: ''
+code: 'https://github.com/tsingke'
 read: ''
 featured: true
 cites: 60

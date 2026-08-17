@@ -9,7 +9,7 @@ venue: 'Expert Systems with Applications, vol. 246, 123214'
 citation: 'X. Bu, Q. Zhang*, H. Gao, and H. Zhang (2024). &quot;Multi-Strategy Differential Evolution Algorithm Based on Adaptive Hash Clustering and Its Application in Wireless Sensor Networks.&quot; <i>Expert Systems with Applications</i>, 246, 123214.'
 pdf: /files/papers/multi-strategy-de-adaptive-hash-clustering.pdf
 screenshot: /images/papers/multi-strategy-de-adaptive-hash-clustering.jpg
-code: ''
+code: 'https://github.com/tsingke'
 read: ''
 featured: true
 cites: 13

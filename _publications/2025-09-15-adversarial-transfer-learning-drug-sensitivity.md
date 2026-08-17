@@ -9,7 +9,7 @@ venue: 'Lecture Notes in Computer Science, vol. 15710, pp. 242-256 (IJCRS 2025)'
 citation: 'H.-W. Zhang, S. Zhu, F. Lin, Q.-H. Zhang, F. Yang, and Q. Zhang* (2025). &quot;Adversarial Transfer Learning for Predicting Drug Sensitivity in Single-Cell Data.&quot; <i>Lecture Notes in Computer Science</i>, 15710, pp. 242-256.'
 pdf: /files/papers/adversarial-transfer-learning-drug-sensitivity.pdf
 screenshot: /images/papers/adversarial-transfer-learning-drug-sensitivity.jpg
-code: ''
+code: 'https://github.com/tsingke'
 read: ''
 featured: false
 cites: 0

@@ -9,7 +9,7 @@ venue: 'Lecture Notes in Computer Science, vol. 14862, pp. 39-56 (ICIC 2024)'
 citation: 'C. Li, Q. Zhang*, S. Pang, W. Chen, X. Yin, X. Dong, and H. Zhang (2024). &quot;An Efficient Growth Optimizer With Adaptive Parameters and Targeted Stochastic Mutation Strategies for Global Optimization.&quot; <i>Lecture Notes in Computer Science</i>, 14862, pp. 39-56.'
 pdf: /files/papers/efficient-growth-optimizer-adaptive-parameters.pdf
 screenshot: /images/papers/efficient-growth-optimizer-adaptive-parameters.jpg
-code: ''
+code: 'https://github.com/tsingke'
 read: ''
 featured: false
 cites: 0

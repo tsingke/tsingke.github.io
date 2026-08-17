@@ -9,7 +9,7 @@ venue: 'Applied Intelligence, vol. 55, 777'
 citation: 'X. Liu, Q. Zhang*, S. Pang, J. Sun, and H. Zhang (2025). &quot;Pulse-Strategy Collective Learning Swarm Optimizer for Large-Scale Global Optimization.&quot; <i>Applied Intelligence</i>, 55, 777.'
 pdf: /files/papers/pulse-strategy-collective-learning-swarm-optimizer.pdf
 screenshot: /images/papers/pulse-strategy-collective-learning-swarm-optimizer.jpg
-code: ''
+code: 'https://github.com/tsingke'
 read: ''
 featured: true
 cites: 0

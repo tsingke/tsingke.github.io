@@ -9,7 +9,7 @@ venue: 'Engineering Applications of Artificial Intelligence, vol. 137, 109202'
 citation: 'H. Gao and Q. Zhang* (2024). &quot;Alpha Evolution: An Efficient Evolutionary Algorithm With Evolution Path Adaptation and Matrix Generation.&quot; <i>Engineering Applications of Artificial Intelligence</i>, 137, 109202.'
 pdf: /files/papers/alpha-evolution.pdf
 screenshot: /images/papers/alpha-evolution.jpg
-code: ''
+code: 'https://github.com/tsingke'
 read: ''
 featured: true
 cites: 92

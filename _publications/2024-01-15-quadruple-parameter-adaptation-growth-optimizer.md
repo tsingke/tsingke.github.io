@@ -9,7 +9,7 @@ venue: 'Expert Systems with Applications, vol. 235, 121218'
 citation: 'H. Gao, Q. Zhang*, X. Bu, and H. Zhang (2024). &quot;Quadruple Parameter Adaptation Growth Optimizer With Integrated Distribution, Confrontation, and Balance Features for Optimization.&quot; <i>Expert Systems with Applications</i>, 235, 121218.'
 pdf: /files/papers/quadruple-parameter-adaptation-growth-optimizer.pdf
 screenshot: /images/papers/quadruple-parameter-adaptation-growth-optimizer.jpg
-code: ''
+code: 'https://github.com/tsingke'
 read: ''
 featured: true
 cites: 26

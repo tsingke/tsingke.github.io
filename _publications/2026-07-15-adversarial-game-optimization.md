@@ -9,7 +9,7 @@ venue: 'Information Sciences, vol. 735, 123022'
 citation: 'C. Li, Q. Zhang*, J. Li, S. Tao, and D. Oliva (2026). &quot;Adversarial Game Optimization: A Game-Theoretic Metaheuristic for Efficient Complex Optimization and Engineering Applications.&quot; <i>Information Sciences</i>, 735, 123022.'
 pdf: /files/papers/adversarial-game-optimization.pdf
 screenshot: /images/papers/adversarial-game-optimization.jpg
-code: ''
+code: 'https://github.com/tsingke'
 read: ''
 featured: true
 cites: 0

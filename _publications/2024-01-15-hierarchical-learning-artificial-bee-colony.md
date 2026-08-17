@@ -9,7 +9,7 @@ venue: 'Applied Intelligence, vol. 54, pp. 169-200'
 citation: 'Q. Zhang*, X. Bu, H. Gao, T. Li, and H. Zhang (2024). &quot;A Hierarchical Learning Based Artificial Bee Colony Algorithm for Numerical Global Optimization and Its Applications.&quot; <i>Applied Intelligence</i>, 54, pp. 169-200.'
 pdf: /files/papers/hierarchical-learning-artificial-bee-colony.pdf
 screenshot: /images/papers/hierarchical-learning-artificial-bee-colony.jpg
-code: ''
+code: 'https://github.com/tsingke'
 read: ''
 featured: true
 cites: 8

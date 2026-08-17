@@ -120,19 +120,34 @@ graduate_students:
 
 undergraduate:
   thesis:
-    # - name: "李四"
-    #   contact: ""
-    #   thesis_title: "基于XX的XX算法研究"
-    #   year: "2024"
+    - name: "王新杰"
+      contact: ""
+      thesis_title: "基于智能优化的算法研究"
+      year: "2024"
+
+    - name: "邱璇"
+      contact: ""
+      thesis_title: "面向全局优化问题的算法设计"
+      year: "2024"
+
+    - name: "杜芊芊"
+      contact: ""
+      thesis_title: "智能计算方法及其应用"
+      year: "2025"
 
   competition:
-    # - name: "王五"
-    #   contact: ""
-    #   award: "蓝桥杯省级一等奖"
-    #   year: "2024"
+    - name: "肖威"
+      contact: ""
+      award: "蓝桥杯软件大赛省级奖"
+      year: "2024"
+
+    - name: "李天奇"
+      contact: ""
+      award: "数学建模竞赛省级奖"
+      year: "2025"
 
   research:
-    # - name: "赵六"
-    #   contact: ""
-    #   project: "大创国家级项目"
-    #   year: "2024"
+    - name: "周田羽"
+      contact: ""
+      project: "大学生创新训练项目"
+      year: "2025"

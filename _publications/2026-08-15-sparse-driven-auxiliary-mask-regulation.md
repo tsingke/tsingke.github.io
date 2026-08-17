@@ -9,7 +9,7 @@ venue: 'Expert Systems with Applications, vol. 302, 130489'
 citation: 'S. Pang, Q. Zhang*, Z.-H. Zhan, J. Li, and H. Zhang (2026). &quot;Sparse-Driven Auxiliary Mask Regulation and Hierarchical Action Selection for Large-Scale Multi-Objective Optimization.&quot; <i>Expert Systems with Applications</i>, 302, 130489.'
 pdf: /files/papers/sparse-driven-auxiliary-mask-regulation.pdf
 screenshot: /images/papers/sparse-driven-auxiliary-mask-regulation.jpg
-code: ''
+code: 'https://github.com/tsingke'
 read: ''
 featured: true
 cites: 1

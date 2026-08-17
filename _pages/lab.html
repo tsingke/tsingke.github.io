@@ -23,7 +23,7 @@ redirect_from:
 <h2 class="pub-section-title"><span class="i18n-en">Team Members</span><span class="i18n-zh">团队成员</span></h2>
 
 <h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-8) 0 var(--s-4);"><span class="i18n-en">Current Graduate Students</span><span class="i18n-zh">在读研究生</span> <span class="tag tag--q1">在读</span></h3>
-<div class="grid grid--4">
+<div class="grid grid--4" style="gap: var(--s-3);">
   {% assign idx = 0 %}
   {% for m in site.data.members.graduate_students %}
     {% if m.status == 'current' %}
@@ -42,7 +42,7 @@ redirect_from:
 {% endfor %}
 
 <h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-12) 0 var(--s-4);"><span class="i18n-en">Alumni</span><span class="i18n-zh">已毕业研究生</span> <span class="tag">已毕业</span></h3>
-<div class="grid grid--4">
+<div class="grid grid--4" style="gap: var(--s-3);">
   {% for m in site.data.members.graduate_students %}
     {% if m.status == 'alumni' %}
       {% include student-card.html member=m %}
@@ -51,17 +51,17 @@ redirect_from:
 </div>
 
 <h3 class="pub-section-title" style="font-size: var(--fs-base); margin: var(--s-12) 0 var(--s-4);"><span class="i18n-en">Undergraduate Students</span><span class="i18n-zh">本科生培养</span></h3>
-<div class="grid grid--3" style="margin-bottom: var(--s-8);">
+<div class="grid grid--3" style="gap: var(--s-3); margin-bottom: var(--s-8);">
   {% for t in site.data.members.undergraduate.thesis %}
   <div class="card"><h3>{{ t.name }}</h3><p style="margin-top: var(--s-2);">{{ t.thesis_title }}</p><div class="pub__tags" style="margin-top: var(--s-3);"><span class="tag">{{ t.year }}</span></div></div>
   {% endfor %}
 </div>
-<div class="grid grid--3" style="margin-bottom: var(--s-8);">
+<div class="grid grid--3" style="gap: var(--s-3); margin-bottom: var(--s-8);">
   {% for c in site.data.members.undergraduate.competition %}
   <div class="card"><h3>{{ c.name }}</h3><p style="margin-top: var(--s-2);">{{ c.award }}</p><div class="pub__tags" style="margin-top: var(--s-3);"><span class="tag">{{ c.year }}</span></div></div>
   {% endfor %}
 </div>
-<div class="grid grid--3" style="margin-bottom: var(--s-8);">
+<div class="grid grid--3" style="gap: var(--s-3); margin-bottom: var(--s-8);">
   {% for r in site.data.members.undergraduate.research %}
   <div class="card"><h3>{{ r.name }}</h3><p style="margin-top: var(--s-2);">{{ r.project }}</p><div class="pub__tags" style="margin-top: var(--s-3);"><span class="tag">{{ r.year }}</span></div></div>
   {% endfor %}
@@ -73,7 +73,7 @@ redirect_from:
 <!-- ===== 研究领域 ===== -->
 <div style="height: var(--s-8);"></div>
 <h2 class="pub-section-title"><span class="i18n-en">Research Directions</span><span class="i18n-zh">研究方向</span></h2>
-<div class="grid grid--3" style="margin-bottom: var(--s-8);">
+<div class="grid grid--3" style="gap: var(--s-3); margin-bottom: var(--s-8);">
   {% for d in site.data.lab.directions %}
     {% include card.html icon=d.icon title=d.title title_zh=d.title_zh text=d.text text_zh=d.text_zh %}
   {% endfor %}

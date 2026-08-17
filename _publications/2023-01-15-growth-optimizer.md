@@ -9,7 +9,7 @@ venue: 'Knowledge-Based Systems, vol. 261, 110206'
 citation: 'Q. Zhang*, H. Gao, Z.-H. Zhan, J. Li, and H. Zhang (2023). &quot;Growth Optimizer: A Powerful Metaheuristic Algorithm for Solving Continuous and Discrete Global Optimization Problems.&quot; <i>Knowledge-Based Systems</i>, 261, 110206.'
 pdf: /files/papers/growth-optimizer.pdf
 screenshot: /images/papers/growth-optimizer.jpg
-code: ''
+code: 'https://github.com/tsingke'
 read: ''
 featured: true
 cites: 204

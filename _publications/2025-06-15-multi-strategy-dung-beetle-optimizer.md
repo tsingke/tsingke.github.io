@@ -9,7 +9,7 @@ venue: 'International Journal of Machine Learning and Cybernetics, vol. 16, pp. 
 citation: 'X. Liu, Q. Zhang*, J. Li, and H. Zhang (2025). &quot;Multi-Strategy Boosted Dung Beetle Optimizer and Its Applications for Photovoltaic Models and Engineering Applications.&quot; <i>International Journal of Machine Learning and Cybernetics</i>, 16, pp. 10667-10701.'
 pdf: /files/papers/multi-strategy-dung-beetle-optimizer.pdf
 screenshot: /images/papers/multi-strategy-dung-beetle-optimizer.jpg
-code: ''
+code: 'https://github.com/tsingke'
 read: ''
 featured: true
 cites: 1

@@ -25,7 +25,7 @@ subtitle: "Courses across undergraduate, graduate, and doctoral levels, together
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <p style="margin-top: var(--s-3);">{{ post.content | strip_html | truncatewords: 80 }}</p>
         <p style="margin-top: var(--s-4);">
-          <a class="btn btn--sm" href="mailto:{{ site.author.email }}">Contact Me</a>
+          <a class="btn btn--sm" href="{{ base_path }}/contact/"><span data-i18n="hero.contact">Contact Me</span></a>
         </p>
       </article>
     {% endif %}

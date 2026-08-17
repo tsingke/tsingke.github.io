@@ -14,7 +14,7 @@ en:
     contact: "Contact"
 
   hero:
-    role: "Associate Professor, School of Computer Science and Artificial Intelligence, Shandong Normal University"
+    role: "Ph.D., Associate Professor, School of Computer Science and Artificial Intelligence, Shandong Normal University"
     tagline: "Research on swarm intelligence, evolutionary computation, and parallel intelligent computing."
     cv: "Curriculum Vitae"
     contact: "Contact Me"
@@ -128,7 +128,7 @@ zh:
     contact: "联系"
 
   hero:
-    role: "副教授，山东师范大学计算机与人工智能学院"
+    role: "工学博士，副教授，山东师范大学计算机与人工智能学院"
     tagline: "研究方向：群体智能、演化计算与并行智能计算。"
     cv: "个人简历"
     contact: "联系我"
