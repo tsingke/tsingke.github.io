@@ -8,8 +8,11 @@
     <div class="dots"></div>
   </div>
   <div class="container">
-    <div class="hero__inner">
-      <div class="hero__main">
+    <div class="hero__profile">
+      <div class="hero__photo">
+        <img src="{{ base_path }}/images/photo-portrait.jpg" alt="{{ site.author.name }}">
+      </div>
+      <div class="hero__info">
         <div class="hero__eyebrow">
           <svg class="icon"><use href="#i-graduation-cap"/></svg> Ph.D. &middot; Associate Professor &middot; Master's Supervisor
         </div>
@@ -21,11 +24,11 @@
           <span class="chip chip--orange">Evolutionary Computation</span>
           <span class="chip chip--purple">GPU/CUDA Computing</span>
         </div>
-        <div class="hero__socials">
-          {% if site.author.email %}<a href="mailto:{{ site.author.email }}" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a>{% endif %}
-          {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>{% endif %}
-          {% if site.author.orcid %}<a href="{{ site.author.orcid }}" aria-label="ORCID"><svg class="icon"><use href="#i-orcid"/></svg></a>{% endif %}
-          {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}" aria-label="X"><svg class="icon"><use href="#i-x"/></svg></a>{% endif %}
+        <div class="hero__contact">
+          {% if site.author.email %}<a href="mailto:{{ site.author.email }}"><svg class="icon"><use href="#i-mail"/></svg> {{ site.author.email }}</a>{% endif %}
+          {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-github"/></svg> github.com/{{ site.author.github }}</a>{% endif %}
+          {% if site.author.orcid %}<a href="{{ site.author.orcid }}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-orcid"/></svg> ORCID</a>{% endif %}
+          {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-x"/></svg> @{{ site.author.twitter }}</a>{% endif %}
         </div>
         <div class="hero__ctas">
           <a class="btn btn--light btn--lg" href="{{ base_path }}/cv/">
@@ -34,16 +37,6 @@
           <a class="btn btn--ghost btn--lg" href="{{ base_path }}/contact/">
             <svg class="icon"><use href="#i-mail"/></svg> <span data-i18n="hero.contact">Contact Me</span>
           </a>
-        </div>
-      </div>
-      <div class="hero__media">
-        <div class="hero__portrait">
-          <img src="{{ base_path }}/images/{{ site.author.avatar }}" alt="{{ site.author.name }}">
-        </div>
-        <div class="hero__badges">
-          <span class="hbadge hbadge--orange">40+ SCI Papers</span>
-          <span class="hbadge hbadge--blue">2 ESI Highly Cited</span>
-          <span class="hbadge hbadge--purple">5 Patents</span>
         </div>
       </div>
     </div>
