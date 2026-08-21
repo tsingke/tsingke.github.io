@@ -55,7 +55,7 @@ graduate_students:
   - name: "王娜"
     cohort: "2025级"
     status: current
-    interests: ["演化计算", "复杂多目标优化"]
+    interests: ["演化计算", "流形学习优化"]
     hometown: "山东临沂"
     contact: ""
     papers: []
@@ -64,7 +64,7 @@ graduate_students:
   - name: "张胜男"
     cohort: "2025级"
     status: current
-    interests: ["演化计算", "流形学习优化"]
+    interests: ["演化计算", "复杂多目标优化"]
     hometown: "山东临沂"
     contact: ""
     papers: []
