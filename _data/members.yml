@@ -10,8 +10,8 @@ graduate_students:
   - name: "付开通"
     cohort: "2024级"
     status: current
-    interests: ["群体智能", "演化算法"]
-    hometown: ""
+    interests: ["群体智能", "复杂优化方法"]
+    hometown: "山东济宁"
     contact: ""
     papers: []
     awards: []
@@ -19,8 +19,8 @@ graduate_students:
   - name: "董星辰"
     cohort: "2024级"
     status: current
-    interests: ["大规模全局优化"]
-    hometown: ""
+    interests: ["深度学习与多序列分析"]
+    hometown: "山东滕州"
     contact: ""
     papers: []
     awards: []
@@ -28,8 +28,8 @@ graduate_students:
   - name: "王晓琳"
     cohort: "2024级"
     status: current
-    interests: ["生物信息优化"]
-    hometown: ""
+    interests: ["智能优化与教育大数据"]
+    hometown: "山东平阴"
     contact: ""
     papers: []
     awards: []
@@ -37,8 +37,8 @@ graduate_students:
   - name: "周光辉"
     cohort: "2024级"
     status: current
-    interests: ["工程应用优化"]
-    hometown: ""
+    interests: ["大规模全局优化"]
+    hometown: "山东德州"
     contact: ""
     papers: []
     awards: []
@@ -46,8 +46,8 @@ graduate_students:
   - name: "吕凌宇"
     cohort: "2025级"
     status: current
-    interests: ["学习型智能优化"]
-    hometown: ""
+    interests: ["学习型稀疏智能优化"]
+    hometown: "河南安阳"
     contact: ""
     papers: []
     awards: []
@@ -55,8 +55,8 @@ graduate_students:
   - name: "王娜"
     cohort: "2025级"
     status: current
-    interests: ["演化计算", "多目标优化"]
-    hometown: ""
+    interests: ["演化计算", "复杂多目标优化"]
+    hometown: "山东临沂"
     contact: ""
     papers: []
     awards: []
@@ -64,8 +64,8 @@ graduate_students:
   - name: "张胜男"
     cohort: "2025级"
     status: current
-    interests: ["GPU并行智能计算"]
-    hometown: ""
+    interests: ["演化计算", "流形学习优化"]
+    hometown: "山东临沂"
     contact: ""
     papers: []
     awards: []
@@ -127,12 +127,12 @@ undergraduate:
 
     - name: "邱璇"
       contact: ""
-      thesis_title: "面向全局优化问题的算法设计"
+      thesis_title: "基于教与学的智能优化算法及应用研究"
       year: "2024"
 
     - name: "杜芊芊"
       contact: ""
-      thesis_title: "智能计算方法及其应用"
+      thesis_title: "生物地理学优化方法及其应用研究"
       year: "2025"
 
   competition:
